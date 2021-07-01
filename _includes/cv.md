@@ -1,32 +1,23 @@
- I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and study foundational topics in <b>machine learning</b> and <b>optimization</b>, recently involving reinforcement learning, control, optimal transport, and geometry. I am interested in building learning systems that understand and interact with our world. I freely publish my research code to <a href="https://github.com/bamos">GitHub</a> as science should be open and reproducible and well-crafted software enables new frontiers. <br><br>
+ I am medical student at Yang Ming Chiao Tung University with interests in machine learning, computer vision and medical image analysis, recently involving meta-learing and self-supervised contrastive learning.<br><br>
 
 ## <i class="fa fa-chevron-right"></i> Education
 
 <table class="table table-hover">
   <tr>
     <td>
-        <strong>Ph.D. in Computer Science</strong>
-          (0.00/0.00)
+        <strong>M.D.</strong>
+          <!-- (0.00/0.00) -->
         <br>
-      Carnegie Mellon University | Pittsburgh, PA
+      National Yang Ming Chiao Tung University | Taipei, Taiwan
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> *<a href="https://github.com/bamos/thesis">Differentiable Optimization-Based Modeling for Machine Learning</a>*
-        <br> Advisors: <a href="http://zicokolter.com">J. Zico Kolter</a> (2016 - 2019),  <a href="https://www.cs.cmu.edu/ satya/">Mahadev Satyanarayanan</a> (2014 - 2016)
+        <!-- <br> *<a href="https://github.com/bamos/thesis">Differentiable Optimization-Based Modeling for Machine Learning</a>* -->
+        <br> Advisors:
+        <a href="http://zicokolter.com">JLi-Fen, Chen </a> (2017 - 2020),  
+        <a href="https://www.cs.cmu.edu/satya/"> Wei-Chen Chiu</a> (2020 - 2021),
+        <a href="http://zicokolter.com">Pin-Yu Chen</a> (2021)  
         </p>
     </td>
-    <td class="col-md-2" style='text-align:right;'>2014 - 2019</td>
-  </tr>
-  <tr>
-    <td>
-        <strong>B.S. in Computer Science</strong>
-          (3.99/4.00)
-        <br>
-      Virginia Tech | Blacksburg, VA
-        <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <br> Advisors: <a href="https://people.cs.vt.edu/ ltw/shortvita.html">Layne Watson</a>, <a href="https://www.magnum.io/people/jules.html">Jules White</a>, <a href="https://www.ssrg.ece.vt.edu/">Binoy Ravindran</a>
-        </p>
-    </td>
-    <td class="col-md-2" style='text-align:right;'>2011 - 2014</td>
+    <td class="col-md-2" style='text-align:right;'>2015 - 2022</td>
   </tr>
 </table>
 
@@ -91,11 +82,12 @@ VT Benjamin F. Bock, VT Gay B. Shober, VT I. Luck Gravett
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Publications <a href="https://github.com/bamos/cv/blob/master/publications/all.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+## <i class="fa fa-chevron-right"></i> Publications
+<!-- <a href="https://github.com/bamos/cv/blob/master/publications/all.bib"> <i class="fa fa-code-fork" aria-hidden="true"></i></a> -->
 
-<a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
+<!-- <a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
   <i class="ai ai-google-scholar"></i> Google Scholar
-</a>
+</a> -->
 
 <h2>2021</h2>
 <table class="table table-hover">
