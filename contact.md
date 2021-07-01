@@ -3,9 +3,7 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
-
-* Phone: [+91-123123](tel:+91-123123)
+* Email: [foo@xyz.com](0102030405jacky_at_gmail_com)
 
 ---
 
