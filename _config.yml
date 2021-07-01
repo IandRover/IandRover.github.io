@@ -1,6 +1,6 @@
 title: Researcher
 url: "https://iandrover.github.io/"
-baseurl: "/researcher"
+baseurl: "https://iandrover.github.io/"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
