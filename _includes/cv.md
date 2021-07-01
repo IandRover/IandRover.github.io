@@ -61,20 +61,14 @@
 <table class="table table-hover">
 <tr>
   <td>
-    NSF Graduate Research Fellowship
+    Second Prize, Taiwan Brain Tumor Segmentation Challenge
   </td>
   <td class='col-md-2' style='text-align:right;'>2016 - 2019</td>
 </tr>
 <tr>
   <td>
-    Nine undergraduate scholarships
-    <br><p style="color:grey;font-size:1.2rem">Roanoke County Public Schools Engineering,
-Salem-Roanoke County Chamber of Commerce,
-Papa John's,
-Scottish Rite of Freemasonry,
-VT Intelligence Community Conter for Academic Excellence,
-VT Pamplin Leader,
-VT Benjamin F. Bock, VT Gay B. Shober, VT I. Luck Gravett
+    Gold Medal, 2016 International Genetically Engineered Machine Competition
+    <br><p style="color:grey;font-size:1.2rem">
 </p>
   </td>
   <td class='col-md-2' style='text-align:right;'>2011 - 2014</td>
@@ -83,11 +77,6 @@ VT Benjamin F. Bock, VT Gay B. Shober, VT I. Luck Gravett
 
 
 ## <i class="fa fa-chevron-right"></i> Publications
-<!-- <a href="https://github.com/bamos/cv/blob/master/publications/all.bib"> <i class="fa fa-code-fork" aria-hidden="true"></i></a> -->
-
-<!-- <a href="https://scholar.google.com/citations?user=d8gdZR4AAAAJ" class="btn btn-primary" style="padding: 0.3em;">
-  <i class="ai ai-google-scholar"></i> Google Scholar
-</a> -->
 
 <h2>2021</h2>
 <table class="table table-hover">
@@ -96,7 +85,7 @@ VT Benjamin F. Bock, VT Gay B. Shober, VT I. Luck Gravett
 <td>
     <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
-    preprint 2020 <br>
+    Preprint <br>
     [2]
 [<a href='javascript:;'
     onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
@@ -117,7 +106,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 <td>
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
-    preprint 2020 <br>
+    MICCAI 2021 <br>
     [2]
 [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
@@ -170,182 +159,6 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
   <td class='col-md-1' style='text-align:right;'>2021</td>
 </tr>
-<tr>
-  <td>
-    <a href="https://github.com/facebookresearch/dcem">facebookresearch/dcem</a> |
-    <i class="fa fas fa-star"></i> 77 |
-    <em>Differentiable Cross-Entropy Method Experiments</em>
-    <!--  -->
-    <!--     facebookresearch/dcem  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/facebookresearch/higher">facebookresearch/higher</a> |
-    <i class="fa fas fa-star"></i> 1.1k |
-    <em>PyTorch higher-order gradient and optimization library</em>
-    <!--  -->
-    <!--     facebookresearch/higher  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/thesis">bamos/thesis</a> |
-    <i class="fa fas fa-star"></i> 238 |
-    <em>Ph.D. Thesis LaTeX source code</em>
-    <!--  -->
-    <!--     bamos/thesis  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/cvxgrp/cvxpylayers">cvxgrp/cvxpylayers</a> |
-    <i class="fa fas fa-star"></i> 862 |
-    <em>Differentiable convex optimization layers</em>
-    <!--  -->
-    <!--     cvxgrp/cvxpylayers  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/locuslab/mpc.pytorch">locuslab/mpc.pytorch</a> |
-    <i class="fa fas fa-star"></i> 436 |
-    <em>Differentiable model-predictive control</em>
-    <!--  -->
-    <!--     locuslab/mpc.pytorch  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/locuslab/icnn">locuslab/icnn</a> |
-    <i class="fa fas fa-star"></i> 212 |
-    <em>Input Convex Neural Network Experiments</em>
-    <!--  -->
-    <!--     locuslab/icnn  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/locuslab/optnet">locuslab/optnet</a> |
-    <i class="fa fas fa-star"></i> 360 |
-    <em>OptNet Experiments</em>
-    <!--  -->
-    <!--     locuslab/optnet  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/locuslab/qpth">locuslab/qpth</a> |
-    <i class="fa fas fa-star"></i> 461 |
-    <em>Differentiable PyTorch QP solver</em>
-    <!--  -->
-    <!--     locuslab/qpth  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/densenet.pytorch">bamos/densenet.pytorch</a> |
-    <i class="fa fas fa-star"></i> 681 |
-    <em>PyTorch DenseNet implementation</em>
-    <!--  -->
-    <!--     bamos/densenet.pytorch  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/block">bamos/block</a> |
-    <i class="fa fas fa-star"></i> 253 |
-    <em>Intelligent block matrix constructions</em>
-    <!--  -->
-    <!--     bamos/block  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/setGPU">bamos/setGPU</a> |
-    <i class="fa fas fa-star"></i> 92 |
-    <em>Automatically use the least-loaded GPU</em>
-    <!--  -->
-    <!--     bamos/setGPU  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2017</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/dcgan-completion.tensorflow">bamos/dcgan-completion.tensorflow</a> |
-    <i class="fa fas fa-star"></i> 1.3k |
-    <em>Image completion with GANs</em>
-    <!--  -->
-    <!--     bamos/dcgan-completion.tensorflow  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2016</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/cmusatyalab/openface">cmusatyalab/openface</a> |
-    <i class="fa fas fa-star"></i> 13.9k |
-    <em>Face recognition with deep neural networks</em>
-    <!--  -->
-    <!--     cmusatyalab/openface  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2015</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/zsh-history-analysis">bamos/zsh-history-analysis</a> |
-    <i class="fa fas fa-star"></i> 160 |
-    <em>Analyze and plot your zsh history</em>
-    <!--  -->
-    <!--     bamos/zsh-history-analysis  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2014</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/cv">bamos/cv</a> |
-    <i class="fa fas fa-star"></i> 307 |
-    <em>My YAML/LaTeX/Markdown cv</em>
-    <!--  -->
-    <!--     bamos/cv  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2013</td>
-</tr>
-<tr>
-  <td>
-    <a href="https://github.com/bamos/dotfiles">bamos/dotfiles</a> |
-    <i class="fa fas fa-star"></i> 222 |
-    <em>Linux, mutt, xmonad, i3, vim, emacs, zsh</em>
-    <!--  -->
-    <!--     bamos/dotfiles  -->
-    <!--  -->
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2012</td>
-</tr>
 </table>
 
 
@@ -357,229 +170,24 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
   <td class='col-md-1' style='text-align:right;'>2020</td>
 </tr>
-<tr>
-  <td>
-        Montreal Institute for Learning Algorithms Seminar
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://anucvml.github.io/ddn-eccvt2020/">ECCV Deep Declarative Networks Tutorial</a>
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://anucvml.github.io/ddn-cvprw2020/">CVPR Deep Declarative Networks Workshop</a>
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://sites.google.com/view/cs-159-spring-2020/lectures">Caltech CS 159, Guest Lecture</a>
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        SIAM MDS Minisymposium on Learning Parameterized Energy Minimization Models
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        New York University CILVR Seminar
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-        INFORMS Session on Prediction and Optimization
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-        Facebook AI Research
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2019</td>
-</tr>
-<tr>
-  <td>
-        ISMP Session on Machine Learning and Optimization
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        Google Brain
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        Bosch Center for AI
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        Waymo Research
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        Tesla AI
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        NVIDIA Robotics
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        Salesforce Research
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        OpenAI
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        NNAISENSE
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
+
 </table>
-
-
-## <i class="fa fa-chevron-right"></i> Interns and Students
-<table class="table table-hover">
-<tr>
-  <td>
-        <a href="https://samcohen16.github.io/">Samuel Cohen</a> (visiting FAIR from UCL)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2021</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://eugenevinitsky.github.io/">Eugene Vinitsky</a> (visiting FAIR from Berkeley)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2021</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://www.aaronlou.com/">Aaron Lou</a> (visiting FAIR from Cornell)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="http://www.cs.toronto.edu/~rtqichen/">Ricky Chen</a> (visiting FAIR from Toronto)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="http://www.cs.cmu.edu/~pliang/">Paul Liang</a> (visiting FAIR from CMU)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://phillipkwang.com/">Phillip Wang</a> (at CMU, now: CEO at <a href="https://gather.town/">Gather</a>)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2018</td>
-</tr>
-<tr>
-  <td>
-        <a href="https://leix28.github.io">Lei Xu</a> (visiting CMU from Tsinghua, now: Ph.D. student at MIT)
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2016</td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Professional Activities
-<table class="table table-hover">
-<tr>
-  <td>
-      Reviewing: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA
-  <br><p style="color:grey;font-size:1.2rem">*Outstanding reviewer</p>
-  <td class='col-md-2' style='text-align:right;'></td>
-  </td>
-</tr>
-<tr>
-  <td>
-     <a href="https://sites.google.com/view/lmca2020/home">NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer</a>
-  <td class='col-md-2' style='text-align:right;'>2020</td>
-  </td>
-</tr>
-<tr>
-  <td>
-     <a href="https://anucvml.github.io/ddn-cvprw2020/">CVPR Deep Declarative Workshop Organizer</a>
-  <td class='col-md-2' style='text-align:right;'>2020</td>
-  </td>
-</tr>
-<tr>
-  <td>
-     <a href="https://anucvml.github.io/ddn-eccvt2020/">ECCV Deep Declarative Tutorial Organizer</a>
-  <td class='col-md-2' style='text-align:right;'>2020</td>
-  </td>
-</tr>
-<tr>
-  <td>
-      CMU CSD MS Admissions
-  <td class='col-md-2' style='text-align:right;'>2014 - 2015</td>
-  </td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Teaching
-<table class="table table-hover">
-<tr>
-  <td><strong>Graduate AI</strong> (CMU 15-780), TA</td>
-  <td class='col-md-1' style='text-align:right;'>S2017</td>
-</tr>
-<tr>
-  <td><strong>Distributed Systems</strong> (CMU 15-440/640), TA</td>
-  <td class='col-md-1' style='text-align:right;'>S2016</td>
-</tr>
-<tr>
-  <td><strong>Software Design and Data Structures</strong> (VT CS2114), TA</td>
-  <td class='col-md-1' style='text-align:right;'>S2013</td>
-</tr>
-</table>
-
 
 ## <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
-  <td>
-C, C++, Fortran, Haskell, Java, Lua, Make, Mathematica, Python, R, Scala
+  <td> Python, Matlab
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Frameworks</td>
-  <td>
-JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+  <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Tools</td>
-  <td>
-Linux, emacs, vim, evil, org, mu4e, xmonad, i3, git, tmux, zsh
+  <td> Linux, tmux
   </td>
 </tr>
 </table>
