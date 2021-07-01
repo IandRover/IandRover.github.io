@@ -84,7 +84,7 @@
     <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
     Preprint <br>
-    [2]
+    [1]
 [<a href='javascript:;'
     onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
@@ -105,7 +105,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
     MICCAI 2021 <br>
-    [2]
+    [1]
 [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
