@@ -12,9 +12,7 @@
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
         <!-- <br> *<a href="https://github.com/bamos/thesis">Differentiable Optimization-Based Modeling for Machine Learning</a>* -->
         <br> Advisors:
-        <a href="http://zicokolter.com">JLi-Fen, Chen </a> (2017 - 2020),  
-        <a href="https://www.cs.cmu.edu/satya/"> Wei-Chen Chiu</a> (2020 - 2021),
-        <a href="http://zicokolter.com">Pin-Yu Chen</a> (2021)  
+        <a href="http://zicokolter.com">JLi-Fen, Chen </a> (2017 - 2020), <a href="https://www.cs.cmu.edu/satya/"> Wei-Chen Chiu</a> (2020 - 2021), <a href="http://zicokolter.com">Pin-Yu Chen</a> (2021)  
         </p>
     </td>
     <td class="col-md-2" style='text-align:right;'>2015 - 2022</td>
@@ -61,17 +59,17 @@
 <table class="table table-hover">
 <tr>
   <td>
-    Second Prize, Taiwan Brain Tumor Segmentation Challenge
+    <strong>Second Prize</strong>, Taiwan Brain Tumor Segmentation Challenge
   </td>
-  <td class='col-md-2' style='text-align:right;'>2016 - 2019</td>
+  <td class='col-md-2' style='text-align:right;'> 2019 </td>
 </tr>
 <tr>
   <td>
-    Gold Medal, 2016 International Genetically Engineered Machine Competition
+    <strong>Gold Medal</strong>, 2016 International Genetically Engineered Machine Competition
     <br><p style="color:grey;font-size:1.2rem">
 </p>
   </td>
-  <td class='col-md-2' style='text-align:right;'>2011 - 2014</td>
+  <td class='col-md-2' style='text-align:right;'> 2016 </td>
 </tr>
 </table>
 
@@ -159,18 +157,6 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
   <td class='col-md-1' style='text-align:right;'>2021</td>
 </tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Invited Talks
-<table class="table table-hover">
-<tr>
-  <td>
-        Max Planck Institute for Intelligent Systems (Tübingen) Seminar
-  </td>
-  <td class='col-md-1' style='text-align:right;'>2020</td>
-</tr>
-
 </table>
 
 ## <i class="fa fa-chevron-right"></i> Skills
