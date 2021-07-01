@@ -12,7 +12,7 @@
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
         <!-- <br> *<a href="https://github.com/bamos/thesis">Differentiable Optimization-Based Modeling for Machine Learning</a>* -->
         <br> Advisors:
-        <a href="http://zicokolter.com">JLi-Fen, Chen </a> (2017 - 2020), <a href="https://www.cs.cmu.edu/satya/"> Wei-Chen Chiu</a> (2020 - 2021), <a href="http://zicokolter.com">Pin-Yu Chen</a> (2021)  
+        <a href="http://zicokolter.com">Li-Fen, Chen </a> (2017 - 2020), <a href="https://www.cs.cmu.edu/satya/"> Wei-Chen Chiu</a> (2020 - 2021), <a href="http://zicokolter.com">Pin-Yu Chen</a> (2021)  
         </p>
     </td>
     <td class="col-md-2" style='text-align:right;'>2015 - 2022</td>
