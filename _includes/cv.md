@@ -22,7 +22,7 @@
 
 ## <i class="fa fa-chevron-right"></i> Research Internships
 <table class="table table-hover">
-<tr>
+<!-- <tr>
   <td>
 <p markdown="1" style='margin: 0'>
 <strong>Intel Labs</strong>
@@ -51,7 +51,7 @@
 </p>
   </td>
   <td class='col-md-2' style='text-align:right;'>2014</td>
-</tr>
+</tr> -->
 </table>
 
 
@@ -65,7 +65,7 @@
 </tr>
 <tr>
   <td>
-    <strong>Gold Medal</strong>, 2016 International Genetically Engineered Machine Competition
+    <strong>Gold Medal</strong>, International Genetically Engineered Machine Competition
     <br><p style="color:grey;font-size:1.2rem">
 </p>
   </td>
