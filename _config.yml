@@ -1,15 +1,14 @@
 title: Researcher
 url: "https://https://iandrover.github.io"
-baseurl: "/index"
+baseurl: "/index.html"
 
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
 
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+# footer_url: "https://github.com/ankitsultana"
+# footer_text: "Page design by Ankit Sultana"
 
 sass:
     style: compressed
