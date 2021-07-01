@@ -150,7 +150,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
   <td>
     <a href="https://github.com/IandRover/meta-gradient_RL">Replication</a>
     <!-- |<i class="fa fas fa-star"></i> 377 | -->
-    <em>NeurIPS 2018 paper "Meta-Gradient Reinforcement Learning"</em>
+    <em>NeurIPS 2018 "Meta-Gradient Reinforcement Learning"</em>
     <!--  -->
     <!--     facebookresearch/mbrl-lib  -->
     <!--  -->
