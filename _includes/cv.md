@@ -100,36 +100,45 @@ VT Benjamin F. Bock, VT Gay B. Shober, VT I. Luck Gravett
 <h2>2021</h2>
 <table class="table table-hover">
 
-<tr id="tr-amos2020differentiable" style="background-color: #ffffd0">
+<tr id="tr-kao2021maml" style="background-color: #ffffd0">
 <td>
-    <em><a href='https://arxiv.org/abs/1909.12830' target='_blank'>The Differentiable Cross-Entropy Method</a> </em><br>
-    <strong>B. Amos</strong> and D. Yarats<br>
-    ICML 2020  <br>
-    [9]
+    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
+    <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
+    preprint 2020 <br>
+    [2]
 [<a href='javascript:;'
-    onclick='$("#abs_amos2020differentiable").toggle()'>abs</a>] [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br>
+    onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
+     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
+    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
 
-<div id="abs_amos2020differentiable" style="text-align: justify; display: none" markdown="1">
-We study the Cross-Entropy Method (CEM) for the non-convex
-optimization of a continuous and parameterized
-objective function and introduce a differentiable
-variant (DCEM) that enables us to differentiate the
-output of CEM with respect to the objective
-function's parameters. In the machine learning
-setting this brings CEM inside of the end-to-end
-learning pipeline where this has otherwise been
-impossible. We show applications in a synthetic
-energy-based structured prediction task and in
-non-convex continuous control. In the control
-setting we show on the simulated cheetah and walker
-tasks that we can embed their optimal action
-sequences with DCEM and then use policy optimization
-to fine-tune components of the controller as a step
-towards combining model-based and model-free RL.
+<div id="abs_kao2021maml" style="text-align: justify; display: none" markdown="1">
+Model-agnostic meta-learning (MAML) is one of the most popular and widely-adopted meta-learning algorithms nowadays, which achieves remarkable success in various learning problems.
+Yet, with the unique design of nested inner-loop and outer-loop updates which respectively govern the task-specific and meta-model-centric learning,
+the underlying learning objective of MAML still remains implicit and thus impedes a more straightforward understanding of it.
+In this paper, we provide a new perspective to the working mechanism of MAML and discover that: MAML is analogous to a meta-learner using a supervised contrastive objective function, where the query features are pulled towards the support features of the same class and against those of different classes, in which such contrastiveness is experimentally verified via an analysis based on the cosine similarity. Moreover, our analysis reveals that the vanilla MAML algorithm has an undesirable interference term originating from the random initialization and the cross-task interaction. We therefore propose a simple but effective technique, zeroing trick, to alleviate such interference, where the extensive experiments are then conducted on both miniImagenet and Omniglot datasets to demonstrate the consistent improvement brought by our proposed technique thus well validating its effectiveness.
 </div>
 
 </td>
 </tr>
+
+<tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
+<td>
+    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
+    <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
+    preprint 2020 <br>
+    [2]
+[<a href='javascript:;'
+    onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
+     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
+    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
+
+<div id="abs_kao2021demystifying" style="text-align: justify; display: none" markdown="1">
+Recent development of image-to-image translation techniques has enabled the generation of rare medical images (e.g., PET) from common ones (e.g., MRI). Beyond the potential benefits of the reduction in scanning time, acquisition cost, and radiation exposure risks, the translation models in themselves are inscrutable black boxes. In this work, we propose two approaches to demystify the image translation process, where we particularly focus on the T1-MRI to PET translation. First, we adopt the representational similarity analysis and discover that the process of T1-MR to PET image translation includes the stages of brain tissue segmentation and brain region recognition, which unravels the relationship between the structural and functional neuroimaging data. Second, based on our findings, an Explainable and Simplified Image Translation (ESIT) model is proposed to demonstrate the capability of deep learning models for extracting gray matter volume information and identifying brain regions related to normal aging and Alzheimer's disease, which untangles the biological plausibility hidden in deep learning models.
+</div>
+
+</td>
+</tr>
+
 
 </table>
 
@@ -143,39 +152,12 @@ towards combining model-based and model-free RL.
     [1]
 [<a href='javascript:;'
     onclick='$("#abs_Kao2019Unravelling").toggle()'>abs</a>]
-    [<a href='https://github.com/facebookresearch/svg' target='_blank'>code</a>]  
-    [<a href='http://bamos.github.io/data/slides/2021.svg.pdf' target='_blank'>slides</a>]  
-    [<a href='https://youtu.be/ABS40GW7Ekk?t=5393' target='_blank'>talk</a>] <br>
+    <!-- [<a href='https://github.com/facebookresearch/svg' target='_blank'>code</a>]   -->
+    <!-- [<a href='http://bamos.github.io/data/slides/2021.svg.pdf' target='_blank'>slides</a>]   -->
+    <!-- [<a href='https://youtu.be/ABS40GW7Ekk?t=5393' target='_blank'>talk</a>] <br> -->
 
 <div id="abs_Kao2019Unravelling" style="text-align: justify; display: none" markdown="1">
-Model-based reinforcement learning approaches add explicit domain
-knowledge to agents in hopes of improving the
-sample-efficiency in comparison to model-free
-agents. However, in practice model-based methods are
-unable to achieve the same asymptotic performance on
-challenging continuous control tasks due to the
-complexity of learning and controlling an explicit
-world model. In this paper we investigate the
-stochastic value gradient (SVG), which is a
-well-known family of methods for controlling
-continuous systems which includes model-based
-approaches that distill a model-based value
-expansion into a model-free policy. We consider a
-variant of the model-based SVG that scales to larger
-systems and uses 1) an entropy regularization to
-help with exploration, 2) a learned deterministic
-world model to improve the short-horizon value
-estimate, and 3) a learned model-free value estimate
-after the model's rollout. This SVG variation
-captures the model-free soft actor-critic method as
-an instance when the model rollout horizon is zero, and otherwise uses short-horizon model rollouts to
-improve the value estimate for the policy update. We
-surpass the asymptotic performance of other
-model-based methods on the proprioceptive MuJoCo
-locomotion tasks from the OpenAI gym, including a
-humanoid. We notably achieve these results with a
-simple deterministic world model without requiring
-an ensemble.
+Visualization of how the external stimuli are processed dynamically in the brain would help understanding the neural mechanisms of functional segregation and integration. The present study proposed a novel temporal autoencoder to estimate the neurodynamics of functional networks involved in rhythm encoding and reproduction. A fully-connected two-layer autoencoder was proposed to estimate the temporal dynamics in functional magnetic resonance image recordings. By minimizing the reconstruction error between the predicted next time sample and the corresponding ground truth next time sample, the system was trained to extract spatial patterns of functional network dynamics without any supervision effort. The results showed that the proposed model was able to extract the spatial patterns of task-related functional dynamics as well as the interactions between them. Our findings suggest that artificial neural networks would provide a useful tool to resolve temporal dynamics of neural processing in the human brain.
 </div>
 
 </td>
