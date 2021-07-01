@@ -148,9 +148,9 @@ Visualization of how the external stimuli are processed dynamically in the brain
 <table class="table table-hover">
 <tr>
   <td>
-    <a href="https://github.com/facebookresearch/mbrl-lib">facebookresearch/mbrl-lib</a> |
-    <i class="fa fas fa-star"></i> 377 |
-    <em>Model-based reinforcement learning library</em>
+    <a href="https://github.com/IandRover/meta-gradient_RL">Replication</a>
+    <!-- |<i class="fa fas fa-star"></i> 377 | -->
+    <em>NeurIPS 2018 paper "Meta-Gradient Reinforcement Learning"</em>
     <!--  -->
     <!--     facebookresearch/mbrl-lib  -->
     <!--  -->
