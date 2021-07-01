@@ -1,45 +1,63 @@
 ---
-layout: default
+layout: index
+title: Brandon Amos
 ---
-
-## About Me
-
-<img class="profile-picture" src="sherlock.jpg">
-
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
-
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
-
-## Research Interest
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
-
-## Publications
-
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
-
-## Typography
-
-This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
 
 ---
 
-Here is a blockquote
+{% include cv.md %}
 
-> To a great mind, nothing is little
+<!--
+## <i class="fa fa-chevron-right"></i> Recent Blog Posts
 
-## References
+<table class="table table-hover">
+  {% for post in site.posts limit: 5 %}
+    {% unless post.draft %}
+    <tr>
+      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+      <td class="col-md-3" style="text-align: right;">{{ post.date | date: "%B %e, %Y" }}</td>
+    </tr>
+    {% endunless %}
+  {% endfor %}
+</table>
+<h4><a href="/blog">View all</a></h4>
 
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+## <i class="fa fa-chevron-right"></i> Fun Side Projects
++ [CS conference tracker](https://github.com/bamos/conference-tracker).
++ [SnowGlobe](https://github.com/bamos/snowglobe):
+  Haskell-driven, small-scale web analytics with minimal configuration.
++ [My reading list](http://bamos.github.io/reading-list/):
+  YAML data and hosted on GitHub pages.
++ [dotfiles](https://github.com/bamos/dotfiles):
+  &hearts;
+  [Arch Linux](https://www.archlinux.org/),
+  OSX,
+  [mutt](http://www.mutt.org/),
+  [xmonad](http://xmonad.org/),
+  [i3](https://i3wm.org/),
+  [vim](http://www.vim.org/),
+  [emacs](https://www.gnu.org/software/emacs/),
+  [zsh](http://www.zsh.org/),
+  [mpv](http://mpv.io/),
+  [cmus](https://cmus.github.io/).
++ [girl](https://github.com/bamos/girl):
+  Scala program to find broken links in GitHub projects.
++ [zsh-history-analysis](https://github.com/bamos/zsh-history-analysis):
+  Analyze shell usage patterns with Python and R.
++ [python-scripts](https://github.com/bamos/python-scripts):
+  Short and fun Python scripts.
++ [This website](https://github.com/bamos/bamos.github.io):
+  Built with Jekyll and hosted on GitHub pages.
++ [cv](https://github.com/bamos/cv):
+  Python-driven resume-curriculum vitae with Jinja templates.
++ [yaml-mailer](https://github.com/bamos/yaml-mailer):
+  Email many people different messages.
++ [latex-templates](https://github.com/bamos/latex-templates)
+  and [beamer-snippets](https://github.com/bamos/beamer-snippets):
+  Personal collection and previewing of LaTeX and Beamer snippets.
+  Admittedly, I now use Keynote for presentations.
+-->
+
+---
+
+Last updated on {% include last-updated.txt %}

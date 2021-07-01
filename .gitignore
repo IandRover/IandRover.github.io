@@ -1,5 +1,12 @@
-_site
-.sass-cache
-.sass-cache/
-.DS_Store
-.jekyll-cache
+_posts/ideas
+
+*.swp
+
+/_site/
+/images/latex/
+
+bower_components
+
+.jekyll-metadata
+.bundle
+vendor/bundle

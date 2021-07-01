@@ -1,26 +1,26 @@
-title: Chia-Hsiang Kao (高家祥)
-url: "https://IandRover.github.io"
-baseurl: "/"
-
+name: Brandon Amos
+url: http://bamos.github.io
+destination: ./_site
+twitter: brandondamos
+lsi: false
+port: 4000
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
+future: true
+kramdown:
+  parse_block_html: true
+  syntax_highlighter: rouge
+permalink: pretty
+#paginate: 5
+gems:
+  - jekyll-sitemap
 
-tracking_id: #
-
-footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
-
-sass:
-    style: compressed
-    sass_dir: /_sass
-
-nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
-
-theme: jekyll-theme-minimal
+exclude:
+  - .travis.yml
+  - validate.rb
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - bower_components
+  - update-vendor-deps.sh
+  - vendor/bundle
+  - vendor/bower.json
