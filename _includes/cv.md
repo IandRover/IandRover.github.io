@@ -5,7 +5,7 @@
 <table class="table table-hover">
   <tr>
     <td>
-        <strong>M.D.</strong>
+        <strong>Doctor of Medicine</strong> (M.D.)
           <!-- (0.00/0.00) -->
         <br>
       National Yang Ming Chiao Tung University | Taipei, Taiwan
