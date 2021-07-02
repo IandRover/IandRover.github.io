@@ -83,8 +83,7 @@
 <td>
     <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
-    Preprint <br>
-    [1]
+    Preprint
 [<a href='javascript:;'
     onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
@@ -104,9 +103,8 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 <td>
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
     <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
-    MICCAI 2021 <br>
-    [1]
-[<a href='javascript:;'
+    MICCAI 2021
+    [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
     <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
@@ -127,9 +125,8 @@ Recent development of image-to-image translation techniques has enabled the gene
 <td>
     <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em><br>
     <strong>Chia-Hsiang Kao</strong>, Ching-Ju Yang, Li-Kai Cheng, Hsin-Yen Yu, Yong-Sheng Chen, Jen-Chuen Hsieh, and Li-Fen Chen<br>
-    NER 2019 <br>
-    [1]
-[<a href='javascript:;'
+    NER 2019
+    [<a href='javascript:;'
     onclick='$("#abs_Kao2019Unravelling").toggle()'>abs</a>]
     <!-- [<a href='https://github.com/facebookresearch/svg' target='_blank'>code</a>]   -->
     <!-- [<a href='http://bamos.github.io/data/slides/2021.svg.pdf' target='_blank'>slides</a>]   -->
