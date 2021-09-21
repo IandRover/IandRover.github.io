@@ -1,7 +1,6 @@
- I am medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis, recently involving meta-learing and self-supervised contrastive learning.<br><br>
+ I am medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) meta-learing, self-supervised contrastive learning and adversarial learning.<br><br>
 
 ## <i class="fa fa-chevron-right"></i> Education
-
 <table class="table table-hover">
   <tr>
     <td>
