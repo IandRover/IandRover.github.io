@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Connection between Contrastive Divergence and Multiple-step Logistic Regression."
+title: "Two understanding of the Contrastive Divergence Algorithm."
 tags: [ML]
 ---
 
 <ul id="toc"></ul>
 
 ---
-Connection between Contrastive Divergence and Multiple-step Logistic Regression
+Two understanding of the Contrastive Divergence Algorithm
 ===
 
 ## Introduction
@@ -17,11 +17,10 @@ Contrastive Divergence (CD) was proposed by Hinton and has been shown as a power
 The objective of RBM is to best reconstruct the input data from a dataset $V$ and at the same time to find a good representation of the input data from $V$.
 
 ### The structure of RBM
-<img src="https://miro.medium.com/max/700/1*LoeBW9Stm6HjK57yBp45sQ.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
 
-Basically, it contains two layers: visible layer (with visible nodes) and hidden layer (with hidden nodes). RBM is parameterized with a weight matrix $W$ and two biases $a$ and $b$.
+Basically, a RBM contains two layers: visible layer (with visible nodes) and hidden layer (with hidden nodes). RBM is parameterized with a weight matrix $W$ and two biases $a$ and $b$.
+- ![](https://miro.medium.com/max/700/1*LoeBW9Stm6HjK57yBp45sQ.png)
+
 Consider now we have a set of patterns to be remembered, for example 60k MNIST images.
 The inference procedure is as follows:
 - Given input $v_0$ from MNIST.
@@ -59,7 +58,7 @@ In this post, we want to propose two interesting viewpoints, though both of them
 
 ## Understanding Contrastive Divergence (1).
 Now we provide the more complete idea of the two. Before we start, please allow us to first review the logistic regression.
-### Review of Logistic Regression
+### A Review of Logistic Regression
 Consider input $\{x_1, x_2, ..., x_n\}$ and one-hot target $\{y_1, y_2, ..., y_n\}$, we perform classification using a model parameterized by $\theta$:
 $$
 \begin{aligned}
@@ -146,7 +145,7 @@ $$
 \end{aligned}
 $$
 
-## The reconstruction is the gradient.
+## The Reconstruction of $v_0$ is the Gradient w.r.t. $v_0$ .
 Now something cool happens.
 We can calculate the derivative of the energy function $𝐸(𝑣_0)$ w.r.t the input $v_0$.
 $$
@@ -175,7 +174,7 @@ $$
 
 But now, I cannot combine the concept that "the reconstruction is the gradient" to the CD update of $W$. Because I do not know how to explain the update from this point of view.
 
-## Final words
+## Final Words
 
 Thank you for taking your time.
 Generally speaking, I love the mysterious CD algorithm and I still think there can be some other explanation to the CD algorithm. The two points of view provided above are both simply and straight-forward. Hope that this post can give you some inspirations.
