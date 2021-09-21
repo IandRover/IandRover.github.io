@@ -5,196 +5,40 @@ title: "Tools"
 
 # under construction
 
-<! DOCTYPE html>  
-<html>  
-    <head>  
-    <meta charset="utf-8">  
-    <title>  
-         Calculator using HTML Example  
-    </title>  
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
-    <!-- CSS property to create interactive  
-        calculator interface -->  
-    <style>  
-        * {  
-  box-sizing: border-box;  
-  font-family: 'Roboto', sans-serif;  
-}  
-body {  
-  background: black;  
-}  
-.container {  
-  width: auto;  
-  margin: 20px;  
-  color:black;  
-}  
-.calc-body {  
-  width: 275px;  
-  margin: auto;  
-  min-height: 400px;  
-  border: solid 1px #3A4655;  
-  box-shadow: 0 8px 50px -7px black;  
-}  
-.calc-screen {  
-  background: #3A4655;  
-  width: 100%;  
-  height: 150px;  
-  padding: 20px;  
-}  
-.calc-operation {  
-  text-align: right;  
-  color: #727B86;  
-  font-size: 21px;  
-  padding-bottom: 10px;  
-  border-bottom: dotted 1px;  
-}  
-.calc-typed {  
-  margin-top: 20px;  
-  font-size: 45px;  
-  text-align: right;  
-  color: #fff;  
-}  
-.calc-button-row {  
-  width: 100%;  
-  background: #3C4857;  
-}  
-.button {  
-  width: 25%;  
-  background: #425062;  
-  color: #fff;  
-  padding: 20px;  
-  display: inline-block;  
-  font-size: 25px;  
-  text-align: center;  
-  vertical-align: middle;  
-  margin-right: -4px;  
-  border-right: solid 2px #3C4857;  
-  border-bottom: solid 2px #3C4857;  
-  transition: all 0.2s ease-in-out;  
-}  
-.button.l {  
-  color: #AEB3BA;  
-  background: #404D5E;  
-}  
-.button.c {  
-  color: #D95D4E;  
-  background: #404D5E;  
-}  
-.button:hover {  
-  background: #E0B612;  
-  transform: rotate(5deg);  
-}  
-.button.c:hover {  
-  background: #E0B612;  
-  color: #fff;  
-}  
-.button.l:hover {  
-  background: #E0B612;  
-  color: #fff;  
-}  
-.blink-me {  
-  color: #E0B612;  
-}  
-html {  
-  height: 100vh;  
-  display: flex;  
-  align-items: center;  
-  justify-content: center;  
-  background-color: #2d3436;  
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);  
-  font-family: 'Cookie', cursive;  
-}  
-.title:hover {  
-  background: #E0B612;  
-  color: #fff;  
-}  
-.title {  
-margin-bottom: 10px;  
-padding: 5px 0;  
-font-size: 40px;  
-font-weight: bold;  
-text-align: center;  
-color: #AEB3BA;  
-font-family: 'Cookie', cursive;  
-}  
-input[type=button] {  
-  width: 60px;  
-  height: 60px;  
-  float: left;  
-  padding: 0;  
-  margin: 5px;  
-  box-sizing: border-box;  
-  background: #ecedef;  
-  border: none;  
-  font-size: 30px;  
-  line-height: 30px;  
-  border-radius: 50%;  
-  font-weight: 700;  
-  color: #5E5858;  
-  cursor: pointer;    
-}  
-input[type=text] {  
-  width: 270px;  
-  height: 60px;  
-  float: left;  
-  padding: 0;  
-  box-sizing: border-box;  
-  border: none;  
-  background: none;  
-  color: red;  
-  text-align: right;  
-  font-weight: 700;  
-  font-size: 60px;  
-  line-height: 60px;  
-  margin: 0 25px;  
-  }  
-.calculator {  
-  background-color: #c0c0c0;  
-  box-shadow: 0px 0px 0px 10px #666;  
-  border: 5px solid black;  
-  border-radius: 10px;  
-}     
-</style>  
-</head>  
-<body>  
-    <div class="container">  
-  <div class="calc-body">  
-    <div class="calc-screen">  
-      <div class="calc-operation"> 25 + 10 = </div>  
-      <div class="calc-typed"> 35 <span class="blink-me"> _ </span> </div>  
-    </div>  
-    <div class="calc-button-row">  
-      <div class="button c"> C </div>  
-      <div class="button l"> ? </div>  
-      <div class="button l"> % </div>  
-      <div class="button l"> / </div>  
-    </div>  
-    <div class="calc-button-row">  
-      <div class="button"> 7 </div>  
-      <div class="button"> 8 </div>  
-      <div class="button"> 9 </div>  
-      <div class="button l"> x </div>  
-    </div>  
-    <div class="calc-button-row">  
-      <div class="button"> 4 </div>  
-      <div class="button"> 5 </div>  
-      <div class="button"> 6 </div>  
-      <div class="button l"> ? </div>  
-    </div>  
-    <div class="calc-button-row">  
-      <div class="button"> 1 </div>  
-      <div class="button"> 2 </div>  
-      <div class="button"> 3 </div>  
-      <div class="button l"> + </div>  
-    </div>  
-    <div class="calc-button-row">  
-      <div class="button"> . </div>  
-      <div class="button"> 0 </div>  
-      <div class="button">  
-        < </div>  
-          <div class="button l"> = </div>  
-      </div>  
-    </div>  
-  </div>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="/css/calculator.css" rel="stylesheet">
+    <script src="/js/calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-grid">
+    <div class="output">
+    <div data-previous-operand class="previous-operand"></div>
+    <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+
+    </div>
+
+  </body>
+</html>
