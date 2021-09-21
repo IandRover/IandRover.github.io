@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ideas in self-supervised contrastive learning."
-tags: [Linux,Python,mpv]
+tags: [DL]
 ---
 
 <ul id="toc"></ul>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Connection between Contrastive Divergence and Multiple-step Logistic Regression."
-tags: [Linux,Python,mpv]
+tags: [ML]
 ---
 
 <ul id="toc"></ul>
