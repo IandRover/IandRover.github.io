@@ -1,4 +1,4 @@
- I am medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) meta-learing, self-supervised contrastive learning and adversarial learning.<br><br>
+ I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) meta-learing, self-supervised contrastive learning and adversarial learning.<br><br>
 
 ## <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
@@ -81,7 +81,7 @@
 <tr id="tr-kao2021maml" style="background-color: #ffffd0">
 <td>
     <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
-    <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
+    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
     Preprint
 [<a href='javascript:;'
     onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
@@ -101,7 +101,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 <tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
 <td>
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
-    <strong>Chia-Hsiang Kao</strong> Wei-Chen Chiu, and Pin-Yu Chen<br>
+    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
     MICCAI 2021
     [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
