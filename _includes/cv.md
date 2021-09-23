@@ -1,6 +1,6 @@
 #### Introduction
  I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) Meta-Learning (please refer to my publication) and Adversarial Learning.
- I am looking for PHD (from 2023 Spring) in ML, DL, neuroscience and bio-engineering. <br><br>
+ I am looking for PHD (from 2023 Spring) in ML/DL, neuroscience or bio-engineering. <br><br>
 
 #### Research Interests
 My research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
@@ -54,6 +54,54 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </tr> -->
 </table>
 
+## <i class="fa fa-chevron-right"></i> Courses
+<table class="table table-hover">
+
+<tr>
+  <td><strong>Introduction to Analysis, Honor Class</strong></td>
+  <td>A-</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
+</tr>
+
+<tr>
+  <td><strong>Advanced Probability</strong></td>
+  <td>A-</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
+</tr>
+
+<tr>
+  <td><strong>Reinforcement Learning</strong></td>
+  <td>A+</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
+</tr>
+
+<tr>
+  <td><strong>Machine Learning</strong></td>
+  <td>A+</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
+</tr>
+
+<tr>
+  <td><strong>Molecular Simulation: Concepts and Applications</strong></td>
+  <td>A+</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
+</tr>
+
+<tr>
+  <td><strong>Theory of Computability</strong></td>
+  <td>A+</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
+</tr>
+
+<tr>
+  <td><strong>Introduction to Computer Science</strong></td>
+  <td>A+</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
+</tr>
+
+
+</table>
+
 
 ## <i class="fa fa-chevron-right"></i> Honors & Awards
 <table class="table table-hover">
@@ -66,8 +114,8 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 <tr>
   <td>
     <strong>Gold Medal</strong>, International Genetically Engineered Machine Competition
-    <br><p style="color:grey;font-size:1.2rem">
-</p>
+    <br>
+    <!-- <p style="color:grey;font-size:1.2rem"></p> -->
   </td>
   <td class='col-md-2' style='text-align:right;'> 2016 </td>
 </tr>
