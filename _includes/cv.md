@@ -235,55 +235,38 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </tr>
 </table>
 
-<!-- ### Test -->
-<!-- <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#Awards">Awards</a>
-  <a href="#Certification">Certification</a>
-  <a href="#about">About</a>
-</div>
+### <i class="fa fa-chevron-right"></i> Skills
 
-<div class="tab-content">
-  <div class="tab-pane container active" id="Awards">
-    <h6>
-    <br>
-    <li><a href="#" data-toggle="modal" data-target="#MOSTModal">College Student Research Scholarship, MOST, Taiwan, 2018~2019</a></li><br>
-    <li>Academic Achievement Award, University of Taipei, Taiwan, 2015~2018</li><br>
-    <li><a href="http://service.utaipei.edu.tw/files/11-1023-59.php?Lang=zh-tw">Entrance Scholarship, University of Taipei, Taiwan, 2015~2018</a></li><br>
-    <li>Literary Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li><br>
-    <li>Academic Achievement Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li>
-    <br>
-    </h6>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <table class="table table-hover">
+        <tr>
+          <td class='col-md-2'>Languages</td>
+          <td> Python, Matlab
+          </td>
+        </tr>
+        <tr>
+          <td class='col-md-2'>Frameworks</td>
+          <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
+          </td>
+        </tr>
+        <tr>
+          <td class='col-md-2'>Tools</td>
+          <td> Linux, tmux
+          </td>
+        </tr>
+        </table>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
   </div>
-  <div class="tab-pane container fade" id="Certification">
-    <h6>
-    <br>
-    <li>初階行銷傳播認證, <a href="http://www.tmca.org.tw/">TMCA</a>, Taiwan Marcom Certification Association, 2015</li><br>
-    <li>TOEIC Score:685, ETS, 2015</li><br>
-    <li>The General English Proficiency Test Intermediate,<a href="https://www.lttc.ntu.edu.tw/E_LTTC/E_GEPT.htm"> LTTC</a>, 2015</li>
-    <br>
-    </h6>
-  </div> -->
-
-  ### test2
-<!-- abs plugin also works with pil -->
-<ul class="topnav" >
-  <!-- <li class="nav-item"> -->
-    <a class="active" href="#home">Home</a>
-  <!-- </li> -->
-  <!-- <li class="nav-item"> -->
-  <a href="#profile">profile</a>
-  <!-- </li> -->
-  <!-- <li class="nav-item"> -->
-  <a href="#hi">hi</a>
-  </li>
-</ul>
-
-<div class="tab-content" id="Home">
-  <div class="tab-pane fade show active" id="home">welcome home</div>
-  <div class="tab-pane fade" id="profile">welcome file</div>
-  <div class="tab-pane fade" id="contact">welcome contact</div>
-</div>
 
 
 ### <i class="fa fa-chevron-right"></i> Skills
