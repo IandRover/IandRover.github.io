@@ -4,6 +4,8 @@ title: "Two understanding of the Contrastive Divergence Algorithm."
 tags: [ML]
 ---
 
+##### I am still working on the problem regarding Latex. I provide this post [here](https://hackmd.io/@A8e-o-EGSGq0GvfIVrSFYw/SJW561DQK).
+
 <ul id="toc"></ul>
 
 ---
