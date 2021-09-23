@@ -4,16 +4,16 @@
 
 #### Research Interests
 My research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
-- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI. 
+- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI.
 - The oral paper in MICCAI: Initially, I am intrigued by the increasing trend in using GAN to translate medical images. But I found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. As exploration, after implementation and applying extensive visualization tools (GradCAM, filter visualization, building additional attention modules), I propose that the models may implicitly perform brain region and brain tissue recognition. Finally, we use Canonical Component Analysis to finish this work.
 - Currently under review in NIPS 2021, my new paper turns to MAML (model-agnostic meta learning algorithm) and we find that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on our theoretical results, we further improve the MAML algorithm by introducing a zeroing trick.
 
  My next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during my research in MAML, I become more familiar with the bi-level optimization.
 
-I thank all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements.
+I thank all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
 
 #### Future Plan
-I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background.
+I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background. <br><br>
 
 ## <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
