@@ -1,4 +1,8 @@
+#### Intro
  I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) meta-learing, self-supervised contrastive learning and adversarial learning.<br><br>
+
+#### Future plan.
+I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. For research direction, I would like to dive in the fundamental problems such as understanding the inner working mechanisms of deep learning models, and then apply our insight or novel comprehesion to practical issues such as model interpretability.<br><br>
 
 ## <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
