@@ -235,8 +235,8 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </tr>
 </table>
 
-### Test
-<div class="topnav">
+<!-- ### Test -->
+<!-- <div class="topnav">
   <a class="active" href="#home">Home</a>
   <a href="#Awards">Awards</a>
   <a href="#Certification">Certification</a>
@@ -263,7 +263,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
     <li>The General English Proficiency Test Intermediate,<a href="https://www.lttc.ntu.edu.tw/E_LTTC/E_GEPT.htm"> LTTC</a>, 2015</li>
     <br>
     </h6>
-  </div>
+  </div> -->
 
 
 ### <i class="fa fa-chevron-right"></i> Skills
