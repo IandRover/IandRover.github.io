@@ -280,7 +280,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </ul>
 
 <div class="tab-content" id="Home">
-  <div class="tab-pane fade" id="home">welcome home</div>
+  <div class="tab-pane fade show active" id="home">welcome home</div>
   <div class="tab-pane fade" id="profile">welcome file</div>
   <div class="tab-pane fade" id="contact">welcome contact</div>
 </div>
