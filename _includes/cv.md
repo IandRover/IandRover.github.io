@@ -1,8 +1,17 @@
-#### Intro
- I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) meta-learing, self-supervised contrastive learning and adversarial learning.<br><br>
+#### Introduction
+ I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) Meta-Learning (please refer to my publication) and Adversarial Learning.
+ I am looking for PHD (from 2023 Spring) in ML, DL, neuroscience and bio-engineering.<br><br>
 
-#### Future plan.
-I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. For research direction, I would like to dive in the fundamental problems such as understanding the inner working mechanisms of deep learning models, and then apply our insight or novel comprehesion to practical issues such as model interpretability.<br><br>
+#### Research Interests
+My research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
+- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI.
+- The oral paper in MICCAI: Initially, I am intrigued by the increasing trend in using GAN to translate medical images. But I found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After implementation and apply extensive visualization tools (GradCAM, filter visualization, building additional attention modules), I propose that the models may implicitly perform brain region and brain tissue recognition.
+- Currently under review in NIPS 2021, my new paper turns to MAML (model-agnostic meta learning algorithm) and I find that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on our theoretical results, we further improve the MAML algorithm by introducing a zeroing trick.
+
+During my research in MAML, I am more familiar with the bi-level optimization. My next move is to explore the min-max problem that are intensively encountered in adversarial learning.
+
+#### Future Plan
+I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background.
 
 ## <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
