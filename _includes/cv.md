@@ -15,7 +15,7 @@ I thank all the supervisors for their inspiring suggestion and the reviewers for
 #### Future Plan
 I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background. <br><br>
 
-## <i class="fa fa-chevron-right"></i> Education
+### <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
   <tr>
     <td>
@@ -34,7 +34,7 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Research Internship
+### <i class="fa fa-chevron-right"></i> Research Internship
 <table class="table table-hover">
 <tr>
   <td>
@@ -54,48 +54,54 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </tr> -->
 </table>
 
-## <i class="fa fa-chevron-right"></i> Courses
+### <i class="fa fa-chevron-right"></i> Courses
 <table class="table table-hover">
 
 <tr>
-  <td><strong>Introduction to Analysis, Honor Class</strong></td>
-  <td>A-</td>
+  <td><strong>Course name</strong></td>
+  <td style='text-align:center;'><strong>Score</strong></td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
-  <td><strong>Advanced Probability</strong></td>
-  <td>A-</td>
+  <td><strong>Introduction to Analysis, Honor Class <br> </strong>Institute of Mathematics, NYVU</td>
+  <td style='text-align:center;'>A-</td>
+  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
+</tr>
+
+<tr>
+  <td><strong>Advanced Probability <br> </strong>Institute of Mathematics, NYVU</td>
+  <td style='text-align:center;'>A-</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
   <td><strong>Reinforcement Learning</strong></td>
-  <td>A+</td>
+  <td style='text-align:center;'>A+</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Machine Learning</strong></td>
-  <td>A+</td>
+  <td style='text-align:center;'>A+</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Molecular Simulation: Concepts and Applications</strong></td>
-  <td>A+</td>
+  <td style='text-align:center;'>A+</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Theory of Computability</strong></td>
-  <td>A+</td>
+  <td style='text-align:center;'>A+</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Introduction to Computer Science</strong></td>
-  <td>A+</td>
+  <td style='text-align:center;'>A+</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
@@ -103,13 +109,27 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Honors & Awards
+### <i class="fa fa-chevron-right"></i> Honors & Awards
 <table class="table table-hover">
+<tr>
+  <td>
+    <strong>College Student Research Scholarship</strong>, MOST, Taiwan
+    <br>
+  </td>
+  <td class='col-md-2' style='text-align:right;'> 2020 </td>
+</tr>
 <tr>
   <td>
     <strong>Second Prize</strong>, Taiwan Brain Tumor Segmentation Challenge
   </td>
   <td class='col-md-2' style='text-align:right;'> 2019 </td>
+</tr>
+<tr>
+  <td>
+    <strong>College Student Research Scholarship</strong>, MOST, Taiwan
+    <br>
+  </td>
+  <td class='col-md-2' style='text-align:right;'> 2018 </td>
 </tr>
 <tr>
   <td>
@@ -121,7 +141,7 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Publications
+### <i class="fa fa-chevron-right"></i> Publications
 
 <h2>2021</h2>
 <table class="table table-hover">
@@ -148,7 +168,8 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 
 <tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
 <td>
-    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em><br>
+    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
+    [Oral presentation] <br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
     MICCAI 2021
     [<a href='javascript:;'
@@ -188,7 +209,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
 
 </table>
 
-## <i class="fa fa-chevron-right"></i> Repositories
+### <i class="fa fa-chevron-right"></i> Repositories
 <table class="table table-hover">
 <tr>
   <td>
@@ -203,7 +224,26 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </tr>
 </table>
 
-## <i class="fa fa-chevron-right"></i> Skills
+### <i class="fa fa-chevron-right"></i> Volumteer Experience
+<table class="table table-hover">
+<tr>
+  <td>
+    <strong>Leading data analyst</strong> <br>
+    Data for Social Good Program, DSP Inc, Taiwan <br>
+  </td>
+  <td class='col-md-2' style='text-align:right;'> 2018 </td>
+</tr>
+</table>
+
+### Test
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+### <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
