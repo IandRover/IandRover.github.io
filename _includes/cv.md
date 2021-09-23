@@ -34,7 +34,7 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Research Internships
+## <i class="fa fa-chevron-right"></i> Research Internship
 <table class="table table-hover">
 <tr>
   <td>
@@ -115,7 +115,6 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
   <td>
     <strong>Gold Medal</strong>, International Genetically Engineered Machine Competition
     <br>
-    <!-- <p style="color:grey;font-size:1.2rem"></p> -->
   </td>
   <td class='col-md-2' style='text-align:right;'> 2016 </td>
 </tr>
