@@ -3,10 +3,10 @@ layout: singlePage
 title: "Tools"
 ---
 
-# under construction
+### under construction
 
 <!-- <!DOCTYPE html> -->
-<html lang="en" dir="ltr">
+<!-- <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
@@ -41,4 +41,4 @@ title: "Tools"
     </div>
 
   </body>
-</html>
+</html> -->
