@@ -241,28 +241,30 @@ Visualization of how the external stimuli are processed dynamically in the brain
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <div class="tab-content">
-    <div class="tab-pane container active" id="Awards">
-      <h6>
-      <br>
-      <li><a href="#" data-toggle="modal" data-target="#MOSTModal">College Student Research Scholarship, MOST, Taiwan, 2018~2019</a></li><br>
-      <li>Academic Achievement Award, University of Taipei, Taiwan, 2015~2018</li><br>
-      <li><a href="http://service.utaipei.edu.tw/files/11-1023-59.php?Lang=zh-tw">Entrance Scholarship, University of Taipei, Taiwan, 2015~2018</a></li><br>
-      <li>Literary Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li><br>
-      <li>Academic Achievement Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li>
-      <br>
-      </h6>
-    </div>
-    <div class="tab-pane container fade" id="Certification">
-      <h6>
-      <br>
-      <li>初階行銷傳播認證, <a href="http://www.tmca.org.tw/">TMCA</a>, Taiwan Marcom Certification Association, 2015</li><br>
-      <li>TOEIC Score:685, ETS, 2015</li><br>
-      <li>The General English Proficiency Test Intermediate,<a href="https://www.lttc.ntu.edu.tw/E_LTTC/E_GEPT.htm"> LTTC</a>, 2015</li>
-      <br>
-      </h6>
-    </div>
 </div>
+
+<div class="tab-content">
+  <div class="tab-pane container active" id="Awards">
+    <h6>
+    <br>
+    <li><a href="#" data-toggle="modal" data-target="#MOSTModal">College Student Research Scholarship, MOST, Taiwan, 2018~2019</a></li><br>
+    <li>Academic Achievement Award, University of Taipei, Taiwan, 2015~2018</li><br>
+    <li><a href="http://service.utaipei.edu.tw/files/11-1023-59.php?Lang=zh-tw">Entrance Scholarship, University of Taipei, Taiwan, 2015~2018</a></li><br>
+    <li>Literary Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li><br>
+    <li>Academic Achievement Award, National Yilan Senior High School, Yilan, Taiwan, 2013~2014</li>
+    <br>
+    </h6>
+  </div>
+  <div class="tab-pane container fade" id="Certification">
+    <h6>
+    <br>
+    <li>初階行銷傳播認證, <a href="http://www.tmca.org.tw/">TMCA</a>, Taiwan Marcom Certification Association, 2015</li><br>
+    <li>TOEIC Score:685, ETS, 2015</li><br>
+    <li>The General English Proficiency Test Intermediate,<a href="https://www.lttc.ntu.edu.tw/E_LTTC/E_GEPT.htm"> LTTC</a>, 2015</li>
+    <br>
+    </h6>
+  </div>
+
 
 ### <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
