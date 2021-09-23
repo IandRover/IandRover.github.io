@@ -238,8 +238,8 @@ Visualization of how the external stimuli are processed dynamically in the brain
 ### Test
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a href="#Awards">Awards</a>
+  <a href="#Certification">Certification</a>
   <a href="#about">About</a>
 </div>
 
