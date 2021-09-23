@@ -1,14 +1,16 @@
 #### Introduction
  I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) Meta-Learning (please refer to my publication) and Adversarial Learning.
- I am looking for PHD (from 2023 Spring) in ML, DL, neuroscience and bio-engineering.<br><br>
+ I am looking for PHD (from 2023 Spring) in ML, DL, neuroscience and bio-engineering. <br><br>
 
 #### Research Interests
 My research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
-- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI.
-- The oral paper in MICCAI: Initially, I am intrigued by the increasing trend in using GAN to translate medical images. But I found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After implementation and apply extensive visualization tools (GradCAM, filter visualization, building additional attention modules), I propose that the models may implicitly perform brain region and brain tissue recognition.
-- Currently under review in NIPS 2021, my new paper turns to MAML (model-agnostic meta learning algorithm) and I find that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on our theoretical results, we further improve the MAML algorithm by introducing a zeroing trick.
+- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI. 
+- The oral paper in MICCAI: Initially, I am intrigued by the increasing trend in using GAN to translate medical images. But I found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. As exploration, after implementation and applying extensive visualization tools (GradCAM, filter visualization, building additional attention modules), I propose that the models may implicitly perform brain region and brain tissue recognition. Finally, we use Canonical Component Analysis to finish this work.
+- Currently under review in NIPS 2021, my new paper turns to MAML (model-agnostic meta learning algorithm) and we find that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on our theoretical results, we further improve the MAML algorithm by introducing a zeroing trick.
 
-During my research in MAML, I am more familiar with the bi-level optimization. My next move is to explore the min-max problem that are intensively encountered in adversarial learning.
+ My next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during my research in MAML, I become more familiar with the bi-level optimization.
+
+I thank all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements.
 
 #### Future Plan
 I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background.
