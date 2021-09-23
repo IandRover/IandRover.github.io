@@ -36,33 +36,19 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 
 ## <i class="fa fa-chevron-right"></i> Research Internships
 <table class="table table-hover">
-<!-- <tr>
-  <td>
-<p markdown="1" style='margin: 0'>
-<strong>Intel Labs</strong>
-| Santa Clara, CA
-| Host: <a href="http://vladlen.info/">Vladlen Koltun</a>
-</p>
-  </td>
-  <td class='col-md-2' style='text-align:right;'>2018</td>
-</tr>
 <tr>
   <td>
 <p markdown="1" style='margin: 0'>
-<strong>Google DeepMind</strong>
-| London, UK
-| Hosts: <a href="http://mdenil.com/">Misha Denil</a> and <a href="https://scholar.google.com/citations?user=nzEluBwAAAAJ">Nando de Freitas</a>
+<strong>Institute of Information Science, Academia Sinica</strong>
+| Taipei, Taiwan
+| Host: <a href="https://homepage.iis.sinica.edu.tw/pages/mcc/index_en.html">Meng Chang, Chen</a>
 </p>
   </td>
   <td class='col-md-2' style='text-align:right;'>2017</td>
 </tr>
-<tr>
+
+<!-- <tr>
   <td>
-<p markdown="1" style='margin: 0'>
-<strong>Adobe Research</strong>
-| San Jose, CA
-| Host: <a href="https://research.adobe.com/person/david-tompkins/">David Tompkins</a>
-</p>
   </td>
   <td class='col-md-2' style='text-align:right;'>2014</td>
 </tr> -->
