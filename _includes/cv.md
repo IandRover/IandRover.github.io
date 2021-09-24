@@ -261,7 +261,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
 
 <table class="table table-hover">
 
-<tr id="tr-skills">
+<tr id="tr-skills" style="background-color: #ffffd0">
 <td>
     <strong>Chia-Hsiang Kao</strong>
 [<a href='javascript:;'
@@ -287,7 +287,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
           </table>
 </div></td></tr>
 
-<tr id="tr-Volunteer">
+<tr id="tr-Volunteer" style="background-color: #ffffd0">
 <td>
     <strong>Volunteer Experience</strong>
     [<a href='javascript:;'
@@ -306,30 +306,6 @@ Visualization of how the external stimuli are processed dynamically in the brain
         </tr>
         </table>
 </div></td></tr>
-
-<tr id="tr-repo">
-<td>
-    <strong>Volunteer Experience</strong>
-    [<a href='javascript:;'
-    onclick='$("#abs_repo").toggle()'>abs</a>]
-<div id="abs_repo" style="text-align: justify; display: none" markdown="1">
-          <table class="table table-hover">
-          <tr>
-            <td>
-              <a href="https://github.com/IandRover/meta-gradient_RL">Replication</a>
-              <!-- |<i class="fa fas fa-star"></i> 377 | -->
-              <em>NeurIPS 2018 "Meta-Gradient Reinforcement Learning"</em>
-              <!--  -->
-              <!--     facebookresearch/mbrl-lib  -->
-              <!--  -->
-            </td>
-            <td class='col-md-1' style='text-align:right;'>2021</td>
-          </tr>
-          </table>
-</div></td></tr>
-
-
-
 
 
 
