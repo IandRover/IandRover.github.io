@@ -5,7 +5,7 @@ He is looking for MS/PHD in ML/DL, neuroscience or bio-engineering. <br><br>
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
 - His starting research direction was to use the spatial-temporal autoencoder to unravel the patterns in fMRI.
-- When he was an intern at Department of Radiology in Taipei Veterans General Hospital (台北榮總), he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. As exploration, after implementation and applying extensive visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
+- When he was an intern at Department of Radiology in Taipei Veterans General Hospital (台北榮總), he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After applying visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
 - Currently under review in NIPS 2021, his new work turned to MAML (model-agnostic meta learning algorithm) and he found that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on the theoretical results, he further improved the MAML algorithm by introducing a zeroing trick.
 
 His next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during his research in MAML, he becomes more familiar with the bi-level optimization.
@@ -40,8 +40,8 @@ Although he does not have a CS background, he is acquainted deep learning skills
 <tr>
   <td>
 <p markdown="1" style='margin: 0'>
-<strong>Institute of Information Science, Academia Sinica</strong>
-| Taipei, Taiwan
+<strong>Institute of Information Science, Academia Sinica</strong><br>
+ Taipei, Taiwan
 | Host: <a href="https://homepage.iis.sinica.edu.tw/pages/mcc/index_en.html">Meng Chang, Chen</a>
 </p>
   </td>
@@ -59,8 +59,8 @@ Although he does not have a CS background, he is acquainted deep learning skills
 <table class="table table-hover">
 
 <tr>
-  <td><strong>Course name</strong></td>
-  <td style='text-align:center;'><strong>Score</strong></td>
+  <td bgcolor="#ffffce"><strong>Course name</strong></td>
+  <td bgcolor="#ffffce" style='text-align:center;'><strong>Score</strong></td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
