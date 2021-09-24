@@ -17,6 +17,8 @@ He would pursue MS/PHD right after graduation from the medical school.
 <!-- Although he does not have a CS background, he is acquainted with deep learning skills and basic mathematical analysis skills.  -->
 <!-- He is currently looking for labs that welcome people from interdisciplinary background. <br><br> -->
 
+<br>
+
 ### <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
   <tr>
@@ -66,13 +68,13 @@ He would pursue MS/PHD right after graduation from the medical school.
 </tr>
 
 <tr>
-  <td><strong>Introduction to Analysis, Honor Class <br> </strong>Institute of Mathematics, NYVU</td>
+  <td><strong>Introduction to Analysis, Honor Class <br> </strong>Institute of Mathematics, NYCU</td>
   <td style='text-align:center;'>A-</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
-  <td><strong>Advanced Probability <br> </strong>Institute of Mathematics, NYVU</td>
+  <td><strong>Advanced Probability <br> </strong>Institute of Mathematics, NYCU</td>
   <td style='text-align:center;'>A-</td>
   <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
@@ -145,10 +147,10 @@ He would pursue MS/PHD right after graduation from the medical school.
 
 ### <i class="fa fa-chevron-right"></i> Publications
 
-<h2>2021</h2>
+<h3>2021</h3>
 <table class="table table-hover">
 
-<tr id="tr-kao2021maml" style="background-color: #ffffd0">
+<tr id="tr-kao2021maml">
 <td>
     <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
@@ -168,16 +170,12 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 </td>
 </tr>
 
-<tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
+<tr id="tr-kao2021demystifying">
 <td>
-    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
-    [Oral presentation] <br>
+    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em>  <br>
+    MICCAI 2021 [Oral presentation] [<a href='javascript:;'
+    onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>] <br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
-    MICCAI 2021
-    [<a href='javascript:;'
-    onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
-     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
-    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
 
 <div id="abs_kao2021demystifying" style="text-align: justify; display: none" markdown="1">
 Recent development of image-to-image translation techniques has enabled the generation of rare medical images (e.g., PET) from common ones (e.g., MRI). Beyond the potential benefits of the reduction in scanning time, acquisition cost, and radiation exposure risks, the translation models in themselves are inscrutable black boxes. In this work, we propose two approaches to demystify the image translation process, where we particularly focus on the T1-MRI to PET translation. First, we adopt the representational similarity analysis and discover that the process of T1-MR to PET image translation includes the stages of brain tissue segmentation and brain region recognition, which unravels the relationship between the structural and functional neuroimaging data. Second, based on our findings, an Explainable and Simplified Image Translation (ESIT) model is proposed to demonstrate the capability of deep learning models for extracting gray matter volume information and identifying brain regions related to normal aging and Alzheimer's disease, which untangles the biological plausibility hidden in deep learning models.
@@ -189,9 +187,9 @@ Recent development of image-to-image translation techniques has enabled the gene
 
 </table>
 
-<h2>2019</h2>
+<h3>2019</h3>
 <table class="table table-hover">
-<tr id="tr-Kao2019Unravelling" style="background-color: #ffffd0">
+<tr id="tr-Kao2019Unravelling">
 <td>
     <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em><br>
     <strong>Chia-Hsiang Kao</strong>, Ching-Ju Yang, Li-Kai Cheng, Hsin-Yen Yu, Yong-Sheng Chen, Jen-Chuen Hsieh, and Li-Fen Chen<br>
