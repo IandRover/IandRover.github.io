@@ -1,19 +1,20 @@
 #### Introduction
- I am a medical student at National Yang Ming Chiao Tung University with research interests in machine learning, computer vision and medical image analysis. My recent research direction involves (gradient-based) Meta-Learning (please refer to my publication) and Adversarial Learning.
- I am looking for PHD (from 2023 Spring) in ML/DL, neuroscience or bio-engineering. <br><br>
+Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University with research interests in machine learning/deep learning, computer vision and medical image analysis. His recent research direction involves (gradient-based) Meta-Learning and Adversarial Learning.
+He is looking for MS/PHD in ML/DL, neuroscience or bio-engineering. <br><br>
 
-#### Research Interests
-My research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
-- My first publication in NER conference (International IEEE/EMBS Conference on Neural Engineering) aims to use the spatial-temporal encoder to unravel the patterns in fMRI.
-- The oral paper in MICCAI: Initially, I am intrigued by the increasing trend in using GAN to translate medical images. But I found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. As exploration, after implementation and applying extensive visualization tools (GradCAM, filter visualization, building additional attention modules), I propose that the models may implicitly perform brain region and brain tissue recognition. Finally, we use Canonical Component Analysis to finish this work.
-- Currently under review in NIPS 2021, my new paper turns to MAML (model-agnostic meta learning algorithm) and we find that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on our theoretical results, we further improve the MAML algorithm by introducing a zeroing trick.
+#### Research Experience
+His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
+- His starting research direction was to use the spatial-temporal autoencoder to unravel the patterns in fMRI.
+- When he was an intern at Department of Radiology in Taipei Veterans General Hospital (台北榮總), he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. As exploration, after implementation and applying extensive visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
+- Currently under review in NIPS 2021, his new work turned to MAML (model-agnostic meta learning algorithm) and he found that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on the theoretical results, he further improved the MAML algorithm by introducing a zeroing trick.
 
- My next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during my research in MAML, I become more familiar with the bi-level optimization.
+His next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during his research in MAML, he becomes more familiar with the bi-level optimization.
 
-I thank all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
+He thanks all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
 
 #### Future Plan
-I would like to pursue PHD (from 2023 Spring) after graduation from the medical school. I am currently looking for labs that welcomes people from interdisciplinary background. <br><br>
+He would like to pursue MS/PHD after graduation from the medical school.
+Although he does not have a CS background, he is acquainted deep learning skills and has some mathematical analysis basics. He is currently looking for labs that welcome people from interdisciplinary background. <br><br>
 
 ### <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
@@ -120,7 +121,7 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </tr>
 <tr>
   <td>
-    <strong>Second Prize</strong>, Taiwan Brain Tumor Segmentation Challenge
+    <strong>Second Prize</strong>, Taiwan Brain Tumor Segmentation Challenge, Taiwan
   </td>
   <td class='col-md-2' style='text-align:right;'> 2019 </td>
 </tr>
@@ -133,7 +134,7 @@ I would like to pursue PHD (from 2023 Spring) after graduation from the medical 
 </tr>
 <tr>
   <td>
-    <strong>Gold Medal</strong>, International Genetically Engineered Machine Competition
+    <strong>Gold Medal</strong>, International Genetically Engineered Machine Competition, Boston
     <br>
   </td>
   <td class='col-md-2' style='text-align:right;'> 2016 </td>
