@@ -152,13 +152,11 @@ He would pursue MS/PHD right after graduation from the medical school.
 
 <tr id="tr-kao2021maml">
 <td>
-    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
+    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em> <br>
+    [Preprint] [<a href='javascript:;'
+        onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
+    <br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
-    Preprint
-[<a href='javascript:;'
-    onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
-     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
-    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
 
 <div id="abs_kao2021maml" style="text-align: justify; display: none" markdown="1">
 Model-agnostic meta-learning (MAML) is one of the most popular and widely-adopted meta-learning algorithms nowadays, which achieves remarkable success in various learning problems.
@@ -172,7 +170,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 
 <tr id="tr-kao2021demystifying">
 <td>
-    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em>  <br>
+    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
     MICCAI 2021 [Oral presentation] [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>] <br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
@@ -191,14 +189,12 @@ Recent development of image-to-image translation techniques has enabled the gene
 <table class="table table-hover">
 <tr id="tr-Kao2019Unravelling">
 <td>
-    <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em><br>
-    <strong>Chia-Hsiang Kao</strong>, Ching-Ju Yang, Li-Kai Cheng, Hsin-Yen Yu, Yong-Sheng Chen, Jen-Chuen Hsieh, and Li-Fen Chen<br>
+    <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em>
     NER 2019
     [<a href='javascript:;'
     onclick='$("#abs_Kao2019Unravelling").toggle()'>abs</a>]
-    <!-- [<a href='https://github.com/facebookresearch/svg' target='_blank'>code</a>]   -->
-    <!-- [<a href='http://bamos.github.io/data/slides/2021.svg.pdf' target='_blank'>slides</a>]   -->
-    <!-- [<a href='https://youtu.be/ABS40GW7Ekk?t=5393' target='_blank'>talk</a>] <br> -->
+    <br>
+    <strong>Chia-Hsiang Kao</strong>, Ching-Ju Yang, Li-Kai Cheng, Hsin-Yen Yu, Yong-Sheng Chen, Jen-Chuen Hsieh, and Li-Fen Chen<br>
 
 <div id="abs_Kao2019Unravelling" style="text-align: justify; display: none" markdown="1">
 Visualization of how the external stimuli are processed dynamically in the brain would help understanding the neural mechanisms of functional segregation and integration. The present study proposed a novel temporal autoencoder to estimate the neurodynamics of functional networks involved in rhythm encoding and reproduction. A fully-connected two-layer autoencoder was proposed to estimate the temporal dynamics in functional magnetic resonance image recordings. By minimizing the reconstruction error between the predicted next time sample and the corresponding ground truth next time sample, the system was trained to extract spatial patterns of functional network dynamics without any supervision effort. The results showed that the proposed model was able to extract the spatial patterns of task-related functional dynamics as well as the interactions between them. Our findings suggest that artificial neural networks would provide a useful tool to resolve temporal dynamics of neural processing in the human brain.
