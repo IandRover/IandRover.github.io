@@ -24,11 +24,9 @@ He would pursue MS/PHD right after graduation from the medical school.
   <tr>
     <td>
         <strong>Doctor of Medicine</strong> (M.D.)
-          <!-- (0.00/0.00) -->
         <br>
       National Yang Ming Chiao Tung University | Taipei, Taiwan
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
-        <!-- <br> *<a href="https://github.com/bamos/thesis">Differentiable Optimization-Based Modeling for Machine Learning</a>* -->
         <br> Advisors:
         <a href="https://scholar.google.com.tw/citations?user=BJjT9kAAAAAJ">Li-Fen, Chen </a> (2017 - 2020), <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> (2020 - 2021), <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a> (2021)  
         </p>
@@ -50,7 +48,6 @@ He would pursue MS/PHD right after graduation from the medical school.
   </td>
   <td class='col-md-2' style='text-align:right;'>2017</td>
 </tr>
-
 <!-- <tr>
   <td>
   </td>
@@ -64,49 +61,41 @@ He would pursue MS/PHD right after graduation from the medical school.
 <tr>
   <td bgcolor="#ffffce"><strong>Course name</strong></td>
   <td bgcolor="#ffffce" style='text-align:center;'><strong>Score</strong></td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
   <td><strong>Introduction to Analysis, Honor Class <br> </strong>Institute of Mathematics, NYCU</td>
   <td style='text-align:center;'>A-</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
   <td><strong>Advanced Probability <br> </strong>Institute of Mathematics, NYCU</td>
   <td style='text-align:center;'>A-</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institute of Applied Mathematics</td> -->
 </tr>
 
 <tr>
   <td><strong>Reinforcement Learning</strong></td>
   <td style='text-align:center;'>A+</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Machine Learning</strong></td>
   <td style='text-align:center;'>A+</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Molecular Simulation: Concepts and Applications</strong></td>
   <td style='text-align:center;'>A+</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Theory of Computability</strong></td>
   <td style='text-align:center;'>A+</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 <tr>
   <td><strong>Introduction to Computer Science</strong></td>
   <td style='text-align:center;'>A+</td>
-  <!-- <td class='col-md-2' style='text-align:left;'>Institue of Computer Science and Engineering</td> -->
 </tr>
 
 
@@ -189,7 +178,7 @@ Recent development of image-to-image translation techniques has enabled the gene
 <table class="table table-hover">
 <tr id="tr-Kao2019Unravelling">
 <td>
-    <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em>
+    <em><a href='https://ieeexplore.ieee.org/document/8716917' target='_blank'>Unravelling the Spatio-Temporal Neurodynamics of Rhythm Encoding-Reproduction Networks by a Novel fMRI Autoencoder</a> </em> <br>
     NER 2019
     [<a href='javascript:;'
     onclick='$("#abs_Kao2019Unravelling").toggle()'>abs</a>]
