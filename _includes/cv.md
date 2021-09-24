@@ -256,3 +256,61 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
 </tr>
 </table>
+
+
+
+<table class="table table-hover">
+
+<tr id="tr-kao2021maml" style="background-color: #ffffd0">
+<td>
+    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
+    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
+    Preprint
+[<a href='javascript:;'
+    onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
+     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
+    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
+
+<div id="abs_kao2021maml" style="text-align: justify; display: none" markdown="1">
+<table class="table table-hover">
+<tr>
+  <td class='col-md-2'>Languages</td>
+  <td> Python, Matlab
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Frameworks</td>
+  <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
+  </td>
+</tr>
+<tr>
+  <td class='col-md-2'>Tools</td>
+  <td> Linux, tmux
+  </td>
+</tr>
+</table>
+</div>
+
+</td>
+</tr>
+
+<tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
+<td>
+    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
+    [Oral presentation] <br>
+    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
+    MICCAI 2021
+    [<a href='javascript:;'
+    onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
+     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
+    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
+
+<div id="abs_kao2021demystifying" style="text-align: justify; display: none" markdown="1">
+
+</div>
+
+</td>
+</tr>
+
+
+</table>
