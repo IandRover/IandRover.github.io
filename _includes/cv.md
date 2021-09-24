@@ -13,8 +13,9 @@ His next move is to explore the min-max problem that are intensively encountered
 He thanks all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
 
 #### Future Plan
-He would like to pursue MS/PHD after graduation from the medical school.
-Although he does not have a CS background, he is acquainted deep learning skills and has some mathematical analysis basics. He is currently looking for labs that welcome people from interdisciplinary background. <br><br>
+He would pursue MS/PHD right after graduation from the medical school.
+<!-- Although he does not have a CS background, he is acquainted with deep learning skills and basic mathematical analysis skills.  -->
+<!-- He is currently looking for labs that welcome people from interdisciplinary background. <br><br> -->
 
 ### <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
