@@ -226,7 +226,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </tr>
 </table>
 
-### <i class="fa fa-chevron-right"></i> Volumteer Experience
+<!-- ### <i class="fa fa-chevron-right"></i> Volumteer Experience
 <table class="table table-hover">
 <tr>
   <td>
@@ -235,10 +235,10 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
   <td class='col-md-2' style='text-align:right;'> 2018 </td>
 </tr>
-</table>
+</table> -->
 
 
-### <i class="fa fa-chevron-right"></i> Skills
+<!-- ### <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
@@ -255,70 +255,83 @@ Visualization of how the external stimuli are processed dynamically in the brain
   <td> Linux, tmux
   </td>
 </tr>
-</table>
+</table> -->
 
 
 
 <table class="table table-hover">
 
-<tr id="tr-kao2021maml" style="background-color: #ffffd0">
+<tr id="tr-skills">
 <td>
-    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em><br>
-    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
-    Preprint
+    <strong>Chia-Hsiang Kao</strong>
 [<a href='javascript:;'
-    onclick='$("#abs_haha").toggle()'>abs</a>]
-     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
-    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
+    onclick='$("#abs_skills").toggle()'>abs</a>]
+<div id="abs_skills" style="text-align: justify;
+    display: none" markdown="1">
+          <table class="table table-hover">
+          <tr>
+            <td class='col-md-2'>Languages</td>
+            <td> Python, Matlab
+            </td>
+          </tr>
+          <tr>
+            <td class='col-md-2'>Frameworks</td>
+            <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
+            </td>
+          </tr>
+          <tr>
+            <td class='col-md-2'>Tools</td>
+            <td> Linux, tmux
+            </td>
+          </tr>
+          </table>
+</div></td></tr>
 
-<div id="abs_haha" style="text-align: justify; display: none" markdown="1">
-<table class="table table-hover">
-<tr>
-  <td class='col-md-2'>Languages</td>
-  <td> Python, Matlab
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Frameworks</td>
-  <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Tools</td>
-  <td> Linux, tmux
-  </td>
-</tr>
-</table>
-</div>
-
-</td>
-</tr>
-
-<tr id="tr-kao2021demystifying" style="background-color: #ffffd0">
+<tr id="tr-Volunteer">
 <td>
-    <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
-    [Oral presentation] <br>
-    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
-    MICCAI 2021
+    <strong>Volunteer Experience</strong>
     [<a href='javascript:;'
-    onclick='$("#abs_skill").toggle()'>abs</a>]
+    onclick='$("#abs_Volunteer").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
     <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
 
-<div id="abs_skill" style="text-align: justify; display: none" markdown="1">
-<table class="table table-hover">
-<tr>
-  <td>
-    <strong>Leading data analyst</strong> <br>
-    Data for Social Good Program, DSP Inc, Taiwan <br>
-  </td>
-  <td class='col-md-2' style='text-align:right;'> 2018 </td>
-</tr>
-</table>
-</div>
+<div id="abs_Volunteer" style="text-align: justify; display: none" markdown="1">
+        <table class="table table-hover">
+        <tr>
+          <td>
+            <strong>Leading data analyst</strong> <br>
+            Data for Social Good Program, DSP Inc, Taiwan <br>
+          </td>
+          <td class='col-md-2' style='text-align:right;'> 2018 </td>
+        </tr>
+        </table>
+</div></td></tr>
 
-</td>
-</tr>
+<tr id="tr-repo">
+<td>
+    <strong>Volunteer Experience</strong>
+    [<a href='javascript:;'
+    onclick='$("#abs_repo").toggle()'>abs</a>]
+<div id="abs_repo" style="text-align: justify; display: none" markdown="1">
+          <table class="table table-hover">
+          <tr>
+            <td>
+              <a href="https://github.com/IandRover/meta-gradient_RL">Replication</a>
+              <!-- |<i class="fa fas fa-star"></i> 377 | -->
+              <em>NeurIPS 2018 "Meta-Gradient Reinforcement Learning"</em>
+              <!--  -->
+              <!--     facebookresearch/mbrl-lib  -->
+              <!--  -->
+            </td>
+            <td class='col-md-1' style='text-align:right;'>2021</td>
+          </tr>
+          </table>
+</div></td></tr>
+
+
+
+
+
 
 
 </table>
