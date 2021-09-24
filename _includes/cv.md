@@ -226,7 +226,7 @@ Visualization of how the external stimuli are processed dynamically in the brain
 </tr>
 </table>
 
-<!-- ### <i class="fa fa-chevron-right"></i> Volumteer Experience
+### <i class="fa fa-chevron-right"></i> Volumteer Experience
 <table class="table table-hover">
 <tr>
   <td>
@@ -235,10 +235,10 @@ Visualization of how the external stimuli are processed dynamically in the brain
   </td>
   <td class='col-md-2' style='text-align:right;'> 2018 </td>
 </tr>
-</table> -->
+</table>
 
 
-<!-- ### <i class="fa fa-chevron-right"></i> Skills
+### <i class="fa fa-chevron-right"></i> Skills
 <table class="table table-hover">
 <tr>
   <td class='col-md-2'>Languages</td>
@@ -255,59 +255,4 @@ Visualization of how the external stimuli are processed dynamically in the brain
   <td> Linux, tmux
   </td>
 </tr>
-</table> -->
-
-
-
-<table class="table table-hover">
-
-<tr id="tr-skills" style="background-color: #ffffd0">
-<td>
-    <strong>Chia-Hsiang Kao</strong>
-[<a href='javascript:;'
-    onclick='$("#abs_skills").toggle()'>abs</a>]
-<div id="abs_skills" style="text-align: justify;
-    display: none" markdown="1">
-          <table class="table table-hover">
-          <tr>
-            <td class='col-md-2'>Languages</td>
-            <td> Python, Matlab
-            </td>
-          </tr>
-          <tr>
-            <td class='col-md-2'>Frameworks</td>
-            <td> NumPy, Pandas, PyTorch, SciPy, TensorFlow
-            </td>
-          </tr>
-          <tr>
-            <td class='col-md-2'>Tools</td>
-            <td> Linux, tmux
-            </td>
-          </tr>
-          </table>
-</div></td></tr>
-
-<tr id="tr-Volunteer" style="background-color: #ffffd0">
-<td>
-    <strong>Volunteer Experience</strong>
-    [<a href='javascript:;'
-    onclick='$("#abs_Volunteer").toggle()'>abs</a>]
-     <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
-    <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
-
-<div id="abs_Volunteer" style="text-align: justify; display: none" markdown="1">
-        <table class="table table-hover">
-        <tr>
-          <td>
-            <strong>Leading data analyst</strong> <br>
-            Data for Social Good Program, DSP Inc, Taiwan <br>
-          </td>
-          <td class='col-md-2' style='text-align:right;'> 2018 </td>
-        </tr>
-        </table>
-</div></td></tr>
-
-
-
-
 </table>
