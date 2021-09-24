@@ -301,12 +301,20 @@ Visualization of how the external stimuli are processed dynamically in the brain
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
     MICCAI 2021
     [<a href='javascript:;'
-    onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>]
+    onclick='$("#abs_skill").toggle()'>abs</a>]
      <!-- [<a href='https://github.com/facebookresearch/dcem' target='_blank'>code</a>]  -->
     <!-- [<a href='http://bamos.github.io/data/slides/2020.dcem.pdf' target='_blank'>slides</a>] <br> -->
 
-<div id="abs_kao2021demystifying" style="text-align: justify; display: none" markdown="1">
-
+<div id="abs_skill" style="text-align: justify; display: none" markdown="1">
+<table class="table table-hover">
+<tr>
+  <td>
+    <strong>Leading data analyst</strong> <br>
+    Data for Social Good Program, DSP Inc, Taiwan <br>
+  </td>
+  <td class='col-md-2' style='text-align:right;'> 2018 </td>
+</tr>
+</table>
 </div>
 
 </td>
