@@ -1,23 +1,24 @@
 #### Introduction
-Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University with research interests in machine learning/deep learning, computer vision and medical image analysis. His recent research direction involves (gradient-based) Meta-Learning and Adversarial Learning.
-He is looking for MS/PHD in ML/DL, neuroscience or bio-engineering. <br><br>
+Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University with research interests in machine learning/deep learning, medical image analysis, and computer vision. His recent research direction involves (gradient-based) Meta-Learning and Adversarial Learning.
+
+He is looking for PHD in CS, neuroscience or bio-engineering (2022 Fall). <br><br>
 
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
 - His starting research direction was to use the spatial-temporal autoencoder to unravel the patterns in fMRI.
-- When he was an intern at Department of Radiology in Taipei Veterans General Hospital (台北榮總), he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After applying visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
+- When he was an intern at Department of Radiology in Taipei Veterans General Hospital in Taiwan, he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After applying visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
 - Currently under review in NIPS 2021, his new work turned to MAML (model-agnostic meta learning algorithm) and he found that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on the theoretical results, he further improved the MAML algorithm by introducing a zeroing trick.
 
-His next move is to explore the min-max problem that are intensively encountered in adversarial learning. This is mainly because of the fact that during his research in MAML, he becomes more familiar with the bi-level optimization.
+Recently, he is exploring the adversarial robustness, where he finds that the adversarially-trained models may tend to fake to be robust by being overly confident. He is working on a formal definition of the phenomenon and connecting this to the effect of label smoothing and noise injection.
 
 He thanks all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
 
-#### Future Plan
-He would pursue MS/PHD right after graduation from the medical school.
+<!-- #### Future Plan -->
+<!-- He is applying for (2022 fall) PHD. -->
 <!-- Although he does not have a CS background, he is acquainted with deep learning skills and basic mathematical analysis skills.  -->
 <!-- He is currently looking for labs that welcome people from interdisciplinary background. <br><br> -->
 
-<br>
+<!-- <br> -->
 
 ### <i class="fa fa-chevron-right"></i> Education
 <table class="table table-hover">
@@ -162,7 +163,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
     MICCAI 2021 [Oral presentation] [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>] <br>
-    <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
+    <strong>Chia-Hsiang Kao</strong>, Yong-Sheng Chen, Li-Fen Chen, Wei-Chen Chiu<br>
 
 <div id="abs_kao2021demystifying" style="text-align: justify; display: none" markdown="1">
 Recent development of image-to-image translation techniques has enabled the generation of rare medical images (e.g., PET) from common ones (e.g., MRI). Beyond the potential benefits of the reduction in scanning time, acquisition cost, and radiation exposure risks, the translation models in themselves are inscrutable black boxes. In this work, we propose two approaches to demystify the image translation process, where we particularly focus on the T1-MRI to PET translation. First, we adopt the representational similarity analysis and discover that the process of T1-MR to PET image translation includes the stages of brain tissue segmentation and brain region recognition, which unravels the relationship between the structural and functional neuroimaging data. Second, based on our findings, an Explainable and Simplified Image Translation (ESIT) model is proposed to demonstrate the capability of deep learning models for extracting gray matter volume information and identifying brain regions related to normal aging and Alzheimer's disease, which untangles the biological plausibility hidden in deep learning models.
