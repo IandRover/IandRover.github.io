@@ -1,15 +1,17 @@
 #### Introduction
-Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University with research interests in machine learning/deep learning, medical image analysis, and computer vision. His recent research direction involves (gradient-based) Meta-Learning and Adversarial Learning.
+Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University, advised by Prof. <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> and Dr. <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a>. The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service.
+
+To this end, his research interests include machine learning/deep learning, medical image analysis and computer vision, with recent direction of (gradient-based) Meta-Learning and Adversarial Learning.
 
 He is looking for PHD in CS, neuroscience or bio-engineering (2022 Fall). <br><br>
 
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
 - His starting research direction was to use the spatial-temporal autoencoder to unravel the patterns in fMRI.
-- When he was an intern at Department of Radiology in Taipei Veterans General Hospital in Taiwan, he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After applying visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
+- When he was an medical intern at Department of Radiology in Taipei Veterans General Hospital in Taiwan, he was intrigued by the increasing trend in using GAN to translate medical images. But he then found none of the current work discusses the reason why deep learning models can achieve so, and they rather treat the models as black-boxes. After applying visualization tools (GradCAM, filter visualization, building additional attention modules), he proposed that the models may implicitly perform brain region and brain tissue recognition. This is the first paper aimming to explore the behavior of medical image translation model.
 - Currently under review in NIPS 2021, his new work turned to MAML (model-agnostic meta learning algorithm) and he found that the bilevel-optimization procedure of MAML can be understood from a supervised contrastive learning point of view. Based on the theoretical results, he further improved the MAML algorithm by introducing a zeroing trick.
 
-Recently, he is exploring the adversarial robustness, where he finds that the adversarially-trained models may tend to fake to be robust by being overly confident. He is working on a formal definition of the phenomenon and connecting this to the effect of label smoothing and noise injection.
+Recently, he is exploring the adversarial robustness, where he finds that the adversarially-trained models may (implicitly) pretend to be robust by being overly confident. He is now working on a formal definition of the phenomenon and connecting this to the potential benefits of label smoothing and label squeezing.
 
 He thanks all the supervisors for their inspiring suggestion and the reviewers for their insightful comments. These studies cannot be done without their engagements. <br><br>
 
