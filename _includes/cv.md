@@ -1,9 +1,9 @@
 #### Introduction
-Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University, advised by Prof. <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> and Dr. <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a>. The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service.
+Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University, advised by Prof. <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> and Dr. <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a> (IBM researcher).
+<!-- The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service. -->
+His research interests include machine learning/deep learning, medical image analysis and computer vision, with recent direction of Meta-Learning and Adversarial Learning.
 
-To this end, his research interests include machine learning/deep learning, medical image analysis and computer vision, with recent direction of (gradient-based) Meta-Learning and Adversarial Learning.
-
-He is looking for PHD in CS, neuroscience or bio-engineering (2022 Fall). <br><br>
+Currently, he is looking for PHD in CS, neuroscience or bio-engineering (2022 Fall). <br><br>
 
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical tasks.
