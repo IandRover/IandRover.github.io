@@ -107,6 +107,14 @@ He thanks all the supervisors for their inspiring suggestion and the reviewers f
 
 ### <i class="fa fa-chevron-right"></i> Honors & Awards
 <table class="table table-hover">
+<!-- a MICCAI Student Travel Award -->
+<tr>
+  <td>
+    <strong>Student Travel Award</strong>, MICCAI
+    <br>
+  </td>
+  <td class='col-md-2' style='text-align:right;'> 2021 </td>
+</tr>
 <tr>
   <td>
     <strong>College Student Research Scholarship</strong>, MOST, Taiwan
