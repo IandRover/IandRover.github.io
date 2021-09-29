@@ -3,7 +3,7 @@ Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung 
 <!-- The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service. -->
 His research interests include machine learning, and its healthcare (e.g. meta-learining, robustness, trustworthyness, small-datasets). He previously worked on medical image analysis and computer vision, with recent direction of Meta-Learning and Adversarial Learning.
 
-Currently, he is looking for PHD in CS, neuroscience or bio-engineering (2022 Fall). <br><br>
+He is now looking for PhD in Computer Science (2022 Fall). <br><br>
 
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical issues.
@@ -170,7 +170,7 @@ In this paper, we provide a new perspective to the working mechanism of MAML and
 <tr id="tr-kao2021demystifying">
 <td>
     <em>Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</em> <br>
-    MICCAI 2021 [Oral presentation] [<a href='javascript:;'
+    MICCAI 2021 [Oral presentation]     [<a href="data/papers/MICCAI2021_Demystifying__camera_ready___update_1_.pdf">pdf</a>] [<a href='javascript:;'
     onclick='$("#abs_kao2021demystifying").toggle()'>abs</a>] <br>
     <strong>Chia-Hsiang Kao</strong>, Yong-Sheng Chen, Li-Fen Chen, Wei-Chen Chiu<br>
 
