@@ -3,7 +3,7 @@ Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung 
 <!-- The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service. -->
 His research interests include machine learning, and its healthcare (e.g. meta-learining, robustness, trustworthyness, small-datasets). He previously worked on medical image analysis and computer vision, with recent direction of Meta-Learning and Adversarial Learning.
 
-He is now looking for PhD in Computer Science (2022 Fall). <br><br>
+He is now looking for MS/PhD in Computer Science (2022 Fall). <br><br>
 
 #### Research Experience
 His research direction has always remained the same: diving into the fundamental problems to understand the inner working mechanisms of deep learning models, and to apply the (novel) understanding to practical issues.
@@ -151,8 +151,8 @@ He thanks all the supervisors for their inspiring suggestion and the reviewers f
 
 <tr id="tr-kao2021maml">
 <td>
-    <em><a href='https://arxiv.org/abs/2106.15367' target='_blank'>MAML is a Noisy Contrastive Learner</a> </em> <br>
-    [Preprint] [<a href='javascript:;'
+    <em>MAML is a Noisy Contrastive Learner </em> <br>
+    [Preprint] [<a href='https://arxiv.org/abs/2106.15367' target='_blank'>arxiv</a>] [<a href='javascript:;'
         onclick='$("#abs_kao2021maml").toggle()'>abs</a>]
     <br>
     <strong>Chia-Hsiang Kao</strong>, Wei-Chen Chiu, and Pin-Yu Chen<br>
