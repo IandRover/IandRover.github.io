@@ -1,7 +1,7 @@
 #### Introduction
-Chia-Hsiang Kao is currently a medical student at National Yang Ming Chiao Tung University, advised by Prof. <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> and Dr. <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a> (IBM Researcher, MIT-IBM Watson AI Lab).
+Chia-Hsiang Kao will obtain his MD license in 2022. He has broad interests in machine learning, and its applications in healthcare. Chia-Hsiang is advised by Prof. <a href="https://walonchiu.github.io/"> Wei-Chen Chiu</a> and Dr. <a href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a> (IBM Researcher, MIT-IBM Watson AI Lab) during his visit to EVA Lab. He is also advised by Prof. <a href="https://bml.ym.edu.tw/ibs/Members/LFChen-e.html">Li-Fen Chen</a> and Prof. <a href="http://www.psynetresearch.org/people.html">Chih-Chieh (Albert) Yang</a> (Assistant Professor, Harvard Medical School, 2016-2019) for some interesting projects.
 <!-- The ultimate goal of his research is to further the trustworthyness, understanding and credibility of deep learning models and to foster better health care system and service. -->
-His research interests include machine learning, and its healthcare (e.g. meta-learining, robustness, trustworthyness, small-datasets). He previously worked on medical image analysis and computer vision, with recent direction of Meta-Learning and Adversarial Learning.
+His research interests include machine learning (e.g. meta-learining, robustness, computer vision), and its applications in healthcare. He previously worked on medical image analysis and computer vision, with recent direction of Meta-Learning and Adversarial Learning.
 
 He is now looking for MS/PhD in Computer Science (2022 Fall). <br><br>
 
