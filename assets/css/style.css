@@ -258,6 +258,7 @@ section#hero {}
     height: 60vh;
     background-size:cover;
     background-position: center;
+    position: relative;
     background: url("../img/hero-mid.webp") no-repeat;
   }
 }
