@@ -251,6 +251,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 160px;
   }
 }
+section#hero {}
+@media (max-width: 416px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background: url("../img/hero-mid.webp") no-repeat;
+  }
+}
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
