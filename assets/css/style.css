@@ -160,10 +160,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
-  /* text-align: center; */
   color: #45505b;
   padding: 10px 10px;
-  /* margin-left: 10px; */
   margin-bottom: 8px;
   transition: 0.25s;
   font-size: 15px;
@@ -204,7 +202,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover span, .nav-menu li:hover > a span {
   display: block;
 }
-
 /**
 * Mobile Navigation
 */
@@ -226,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle i {
   color: #45505b;
 }
-
 .mobile-nav-active {
   overflow: hidden;
 }
@@ -248,44 +244,17 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
 }
-/* @media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
-} */
 section#hero {}
 @media (max-width: 600px) {
-  #hero {
-    width: 100vw;
-    height: 60vh;
-    background-size:cover;
-    background-position: center;
-    position: relative;
-    background: url("../img/forest.webp") no-repeat;
-  }
-}
-/* section#hero {}
-@media (max-width: 400px) {
   #hero {
     width: 100vw;
     height: 70vh;
     background-size:cover;
     background-position: center;
     position: relative;
-    background: url("../img/forest2.jpeg") no-repeat;
+    background: url("../img/forest.webp") no-repeat;
   }
-} */
-/* section#hero {}
-@media (max-width: 400px) {
-  #hero {
-    width: 100vw;
-    height: 60vh;
-    background-size:cover;
-    background-position: center;
-    position: relative;
-    background: url("../img/hero-mid.webp") no-repeat;
-  }
-} */
+}
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
