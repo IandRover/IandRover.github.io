@@ -246,11 +246,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
   }
-}
+} */
 section#hero {}
 @media (max-width: 600px) {
   #hero {
@@ -259,10 +259,21 @@ section#hero {}
     background-size:cover;
     background-position: center;
     position: relative;
-    background: url("../img/hero-bmid.webp") no-repeat;
+    background: url("../img/forest.webp") no-repeat;
   }
 }
-section#hero {}
+/* section#hero {}
+@media (max-width: 400px) {
+  #hero {
+    width: 100vw;
+    height: 70vh;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background: url("../img/forest2.jpeg") no-repeat;
+  }
+} */
+/* section#hero {}
 @media (max-width: 400px) {
   #hero {
     width: 100vw;
@@ -272,18 +283,7 @@ section#hero {}
     position: relative;
     background: url("../img/hero-mid.webp") no-repeat;
   }
-}
-section#hero {}
-@media (max-width: 400px) {
-  #hero {
-    width: 100vw;
-    height: 60vh;
-    background-size:cover;
-    background-position: center;
-    position: relative;
-    background: url("../img/hero-mid.webp") no-repeat;
-  }
-}
+} */
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
