@@ -160,8 +160,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
+  /* text-align: center; */
   color: #45505b;
   padding: 10px 10px;
+  /* margin-left: 10px; */
   margin-bottom: 8px;
   transition: 0.25s;
   font-size: 15px;
@@ -176,12 +178,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .nav-menu a span, .nav-menu a:focus span {
-  padding: 0 5px 0 7px;
+  padding: 0 7px 0 7px;
   color: #45505b;
 }
 @media (min-width: 992px) {
   .nav-menu a, .nav-menu a:focus {
-    width: 56px;
+    width: 40px;
   }
   .nav-menu a span, .nav-menu a:focus span {
     display: none;
