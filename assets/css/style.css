@@ -321,6 +321,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 .section-title h2 {
   font-size: 32px;
@@ -354,13 +355,19 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .title h3{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 126px;
   color: #728394;
 }
 .about .content ul {
