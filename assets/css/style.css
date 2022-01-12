@@ -252,6 +252,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 section#hero {}
+@media (max-width: 600px) {
+  #hero {
+    width: 100vw;
+    height: 60vh;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background: url("../img/hero-bmid.webp") no-repeat;
+  }
+}
+section#hero {}
+@media (max-width: 400px) {
+  #hero {
+    width: 100vw;
+    height: 60vh;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background: url("../img/hero-mid.webp") no-repeat;
+  }
+}
+section#hero {}
 @media (max-width: 400px) {
   #hero {
     width: 100vw;
