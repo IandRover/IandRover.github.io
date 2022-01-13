@@ -4,7 +4,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+main {
+  margin: 20px;
+}
 
+p {
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -24,7 +31,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -244,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
 }
+
 section#hero {}
 @media (max-width: 600px) {
   #hero {
