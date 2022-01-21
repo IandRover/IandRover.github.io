@@ -123,9 +123,16 @@
             <div class="col-sm-3 col-md-3 col-md-offset-2">
               <div class="col-sm-12 col-md-12 text-middle">
                 <br>
-                <div class="about-img">
-                  <img src="assets/img/Aaron_600x600.webp" class="img-fluid" style="max-height:200px">
-                </div>
+                <picture>
+                   <source
+                      media="(min-width: 575px)"
+                      srcset="assets/img/Aaron_600x600.webp" class="img-fluid" style="max-height:200px">
+                   <!-- <source
+                      media="(min-width: 300px)"
+                      srcset="assets/img/hero-atari.png" class="img-fluid" style="max-height:600px"> -->
+                   <img src="assets/img/hero-atari.png" class="img-fluid" style="max-height:400px"
+                   alt="a cute kitten">
+                </picture>
               </div>
             </div>
 
