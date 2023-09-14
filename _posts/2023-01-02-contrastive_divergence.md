@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two Perspectives on Contrastive Divergence
+# title: Two Perspectives on Contrastive Divergence
 date: 2021-10-17 15:53:00-0400
 description: An exploration into the two perspectives of the Contrastive Divergence Algorithm.
 tags: Research
