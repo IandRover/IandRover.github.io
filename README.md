@@ -488,8 +488,13 @@ The co-author data format in `_data/coauthors.yml` is as follows,
   - firstname: ["Johann Sebastian", "J. S."]
     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+# "Chen":
+#   - firstname: ["Pin-Yu"]
+#     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+# "Pin-Yu":
+#   - firstname: ["Chen"]
+#     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 ```
 
 If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.
