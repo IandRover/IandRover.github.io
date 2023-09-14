@@ -1,37 +1,37 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Chia-Hsiang Kao",
+    // "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "ck696_at_cornell_edu",
+    "phone": "",
+    "url": "https://iandrover.github.io",
+    "summary": "A Taiwan medical doctor in pursiut of Computer science Ph.D.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      // "address": "2712 Broadway St",
+      // "postalCode": "CA 94115",
+      // "city": "San Francisco",
+      // "countryCode": "US",
+      // "region": "California"
     },
     "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
+      // {
+      //   "network": "Twitter",
+      //   "username": "AlbertEinstein",
+      //   "url": "https://twitter.com/AlbertEinstein"
+      // }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Computer & Information Science, Cornell University",
+      "position": "Teaching Assistant",
+      // "url": "https://example.com",
+      "startDate": "2023-08-21",
+      "endDate": "2024-01-12",
+      "summary": "Teaching assistant for Prof. Bart Selman.",
       "highlights": [
-        "Relativity"
+        "Machine Learning", "Deep Learning"
       ]
     }
   ],
