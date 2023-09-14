@@ -7,5 +7,4 @@ related_posts: false
 ---
 
 Successfully passed the Taiwan Medical Licensing Examination.
-
 I am now officially a licensed medical doctor.
