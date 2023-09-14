@@ -6,7 +6,7 @@
     "email": "ck696_at_cornell_edu",
     "phone": "",
     "url": "https://iandrover.github.io",
-    "summary": "A Taiwan medical doctor in pursiut of Computer science Ph.D.",
+    "summary": "A Taiwanese medical doctor pursuing a Ph.D. in Computer Science.",
     "location": {
       // "address": "2712 Broadway St",
       // "postalCode": "CA 94115",
@@ -29,41 +29,41 @@
       // "url": "https://example.com",
       "startDate": "2023-08-21",
       "endDate": "2024-01-12",
-      "summary": "Teaching assistant for Prof. Bart Selman.",
+      "summary": "Served as a teaching assistant for the 'Practicum in Artificial Intelligence' course, taught by Prof. Bart Selman.",
       "highlights": [
-        "Machine Learning", "Deep Learning"
+        "Deep Learning"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "National Yang-Ming Chiao-Tung University, Taipei, Taiwan",
+      "url": "https://en.nycu.edu.tw",
+      "area": "",
+      "studyType": "Doctor of Medicine",
+      "startDate": "2015-08-01",
+      "endDate": "2022-06-20",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        // "Theory of Relativity"
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
+  // "awards": [
+  //   {
+  //     "title": "Nobel Prize in Physics",
+  //     "date": "1921-11-01",
+  //     "awarder": "Royal Swedish Academy of Sciences",
+  //     "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+  //   }
+  // ],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "Mandarin",
       "fluency": "Native speaker"
     },
     {
