@@ -1,0 +1,218 @@
+# Publications Configuration
+# Run `python paper_gen.py` to regenerate the publications section in index.html
+
+# Tag color mapping (for reference):
+# - biology: green
+# - remote-sensing: blue
+# - medicine: pink
+# - vision-language: purple
+# - ai-agent: orange
+# - learning-algorithm: teal
+
+publications:
+  - id: dynamics2026
+    title: "Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos"
+    venue: "CVPR 2026"
+    venue_type: conference
+    year: 2026
+    selected: true
+    tags: [vision-language, ai-agent]
+    links:
+      paper: null
+      project: null
+      github: null
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Cong Phuoc Huynh"
+        url: null
+      - name: "Chien-Yi Wang"
+        url: https://chienyiwang.github.io
+      - name: "Noranart Vesdapunt"
+        url: https://noranart.com/?i=1
+      - name: "Stefan Stojanov"
+        url: https://sstojanov.github.io
+      - name: "Bharath Hariharan"
+        url: "https://www.cs.cornell.edu/~bharathh/"
+      - name: "Oleksandr Obiednikov"
+        url: https://www.amazon.science/author/oleksandr-obiednikov
+      - name: "Ning Zhou"
+        url: null
+    description: "We introduce a vision-language framework that uses language as a unified representation to infer rigid-body dynamics from videos, bridging perception and physics simulation."
+
+  - id: univearth2025
+    title: "Towards LLM Agents for Earth Observation"
+    venue: "ICML Terrabyte Workshop 2025"
+    venue_type: workshop
+    year: 2025
+    selected: true
+    tags: [remote-sensing, ai-agent, vision-language]
+    links:
+      paper: "https://arxiv.org/pdf/2504.12110"
+      project: "https://iandrover.github.io/UnivEarth/"
+      github: null
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Wenting Zhao"
+        url: https://wenting-zhao.github.io
+      - name: "Shreelekha Revankar"
+        url: https://shreelekha.revankar.net
+      - name: "Samuel Speas"
+        url: null
+      - name: "Snehal Bhagat"
+        url: null
+      - name: "Rajeev Datta"
+        url: https://rajeev-datta.github.io
+      - name: "Cheng Perng Phoo"
+        url: https://cpphoo.github.io
+      - name: "Utkarsh Mall"
+        url: https://utkarshmall.com
+      - name: "Carl Vondrick"
+        url: "https://www.cs.columbia.edu/~vondrick/"
+      - name: "Kavita Bala"
+        url: "https://www.cs.cornell.edu/~kb/"
+      - name: "Bharath Hariharan"
+        url: "https://www.cs.cornell.edu/~bharathh/"
+    description: "We ask and answer: Are AI systems ready for reliable Earth Observation?"
+
+  - id: ccl2024
+    title: "Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning"
+    venue: "NeurIPS 2024"
+    venue_type: conference
+    year: 2024
+    selected: true
+    tags: [learning-algorithm, biology]
+    links:
+      paper: "https://arxiv.org/abs/2409.19841"
+      project: null
+      github: "https://github.com/IandRover/CCL-NeurIPS24"
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Bharath Hariharan"
+        url: "https://www.cs.cornell.edu/~bharathh/"
+    description: "We design a non-backpropagation learning algorithm that mimics the counter-current exchange mechanisms observed in biological systems."
+
+  - id: allclear2024
+    title: "AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery"
+    venue: "NeurIPS 2024"
+    venue_type: conference
+    year: 2024
+    selected: true
+    tags: [remote-sensing]
+    links:
+      paper: "https://arxiv.org/abs/2410.23891"
+      project: "https://allclear.cs.cornell.edu"
+      github: "https://github.com/Zhou-Hangyu/allclear"
+    authors:
+      - name: "Hangyu Zhou"
+        url: https://zhou-hangyu.github.io
+        equal: true
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+        equal: true
+      - name: "Cheng Perng Phoo"
+        url: https://cpphoo.github.io
+      - name: "Utkarsh Mall"
+        url: https://utkarshmall.com
+      - name: "Bharath Hariharan"
+        url: "https://www.cs.cornell.edu/~bharathh/"
+      - name: "Kavita Bala"
+        url: "https://www.cs.cornell.edu/~kb/"
+    description: "We build the largest collection of satellite images with cloud occlusions."
+
+  - id: caduceus2024
+    title: "Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling"
+    venue: "ICML 2024"
+    venue_type: conference
+    year: 2024
+    selected: true
+    tags: [biology, learning-algorithm]
+    links:
+      paper: "https://arxiv.org/pdf/2403.03234.pdf"
+      project: "https://caduceus-dna.github.io"
+      github: "https://github.com/kuleshov-group/caduceus"
+    authors:
+      - name: "Yair Schiff"
+        url: https://yair-schiff.github.io
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Aaron Gokaslan"
+        url: https://skylion007.github.io
+      - name: "Tri Dao"
+        url: https://tridao.me
+      - name: "Albert Gu"
+        url: https://goombalab.github.io
+      - name: "Volodymyr Kuleshov"
+        url: "https://www.cs.cornell.edu/~kuleshov/"
+    description: "We design a DNA foundation model, specialized in long-context sequence modeling, combining the bi-directional equivariant intuition."
+
+  - id: fedbug2023
+    title: "FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning"
+    venue: "arXiv"
+    venue_type: preprint
+    year: 2023
+    selected: false
+    tags: [learning-algorithm]
+    links:
+      paper: "https://arxiv.org/abs/2307.10317"
+      project: null
+      github: "https://github.com/IandRover/FedBug"
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Yu-Chiang Frank Wang"
+        url: "http://vllab.ee.ntu.edu.tw/"
+    description: "We design a federated learning framework to mitigate the dataset shift by gradually unfreezing the model."
+
+  - id: maml2022
+    title: "MAML Is a Noisy Contrastive Learner in Classification"
+    venue: "ICLR 2022"
+    venue_type: conference
+    year: 2022
+    selected: true
+    tags: [learning-algorithm]
+    links:
+      paper: "https://arxiv.org/abs/2106.15367"
+      project: null
+      github: "https://github.com/iandrover/maml_noisy_contrasive_learner"
+      medium: "https://medium.com/@aaronkao/paper-maml-is-a-noisy-contrastive-learner-in-classification-de63001ad3e0"
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Wei-Chen Chiu"
+        url: "https://walonchiu.github.io/"
+      - name: "Pin-Yu Chen"
+        url: "https://sites.google.com/site/pinyuchenpage"
+    description: "We show that Model-agnostic meta-learning (MAML) acts as contrastive learning."
+
+  - id: miccai2021
+    title: "Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity"
+    venue: "MICCAI 2021"
+    venue_type: conference
+    year: 2021
+    selected: false
+    tags: [medicine, vision-language]
+    links:
+      paper: null
+      project: null
+      github: null
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Yong-Sheng Chen"
+        url: https://scholar.google.com/citations?user=kUCM_aEAAAAJ&hl=en
+      - name: "Li-Fen Chen"
+        url: "https://bml.ym.edu.tw/ibs/Members/LFChen-e.html"
+      - name: "Wei-Chen Chiu"
+        url: "https://walonchiu.github.io/"
+    description: "We analyze medical image translation through the lens of representational similarity."
