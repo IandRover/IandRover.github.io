@@ -26,7 +26,7 @@ publications:
         url: null
         is_me: true
       - name: "Cong Phuoc Huynh"
-        url: null
+        url: https://scholar.google.com/citations?user=KtQBW7oAAAAJ
       - name: "Chien-Yi Wang"
         url: https://chienyiwang.github.io
       - name: "Noranart Vesdapunt"
@@ -38,7 +38,7 @@ publications:
       - name: "Oleksandr Obiednikov"
         url: https://www.amazon.science/author/oleksandr-obiednikov
       - name: "Ning Zhou"
-        url: null
+        url: https://scholar.google.com/citations?user=tUd1UL4AAAAJ
     description: "We introduce a vision-language framework that uses language as a unified representation to infer rigid-body dynamics from videos, bridging perception and physics simulation."
 
   - id: univearth2025
@@ -47,7 +47,7 @@ publications:
     venue_type: workshop
     year: 2025
     selected: true
-    tags: [remote-sensing, ai-agent, vision-language]
+    tags: [remote-sensing, ai-agent]
     links:
       paper: "https://arxiv.org/pdf/2504.12110"
       project: "https://iandrover.github.io/UnivEarth/"
@@ -61,9 +61,9 @@ publications:
       - name: "Shreelekha Revankar"
         url: https://shreelekha.revankar.net
       - name: "Samuel Speas"
-        url: null
+        url: https://cam.cornell.edu/people/samuel-speas/
       - name: "Snehal Bhagat"
-        url: null
+        url: https://scholar.google.com/citations?user=Cq-eyMMAAAAJ
       - name: "Rajeev Datta"
         url: https://rajeev-datta.github.io
       - name: "Cheng Perng Phoo"
@@ -210,7 +210,7 @@ publications:
         url: null
         is_me: true
       - name: "Yong-Sheng Chen"
-        url: https://scholar.google.com/citations?user=kUCM_aEAAAAJ&hl=en
+        url: https://scholar.google.com/citations?user=kUCM_aEAAAAJ
       - name: "Li-Fen Chen"
         url: "https://bml.ym.edu.tw/ibs/Members/LFChen-e.html"
       - name: "Wei-Chen Chiu"

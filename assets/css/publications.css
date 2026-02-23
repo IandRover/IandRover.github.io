@@ -86,6 +86,57 @@
   width: fit-content;
 }
 
+/* COLOR SAMPLER - 8 different venue colors for you to choose from */
+
+/* Color 1: Coral Red */
+.venue-color-1 {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Color 2: Burnt Orange */
+.venue-color-2 {
+  background: #d35400;
+  color: #fff;
+}
+
+/* Color 3: Rust */
+.venue-color-3 {
+  background: #a04000;
+  color: #fff;
+}
+
+/* Color 4: Tomato */
+.venue-color-4 {
+  background: #ff6347;
+  color: #fff;
+}
+
+/* Color 5: Dark Orange */
+.venue-color-5 {
+  background: #ff8c00;
+  color: #fff;
+}
+
+/* Color 6: Crimson */
+.venue-color-6 {
+  background: #dc143c;
+  color: #fff;
+}
+
+/* Color 7: Indian Red */
+.venue-color-7 {
+  background: #cd5c5c;
+  color: #fff;
+}
+
+/* Color 8: Terracotta */
+.venue-color-8 {
+  background: #c0392b;
+  color: #fff;
+}
+
+/* Default styles (will be removed after you pick) */
 .venue-conference {
   background: #1a1a2e;
   color: #fff;
