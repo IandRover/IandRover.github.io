@@ -16,7 +16,7 @@ publications:
     venue_type: conference
     year: 2026
     selected: true
-    tags: [vision-language, ai-agent]
+    tags: [vision-language]
     links:
       paper: null
       project: null
@@ -84,7 +84,7 @@ publications:
     venue_type: conference
     year: 2024
     selected: true
-    tags: [learning-algorithm, biology]
+    tags: [learning-algorithm]
     links:
       paper: "https://arxiv.org/abs/2409.19841"
       project: null
