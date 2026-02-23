@@ -11,6 +11,7 @@
 
 publications:
   - id: dynamics2026
+    emoji: "🏀"
     title: "Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos"
     venue: "CVPR 2026"
     venue_type: conference
@@ -42,8 +43,9 @@ publications:
     description: "We introduce a vision-language framework that uses language as a unified representation to infer rigid-body dynamics from videos, bridging perception and physics simulation."
 
   - id: univearth2025
+    emoji: "🌍"
     title: "Towards LLM Agents for Earth Observation"
-    venue: "ICML Terrabyte Workshop 2025"
+    venue: "ICML Terrabytes Workshop 2025"
     venue_type: workshop
     year: 2025
     selected: true
@@ -79,6 +81,7 @@ publications:
     description: "We ask and answer: Are AI systems ready for reliable Earth Observation?"
 
   - id: ccl2024
+    emoji: "🐟"
     title: "Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning"
     venue: "NeurIPS 2024"
     venue_type: conference
@@ -98,6 +101,7 @@ publications:
     description: "We design a non-backpropagation learning algorithm that mimics the counter-current exchange mechanisms observed in biological systems."
 
   - id: allclear2024
+    emoji: "⛅"
     title: "AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery"
     venue: "NeurIPS 2024"
     venue_type: conference
@@ -127,6 +131,7 @@ publications:
     description: "We build the largest collection of satellite images with cloud occlusions."
 
   - id: caduceus2024
+    emoji: "⚕️"
     title: "Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling"
     venue: "ICML 2024"
     venue_type: conference
@@ -154,6 +159,7 @@ publications:
     description: "We design a DNA foundation model, specialized in long-context sequence modeling, combining the bi-directional equivariant intuition."
 
   - id: fedbug2023
+    emoji: "🐞"
     title: "FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning"
     venue: "arXiv"
     venue_type: preprint
@@ -173,6 +179,7 @@ publications:
     description: "We design a federated learning framework to mitigate the dataset shift by gradually unfreezing the model."
 
   - id: maml2022
+    emoji: "🦣"
     title: "MAML Is a Noisy Contrastive Learner in Classification"
     venue: "ICLR 2022"
     venue_type: conference
@@ -195,6 +202,7 @@ publications:
     description: "We show that Model-agnostic meta-learning (MAML) acts as contrastive learning."
 
   - id: miccai2021
+    emoji: "🧠"
     title: "Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity"
     venue: "MICCAI 2021"
     venue_type: conference

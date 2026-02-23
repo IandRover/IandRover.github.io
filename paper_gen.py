@@ -84,9 +84,13 @@ def generate_publication_card(pub: dict) -> str:
     authors_html = generate_author_html(pub.get("authors", []))
     links_html = generate_links_html(pub.get("links", {}))
 
+    # Get emoji if available
+    emoji = pub.get("emoji", "")
+    emoji_html = f'<span class="pub-emoji">{emoji}</span> ' if emoji else ""
+
     html = f"""
     <div class="pub-item">
-      <div class="pub-title">{pub["title"]}</div>
+      <div class="pub-title">{emoji_html}{pub["title"]}</div>
       <div class="pub-authors">{authors_html}</div>
       <div class="pub-venue">{pub["venue"]}</div>
       <div class="pub-links">{links_html}</div>

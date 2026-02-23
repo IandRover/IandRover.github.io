@@ -2,6 +2,82 @@
    Publications Section Styles - Minimal
    ============================================ */
 
+/* Container */
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ============================================
+   Introduction Section
+   ============================================ */
+
+.intro-section {
+  margin-bottom: 2rem;
+}
+
+.intro-name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.intro-photo {
+  flex: 0 0 200px;
+}
+
+.intro-photo img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.intro-links {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.intro-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.intro-links a:hover {
+  text-decoration: underline;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.intro-text p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.intro-text a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.intro-text a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Section Titles
+   ============================================ */
+
 /* Section Title */
 .section-title {
   font-size: 1.5rem;
@@ -68,6 +144,11 @@
   margin-bottom: 0.3rem;
 }
 
+/* Publication Emoji */
+.pub-emoji {
+  margin-right: 0.1rem;
+}
+
 /* Authors */
 .pub-authors {
   font-size: 0.95rem;
@@ -122,32 +203,53 @@
 }
 
 /* ============================================
-   Awards / Services Section Cards
+   Awards / Services / Interests Sections
    ============================================ */
 
-.section-card {
-  padding: 1rem 0;
+.simple-list {
+  margin-bottom: 1.5rem;
 }
 
-.second-item {
+.simple-item {
   display: flex;
   gap: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.second-item:last-child {
-  border-bottom: none;
+.simple-year {
+  min-width: 50px;
+  color: #666;
+  font-style: italic;
 }
 
-.item-year {
-  font-weight: 600;
+.simple-label {
   min-width: 120px;
+  color: #666;
+  font-style: italic;
+}
+
+.simple-text {
   color: #333;
 }
 
-.iten-description {
-  color: #555;
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.footer a {
+  color: #999;
+}
+
+.footer a:hover {
+  color: #666;
 }
 
 /* ============================================
@@ -155,6 +257,20 @@
    ============================================ */
 
 @media (max-width: 600px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-photo {
+    flex: 0 0 auto;
+    width: 150px;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
   .pub-tabs {
     flex-direction: column;
   }
@@ -164,12 +280,13 @@
     text-align: center;
   }
 
-  .second-item {
+  .simple-item {
     flex-direction: column;
     gap: 0.25rem;
   }
 
-  .item-year {
+  .simple-year,
+  .simple-label {
     min-width: auto;
   }
 }
