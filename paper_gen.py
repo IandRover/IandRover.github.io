@@ -6,26 +6,9 @@ Reads publications.yaml and generates the publications section for index.html.
 Usage: python paper_gen.py
 """
 
-import yaml
 from pathlib import Path
 
-# Tag to color mapping (CSS classes)
-TAG_COLORS = {
-    "biology": {"bg": "#d4edda", "text": "#155724", "label": "Biology"},
-    "remote-sensing": {"bg": "#cce5ff", "text": "#004085", "label": "Remote Sensing"},
-    "medicine": {"bg": "#f8d7da", "text": "#721c24", "label": "Medicine"},
-    "vision-language": {"bg": "#e2d9f3", "text": "#4a235a", "label": "Vision-Language"},
-    "ai-agent": {"bg": "#ffe5d0", "text": "#8a4500", "label": "AI Agent"},
-    "learning-algorithm": {"bg": "#d1f2eb", "text": "#0e6251", "label": "Learning Algorithm"},
-}
-
-# Venue type styling
-VENUE_STYLES = {
-    "conference": "venue-conference",
-    "workshop": "venue-workshop",
-    "preprint": "venue-preprint",
-    "journal": "venue-journal",
-}
+import yaml
 
 
 def load_publications(yaml_path: str) -> list:
@@ -38,7 +21,7 @@ def load_publications(yaml_path: str) -> list:
 def generate_author_html(authors: list) -> str:
     """Generate HTML for author list."""
     author_parts = []
-    for i, author in enumerate(authors):
+    for author in authors:
         name = author["name"]
         url = author.get("url")
         is_me = author.get("is_me", False)
@@ -50,33 +33,25 @@ def generate_author_html(authors: list) -> str:
 
         # Format name with link if URL exists
         if url:
-            name_html = f'<a href="{url}" target="_blank">{name}</a>'
+            if is_me:
+                # Self: blue link
+                name_html = (
+                    f'<a href="{url}" target="_blank" class="author-self">{name}</a>'
+                )
+            else:
+                # Others: black link
+                name_html = (
+                    f'<a href="{url}" target="_blank" class="author-link">{name}</a>'
+                )
         else:
-            name_html = name
-
-        # Bold if it's me
-        if is_me:
-            name_html = f"<b>{name_html}</b>"
+            if is_me:
+                name_html = f'<span class="author-self">{name}</span>'
+            else:
+                name_html = name
 
         author_parts.append(name_html)
 
     return ", ".join(author_parts)
-
-
-def generate_tags_html(tags: list) -> str:
-    """Generate HTML for category tags."""
-    if not tags:
-        return ""
-
-    tag_html_parts = []
-    for tag in tags:
-        if tag in TAG_COLORS:
-            color = TAG_COLORS[tag]
-            tag_html_parts.append(
-                f'<span class="pub-tag" style="background-color: {color["bg"]}; color: {color["text"]};">'
-                f'{color["label"]}</span>'
-            )
-    return " ".join(tag_html_parts)
 
 
 def generate_links_html(links: dict) -> str:
@@ -87,59 +62,35 @@ def generate_links_html(links: dict) -> str:
     link_parts = []
 
     if links.get("paper"):
-        link_parts.append(
-            f'<a href="{links["paper"]}" target="_blank" class="pub-link">'
-            f'<span class="pub-link-icon">📄</span>Paper</a>'
-        )
+        link_parts.append(f'<a href="{links["paper"]}" target="_blank">paper</a>')
 
     if links.get("project"):
-        link_parts.append(
-            f'<a href="{links["project"]}" target="_blank" class="pub-link">'
-            f'<span class="pub-link-icon">🌐</span>Project</a>'
-        )
+        link_parts.append(f'<a href="{links["project"]}" target="_blank">project</a>')
 
     if links.get("github"):
-        link_parts.append(
-            f'<a href="{links["github"]}" target="_blank" class="pub-link">'
-            f'<span class="pub-link-icon">💻</span>GitHub</a>'
-        )
+        link_parts.append(f'<a href="{links["github"]}" target="_blank">code</a>')
 
     if links.get("video"):
-        link_parts.append(
-            f'<a href="{links["video"]}" target="_blank" class="pub-link">'
-            f'<span class="pub-link-icon">🎬</span>Video</a>'
-        )
+        link_parts.append(f'<a href="{links["video"]}" target="_blank">video</a>')
 
     if links.get("medium"):
-        link_parts.append(
-            f'<a href="{links["medium"]}" target="_blank" class="pub-link">'
-            f'<span class="pub-link-icon">📝</span>Blog</a>'
-        )
+        link_parts.append(f'<a href="{links["medium"]}" target="_blank">blog</a>')
 
-    return " ".join(link_parts)
+    return " | ".join(link_parts)
 
 
 def generate_publication_card(pub: dict) -> str:
     """Generate HTML for a single publication card."""
-    venue_class = VENUE_STYLES.get(pub.get("venue_type", "conference"), "venue-conference")
-
     authors_html = generate_author_html(pub.get("authors", []))
-    tags_html = generate_tags_html(pub.get("tags", []))
     links_html = generate_links_html(pub.get("links", {}))
 
-    html = f'''
-    <div class="pub-card" data-selected="{str(pub.get('selected', False)).lower()}">
-      <div class="pub-content">
-        <div class="pub-title">{pub["title"]}</div>
-        <div class="pub-venue {venue_class}">{pub["venue"]}</div>
-        <div class="pub-authors">{authors_html}</div>
-        <div class="pub-description">{pub.get("description", "")}</div>
-        <div class="pub-footer">
-          <div class="pub-tags">{tags_html}</div>
-          <div class="pub-links">{links_html}</div>
-        </div>
-      </div>
-    </div>'''
+    html = f"""
+    <div class="pub-item">
+      <div class="pub-title">{pub["title"]}</div>
+      <div class="pub-authors">{authors_html}</div>
+      <div class="pub-venue">{pub["venue"]}</div>
+      <div class="pub-links">{links_html}</div>
+    </div>"""
 
     return html
 
@@ -149,13 +100,12 @@ def generate_publications_html(publications: list) -> str:
 
     # Separate selected and other publications
     selected = [p for p in publications if p.get("selected", False)]
-    others = [p for p in publications if not p.get("selected", False)]
 
     # Generate cards
     selected_cards = "\n".join(generate_publication_card(p) for p in selected)
     all_cards = "\n".join(generate_publication_card(p) for p in publications)
 
-    html = f'''<!-- PUBLICATIONS_START -->
+    html = f"""<!-- PUBLICATIONS_START -->
 <!-- Auto-generated by paper_gen.py - Do not edit manually -->
 
 <div class="section-title">Publications</div>
@@ -198,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {{
 }});
 </script>
 
-<!-- PUBLICATIONS_END -->'''
+<!-- PUBLICATIONS_END -->"""
 
     return html
 
