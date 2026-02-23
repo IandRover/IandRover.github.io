@@ -89,8 +89,8 @@ def generate_publication_card(pub: dict) -> str:
     html = f"""
     <div class="pub-item">
       <div class="pub-title">{emoji_html}{pub["title"]}</div>
-      <div class="pub-authors">{authors_html}</div>
       <div class="pub-venue">{pub["venue"]}</div>
+      <div class="pub-authors">{authors_html}</div>
       <div class="pub-links">{links_html}</div>
     </div>"""
 
