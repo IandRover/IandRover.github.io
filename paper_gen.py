@@ -34,10 +34,8 @@ def generate_author_html(authors: list) -> str:
         # Format name with link if URL exists
         if url:
             if is_me:
-                # Self: blue link
-                name_html = (
-                    f'<a href="{url}" target="_blank" class="author-self">{name}</a>'
-                )
+                # Self: bold blue link
+                name_html = f'<a href="{url}" target="_blank" class="author-self"><b>{name}</b></a>'
             else:
                 # Others: black link
                 name_html = (
@@ -45,7 +43,7 @@ def generate_author_html(authors: list) -> str:
                 )
         else:
             if is_me:
-                name_html = f'<span class="author-self">{name}</span>'
+                name_html = f'<span class="author-self"><b>{name}</b></span>'
             else:
                 name_html = name
 
