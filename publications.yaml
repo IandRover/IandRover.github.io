@@ -48,7 +48,7 @@ publications:
     venue: "ICML Terrabytes Workshop 2025"
     venue_type: workshop
     year: 2025
-    selected: true
+    selected: false
     tags: [remote-sensing, ai-agent]
     links:
       paper: "https://arxiv.org/pdf/2504.12110"
@@ -136,7 +136,7 @@ publications:
     venue: "ICML 2024"
     venue_type: conference
     year: 2024
-    selected: true
+    selected: false
     tags: [biology, learning-algorithm]
     links:
       paper: "https://arxiv.org/pdf/2403.03234.pdf"

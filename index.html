@@ -183,11 +183,11 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('active');
 
       if (this.dataset.tab === 'selected') {
-        selectedList.style.display = 'block';
+        selectedList.style.display = 'flex';
         allList.style.display = 'none';
       } else {
         selectedList.style.display = 'none';
-        allList.style.display = 'block';
+        allList.style.display = 'flex';
       }
     });
   });
