@@ -48,7 +48,7 @@ publications:
     venue: "ICML Terrabytes Workshop 2025"
     venue_type: workshop
     year: 2025
-    selected: false
+    selected: true
     tags: [remote-sensing, ai-agent]
     links:
       paper: "https://arxiv.org/pdf/2504.12110"
@@ -157,6 +157,42 @@ publications:
       - name: "Volodymyr Kuleshov"
         url: "https://www.cs.cornell.edu/~kuleshov/"
     description: "We design a DNA foundation model, specialized in long-context sequence modeling, combining the bi-directional equivariant intuition."
+
+  - id: genomicslrb2024
+    emoji: "🧬"
+    title: "Advancing DNA Language Models: The Genomics Long-Range Benchmark"
+    venue: "ICLR 2024 Workshop on Machine Learning for Genomics Explorations"
+    venue_type: workshop
+    year: 2024
+    selected: false
+    tags: [biology, learning-algorithm]
+    links:
+      paper: null
+      project: null
+      github: null
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+        equal: true
+      - name: "Evan Trop"
+        url: null
+        equal: true
+      - name: "McKinley Polen"
+        url: null
+        equal: true
+      - name: "Yair Schiff"
+        url: https://yair-schiff.github.io
+        equal: true
+      - name: "Bernardo P. de Almeida"
+        url: null
+      - name: "Aaron Gokaslan"
+        url: https://skylion007.github.io
+      - name: "Thomas Pierrot"
+        url: null
+      - name: "Volodymyr Kuleshov"
+        url: "https://www.cs.cornell.edu/~kuleshov/"
+    description: "We introduce a long-range benchmark for evaluating DNA language models on genomics tasks."
 
   - id: fedbug2023
     emoji: "🐞"
