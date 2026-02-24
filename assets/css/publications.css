@@ -1,12 +1,12 @@
 /* ============================================
-   Publications Section Styles - Minimal
+   Site Styles - Breathing Room
    ============================================ */
 
 /* Container */
 .container {
   max-width: 840px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem 1.5rem;
 }
 
 /* ============================================
@@ -14,7 +14,7 @@
    ============================================ */
 
 .intro-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .intro-name {
@@ -65,8 +65,8 @@
 
 .intro-text p {
   margin: 0 0 1rem 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 .intro-text a {
@@ -82,28 +82,31 @@
    Section Titles
    ============================================ */
 
-/* Section Title */
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #333;
+  margin: 2.5rem 0 1.25rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 1.5px solid #ccc;
+  color: #222;
 }
 
-/* Tab Navigation */
+/* ============================================
+   Publication Tabs
+   ============================================ */
+
 .pub-tabs {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .pub-tab {
-  padding: 0.5rem 1.25rem;
+  padding: 0.4rem 1.1rem;
   border: 1px solid #ddd;
   background: #f8f9fa;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
@@ -118,28 +121,30 @@
   border-color: #333;
 }
 
-/* Publication Container */
+/* ============================================
+   Publication List
+   ============================================ */
+
 .pub-container {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 /* Publication Item */
 .pub-item {
-  padding: 0.35rem 0;
-  border-bottom: none;
+  padding: 0.4rem 0;
 }
 
 /* Publication Title */
 .pub-title {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #000;
+  color: #111;
   line-height: 1.5;
 }
 
@@ -148,19 +153,18 @@
   margin-right: 0.15rem;
 }
 
-/* Venue - inline, same size, no italic */
+/* Venue */
 .pub-venue {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #666;
   font-style: normal;
-  display: inline;
 }
 
 /* Authors */
 .pub-authors {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .pub-authors a.author-link {
@@ -186,8 +190,7 @@
 
 /* Links */
 .pub-links {
-  font-size: 0.85rem;
-  display: inline;
+  font-size: 0.95rem;
 }
 
 .pub-links a {
@@ -197,13 +200,6 @@
 
 .pub-links a:hover {
   text-decoration: underline;
-}
-
-/* Second line: authors + links together */
-.pub-second-line {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #555;
 }
 
 /* ============================================
@@ -217,21 +213,19 @@
 .simple-item {
   display: flex;
   gap: 1rem;
-  padding: 0.4rem 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  padding: 0.45rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .simple-year {
   min-width: 50px;
   color: #666;
-  font-style: italic;
 }
 
 .simple-label {
   min-width: 120px;
   color: #666;
-  font-style: italic;
 }
 
 .simple-text {
@@ -240,11 +234,11 @@
 
 /* Footer */
 .footer {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding-top: 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #999;
 }
 
@@ -262,7 +256,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 16px;
+    padding: 1.25rem 1rem;
   }
 
   .intro-content {
