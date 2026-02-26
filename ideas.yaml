@@ -24,7 +24,7 @@
 ideas:
   - date: 2026-02-26
     title: "Analogy of mean-flow to GAN?"
-    note: "The adversarial now predict the time step."
+    note: "The adversarial now predicts the time step."
     status: exploring
     tags: [diffusion]
 
