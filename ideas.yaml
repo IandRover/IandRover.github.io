@@ -22,17 +22,30 @@
 # - published: became a paper
 
 ideas:
+  - date: 2026-02-26
+    title: "Analogy of mean-flow to GAN?"
+    note: "The adversarial now predict the time step."
+    status: exploring
+    tags: [diffusion]
+
   - date: 2026-02-25
     title: "Understanding Conditioning in Diffusion Process"
-    note: "I remember there is similar stuff in NeuralODE where they add auxiliary space/dimension to flow the info."
+    note: "How the text influence the flow? Into another dimension?"
     status: exploring
     tags: [diffusion]
     related_works:
       - title: "Augmented Neural ODEs"
         url: https://arxiv.org/abs/1904.01681
         relation: "inspired by"
-        note: "Is text/caption conditioning a shortcut or a magic passage or 蟲洞"
-        note: "Is residual network itself an Augmented Neural ODEs? Is it why it must have one hiddent layer in residual module? Similarly for LoRA?"
+        notes:
+          - "Is text/caption conditioning a shortcut or a magic passage or 蟲洞"
+          - "Is residual network itself an Augmented Neural ODEs? Is it why it must have one hiddent layer in residual module? Similarly for LoRA?"
+
+  - date: 2026-02-25
+    title: "Why low-res to high-res training works?"
+    note: "Image/Video diffusion models work by first training on low-res and then high-res, but why?"
+    status: exploring
+    tags: [diffusion]
 
   - date: 2026-02-24
     title: "Local Training with Forward Pass Only"

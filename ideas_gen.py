@@ -84,9 +84,9 @@ def generate_related_works_html(related_works: list) -> str:
         else:
             link = title
 
-        # Format notes with numbered markers [1], [2], etc.
+        # Format notes with numbered markers [1], [2], etc. - each on new line
         if len(notes) > 1:
-            notes_html = " ".join(
+            notes_html = "<br>" + "<br>".join(
                 f'<span class="note-marker">[{i+1}]</span> {note}'
                 for i, note in enumerate(notes)
             )
@@ -287,10 +287,10 @@ def generate_ideas_html(ideas: list) -> str:
             color: #666;
         }}
         .note-marker {{
-            color: #2563eb;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 2px;
+            color: #888;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 4px;
         }}
         .idea.hidden {{
             display: none;
