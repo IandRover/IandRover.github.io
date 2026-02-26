@@ -47,7 +47,7 @@ ideas:
       - "Image/Video diffusion models work by first training on low-res and then high-res, but why?"
       - "Can we give a operational definition for physical plausibility? Or it is just an umbrella term for 'it does not work?'"
       - "Is curriculum learning a go-to method to mitigate physical implausibility?"
-      - "A memorization POV? Does low-res to high-res make it easier to memorize the data distribution? Or does it make it easier to learn the underlying structure of the data distribution, which then can be refined with high-res training?"
+      - "A memorization POV? Does low-to-high make it easier to memorize the data distribution?"
     status: exploring
     tags: [diffusion]
 
