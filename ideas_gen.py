@@ -135,13 +135,24 @@ def generate_idea_card(idea: dict) -> str:
     note = idea.get("note", "")
     idea_id = slugify(title)
 
+    if isinstance(note, list):
+        if len(note) == 1:
+            note_html = note[0]
+        else:
+            note_html = "<br>".join(
+                f'<span class="note-marker">{chr(97 + i)}.</span> {item}'
+                for i, item in enumerate(note)
+            )
+    else:
+        note_html = note
+
     html = f"""    <div class="idea" id="{idea_id}">
         <div class="idea-header">
             <span class="date">{date}</span>
             {status_html}
         </div>
         <div class="title">{title}</div>
-        <div class="note">{note}</div>
+        <div class="note">{note_html}</div>
         <div class="idea-meta">
             <div class="idea-tags">{tags_html}</div>
             {related_html}
