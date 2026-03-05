@@ -20,7 +20,7 @@ publications:
     tags: [vision-language]
     links:
       paper: null
-      project: null
+      project: "https://iandrover.github.io/2026_dynamics/"
       github: null
     authors:
       - name: "Chia-Hsiang Kao"
@@ -52,7 +52,7 @@ publications:
     tags: [remote-sensing, ai-agent]
     links:
       paper: "https://arxiv.org/pdf/2504.12110"
-      project: "https://iandrover.github.io/UnivEarth/"
+      project: "https://iandrover.github.io/2025_univearth/"
       github: null
     authors:
       - name: "Chia-Hsiang Kao"
