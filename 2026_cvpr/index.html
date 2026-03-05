@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>∆YNAMICS: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</title>
+  <meta name="description" content="Project page for Learning Simulatable Rigid Dynamics World from Videos" />
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">∆YNAMICS</div>
+      <div class="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#editing">Editing</a>
+        <a href="#bibtex">BibTeX</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="venue">CVPR 2026</div>
+    <h1 class="title">∆YNAMICS: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</h1>
+    <div class="authors">
+      <a href="#">Chia-Hsiang Kao</a><sup>1</sup>,
+      <a href="https://scholar.google.com/citations?user=KtQBW7oAAAAJ" target="_blank">Cong Phuoc Huynh</a><sup>2</sup>,
+      <a href="https://chienyiwang.github.io" target="_blank">Chien-Yi Wang</a><sup>2</sup>,
+      <a href="https://noranart.com/?i=1" target="_blank">Noranart Vesdapunt</a><sup>2</sup>,
+      <a href="https://sstojanov.github.io" target="_blank">Stefan Stojanov</a><sup>2</sup>,
+      <br>
+      <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank">Bharath Hariharan</a><sup>1</sup>,
+      <a href="https://www.amazon.science/author/oleksandr-obiednikov" target="_blank">Oleksandr Obiednikov</a><sup>2</sup>,
+      <a href="https://scholar.google.com/citations?user=tUd1UL4AAAAJ" target="_blank">Ning Zhou</a><sup>2</sup>
+    </div>
+    <div class="affiliations">
+      <sup>1</sup>Cornell University &nbsp;&nbsp; <sup>2</sup>Amazon Ring
+    </div>
+    <!-- <div class="btn-row">
+      <a class="btn" href="#"><i class="fas fa-file-pdf"></i> Paper</a>
+      <a class="btn" href="#"><i class="ai ai-arxiv"></i> arXiv</a>
+      <a class="btn" href="#"><i class="fab fa-github"></i> Code</a>
+      <a class="btn" href="#"><i class="fab fa-youtube"></i> Video</a>
+      <a class="btn" href="#bibtex"><i class="fas fa-quote-right"></i> BibTeX</a>
+    </div> -->
+  </header>
+
+  <!-- Abstract -->
+  <section id="abstract">
+    <h2 class="section-title">Abstract</h2>
+    <div class="abstract-text">
+      <p>
+        Inferring rigid-body physical states and properties from monocular videos is a fundamental step toward physics-based perception and simulation.
+        Existing approaches assume specific underlying physical systems, object types, and camera poses, which are unable to generalize to complex real-world settings.
+        We introduce <strong>∆YNAMICS</strong>, a vision-language framework that uses language as a unified representation of rigid-body dynamics. Instead of directly predicting parameters, ∆YNAMICS generates scene configurations in a structured text format for physics simulation.
+        We enhance the model's generalization by integrating natural language motion reasoning and leveraging optical flow as a semantic-agnostic input. On the CLEVRER dataset, ∆YNAMICS achieves a segmentation IoU of <strong>0.30</strong>, a <strong>7×</strong> improvement over leading VLMs (InternVL3-8B, Qwen2.5-VL-7B and Claude-4-Sonnet). Further, test-time sampling and evolutionary search further boost performance by <strong>27%</strong> and <strong>120%</strong> in segmentation IoU, respectively.
+        Finally, we demonstrate strong transfer to a new dataset of <strong>235</strong> real-world rigid-body videos, highlighting the potential of language-driven physics inference for bridging perception and simulation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Method: Pipeline -->
+  <section id="method">
+    <h2 class="section-title">Method</h2>
+
+    <div class="figure-container">
+      <img src="./assets/images/pipeline-v4.png" alt="Pipeline Overview">
+      <p class="figure-caption">
+        <strong>Figure 2: Pipeline Overview.</strong> Our method takes video frames as input and produces a structured YAML configuration describing the physical properties and dynamics of objects in the scene.
+      </p>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results">
+    <h2 class="section-title">Results</h2>
+    <p style="text-align: center; color: var(--muted); margin-bottom: 8px;">
+      Click on any video to view in full screen. Videos play at 0.75× speed for better visualization.
+    </p>
+  </section>
+
+  <div class="sticky-tabs">
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="single">Single Object</button>
+      <button class="tab" data-tab="two">Two Objects</button>
+      <button class="tab" data-tab="multi">Multiple Objects</button>
+      <button class="tab" data-tab="irregular">Irregular Shapes</button>
+      <button class="tab" data-tab="failures">Failure Cases</button>
+    </div>
+  </div>
+
+  <section>
+    <div id="gallery" class="stack"></div>
+  </section>
+
+  <!-- Physics Editing -->
+  <section id="editing">
+    <h2 class="section-title">Physics-Based Video Editing</h2>
+    <p style="text-align: center; color: var(--muted); margin-bottom: 24px;">
+      Our language-based representation enables intuitive physics editing by modifying the YAML configuration.
+    </p>
+
+    <div class="figure-container">
+      <img src="./assets/images/editting_pipeline.png" alt="Editing Pipeline">
+      <p class="figure-caption">
+        <strong>Figure 11: Physics Editing Pipeline.</strong> Users can edit physical properties (mass, friction, restitution) or initial conditions (velocity, position) in the YAML configuration, and our system re-simulates the scene to generate physically plausible edited videos.
+      </p>
+    </div>
+
+    <div class="figure-container">
+      <img src="./assets/images/editting_box_v2.png" alt="Editing Examples">
+      <p class="figure-caption">
+        <strong>Figure 12: Editing Examples.</strong> By modifying parameters in our structured representation, users can create counterfactual simulations such as changing object trajectories, collision outcomes, or physical material properties.
+      </p>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section id="bibtex">
+    <h2 class="section-title">BibTeX</h2>
+    <div class="bibtex-container">
+      <pre><code>@inproceedings{kao2026dynamics,
+  author    = {Kao, Chia-Hsiang and Huynh, Cong Phuoc and Wang, Chien-Yi and
+               Vesdapunt, Noranart and Stojanov, Stefan and Hariharan, Bharath and
+               Obiednikov, Oleksandr and Zhou, Ning},
+  title     = {∆YNAMICS: Language-Based Representation for Inferring
+               Rigid-Body Dynamics From Videos},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer
+               Vision and Pattern Recognition (CVPR)},
+  year      = {2026},
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox-backdrop" id="lb">
+    <div class="lightbox">
+      <video id="lbVid" muted playsinline preload="metadata"></video>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="topBtn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner">
+      <p><strong>∆YNAMICS</strong> — Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</p>
+      <p>Website template adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a> and <a href="https://edit-by-track.github.io" target="_blank">Edit-by-Track</a>.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const DATA = {
+      single: ["IMG_2271_fps70","IMG_7271_fps50","IMG_7272_fps50","IMG_7274_fps50","IMG_2218_fps30","IMG_2219_fps60","IMG_2220_fps30","IMG_2322_fps30","IMG_2337_fps30","IMG_2361_fps30","IMG_2364_fps30","IMG_7269_fps25"],
+      two: ["IMG_1955_fps70","IMG_1967_fps30","IMG_2173_fps30","IMG_2175_fps30","IMG_2187_fps60","IMG_2188_fps60","IMG_2203_fps60","IMG_2204_fps60","IMG_2213_fps60","IMG_2224_fps30","IMG_2224v2_fps30","IMG_2230_fps60","IMG_2231_fps30","IMG_2232_fps60"],
+      multi: ["IMG_2190_fps60","IMG_7275v2_fps50"],
+      irregular: ["IMG_7266_fps25","IMG_7267_fps50","IMG_7277_fps50","IMG_7264_fps25"],
+      failures: ["IMG_2216_fps60","IMG_2266v2_fps30","IMG_2268v2_fps30","IMG_1962_fps30","IMG_2272v2_fps30"],
+    };
+
+    const gallery = document.getElementById('gallery');
+    const tabs = [...document.querySelectorAll('.tab')];
+    const topBtn = document.getElementById('topBtn');
+    const lb = document.getElementById('lb');
+    const lbVid = document.getElementById('lbVid');
+
+    const getCam = v => (/IMG_[12]/.test(v) ? "iPhone 13" : "Canon EOS R5");
+    const getFps = v => v.split("_fps")[1].replace(/[^0-9]/g,'');
+
+    function videoCard(videoId) {
+      const cam = getCam(videoId);
+      const fps = getFps(videoId);
+
+      const wrap = document.createElement('div');
+      wrap.className = 'hero-video loading';
+
+      const vid = document.createElement('video');
+      vid.setAttribute('playsinline', '');
+      vid.setAttribute('muted', '');
+      vid.muted = true;
+      vid.setAttribute('preload', 'none');
+      vid.dataset.src = `./assets/videos/${videoId}/concat.mp4`;
+
+      vid.addEventListener('loadeddata', () => {
+        wrap.classList.remove('loading');
+      });
+
+      wrap.appendChild(vid);
+
+      const cap = document.createElement('div');
+      cap.className = 'caption';
+      cap.textContent = `${cam}, ${fps} FPS`;
+
+      wrap.addEventListener('click', () => openLightbox(vid.dataset.src));
+
+      const frag = document.createDocumentFragment();
+      frag.appendChild(wrap);
+      frag.appendChild(cap);
+      return frag;
+    }
+
+    function renderTab(name) {
+      gallery.innerHTML = '';
+      (DATA[name] || []).forEach(v => gallery.appendChild(videoCard(v)));
+      hydrateVideos();
+    }
+
+    function setActiveTab(name) {
+      tabs.forEach(t => {
+        t.classList.toggle('is-active', t.dataset.tab === name);
+        t.setAttribute('aria-selected', String(t.dataset.tab === name));
+      });
+      renderTab(name);
+      history.replaceState(null, '', `#tab=${encodeURIComponent(name)}`);
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => setActiveTab(t.dataset.tab)));
+
+    const urlTab = (location.hash.match(/tab=([^&]+)/) || [,'single'])[1];
+    setActiveTab(DATA[urlTab] ? urlTab : 'single');
+
+    function hydrateVideos() {
+      const vids = gallery.querySelectorAll('video');
+      const io = ('IntersectionObserver' in window)
+        ? new IntersectionObserver(entries => {
+            entries.forEach(({isIntersecting, target}) => {
+              if (isIntersecting) {
+                if (!target.src) {
+                  target.src = target.dataset.src;
+                  target.load();
+                }
+                target.playbackRate = 0.75;
+                target.onended = () => setTimeout(() => {
+                  target.currentTime = 0;
+                  target.play().catch(() => {});
+                }, 500);
+                target.play().catch(() => {});
+              } else {
+                target.pause();
+              }
+            });
+          }, { rootMargin: '100px 0px', threshold: 0.1 })
+        : null;
+
+      vids.forEach(v => io ? io.observe(v) : (v.src = v.dataset.src));
+    }
+
+    function openLightbox(src) {
+      lbVid.src = src;
+      lbVid.playbackRate = 0.75;
+      lbVid.onended = () => setTimeout(() => {
+        lbVid.currentTime = 0;
+        lbVid.play().catch(() => {});
+      }, 500);
+      lb.style.display = 'flex';
+      lbVid.play().catch(() => {});
+    }
+
+    function closeLightbox() {
+      lb.style.display = 'none';
+      lbVid.pause();
+      lbVid.removeAttribute('src');
+      lbVid.load();
+    }
+
+    lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    window.addEventListener('scroll', () => {
+      topBtn.style.display = window.scrollY > 600 ? 'flex' : 'none';
+    });
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
