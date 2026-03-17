@@ -22,6 +22,19 @@
 # - published: became a paper
 
 ideas:
+  - date: 2026-03-17
+    title: "Any-any attention?"
+    note: "nested and flattend attention."
+    status: exploring
+    tags: [attention]
+    related_works:
+      - title: "ATTENTION RESIDUALS"
+        url: https://arxiv.org/pdf/2603.15031
+        relation: "inspired by"
+        notes:
+          - "attention as optimization; gradient descent as a meta-optimization."
+
+
   - date: 2026-02-26
     title: "Analogy of mean-flow to GAN?"
     note: "The adversarial now predicts the time step."
@@ -39,7 +52,7 @@ ideas:
         relation: "inspired by"
         notes:
           - "Is text/caption conditioning a shortcut or a magic passage or 蟲洞"
-          - "Is residual network itself an Augmented Neural ODEs? Is it why it must have one hiddent layer in residual module? Similarly for LoRA?"
+          - "Is residual network itself an Augmented Neural ODEs? Is it why it must have one hidden layer in residual module? Similarly for LoRA?"
 
   - date: 2026-02-25
     title: "Why low-res to high-res training works?"
