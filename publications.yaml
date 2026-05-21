@@ -19,7 +19,7 @@ publications:
     selected: true
     tags: [vision-language]
     links:
-      paper: null
+      paper: https://arxiv.org/abs/2605.20576
       project: "https://iandrover.github.io/2026_dynamics/"
       github: null
     authors:
