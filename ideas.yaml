@@ -22,6 +22,12 @@
 # - published: became a paper
 
 ideas:
+  - date: 2026-03-19
+    title: "Video generation with mirror"
+    note: "is simulation data enough?"
+    status: exploring
+    tags: [generative, physics]
+
   - date: 2026-03-17
     title: "Any-any attention?"
     note: "nested and flattend attention."
