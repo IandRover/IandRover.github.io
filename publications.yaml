@@ -10,6 +10,30 @@
 # - learning-algorithm: teal
 
 publications:
+  - id: videoanalogy2026
+    emoji: "🎥"
+    title: "Video, Ergo Genero: Unifying Video Tasks via Spatiotemporal Analogy"
+    venue: "preprint 2026"
+    venue_type: conference
+    year: 2026
+    selected: true
+    tags: [video]
+    links:
+      # paper: https://arxiv.org/abs/2605.20576
+      # project: "https://iandrover.github.io/2026_dynamics/"
+      github: null
+    authors:
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Belinda Zeng"
+        url: "https://openreview.net/profile?id=~Belinda_Zeng1"
+      - name: "Bharath Hariharan"
+        url: "https://www.cs.cornell.edu/~bharathh/"
+      - name: "Menglin Jia"
+        url: "https://kmnp.github.io"
+    description: " We introduce a unified, text-free framework that executes and generalizes to diverse, unseen video tasks simply by observing and completing a single visual analogy on a spatiotemporal canvas."
+
   - id: dynamics2026
     emoji: "🏀"
     title: "Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos"
