@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Supplementary results for Video, Ergo Genero: Unifying Video Tasks via Spatiotemporal Analogy.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video, Ergo Genero — Supplementary Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1><span class="title-accent">Video, Ergo Genero:</span> Unifying Video Tasks via Spatiotemporal Analogy</h1>
+    <div class="quote">
+      <em>"Video, ergo genero."</em><br>
+      <span class="quote-translation">(I see, therefore I generate.)</span>
+    </div>
+    <p class="subtitle">Supplementary Video Results</p>
+    <p class="page-note">Interaction guide: <span class="guide-hover">Hover</span> to play the video. <span class="guide-click">Click</span> to show the control bar.</p>
+    <p class="page-note page-note-source">Dataset source: We use self-collected videos to present the results.</p>
+  </header>
+
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="container">
+      <h2>Highlights</h2>
+      <p class="section-intro">Each video shows the full analogy canvas: demonstration pair (top) and query input → generated output (bottom).</p>
+      <div class="highlights-grid" id="highlights-grid"></div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="category-nav">
+    <div class="container">
+      <a href="#sec-gg" class="nav-pill">Modal-Guided Generation</a>
+      <a href="#sec-vm" class="nav-pill">Video Manipulation</a>
+      <a href="#sec-cc" class="nav-pill">Camera Control</a>
+    </div>
+  </nav>
+
+  <!-- Modal-Guided Generation -->
+  <section id="sec-gg" class="category-section">
+    <div class="container">
+      <h2>Modal-Guided Generation</h2>
+      <p class="section-intro">Tasks using structured visual signals (depth, flow, events, points) as conditions for generation.</p>
+      <div class="task-list" id="task-list-gg"></div>
+    </div>
+  </section>
+
+  <!-- Video Manipulation -->
+  <section id="sec-vm" class="category-section alt">
+    <div class="container">
+      <h2>Video Manipulation</h2>
+      <p class="section-intro">Held-out manipulation tasks requiring temporal coherence and transformation reasoning.</p>
+      <div class="task-list" id="task-list-vm"></div>
+    </div>
+  </section>
+
+  <!-- Camera Control -->
+  <section id="sec-cc" class="category-section">
+    <div class="container">
+      <h2>Camera Control</h2>
+      <p class="section-intro">Camera motion and view transfer between demonstration and query scenes.</p>
+      <div class="task-list" id="task-list-cc"></div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="container">
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

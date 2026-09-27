@@ -1,0 +1,298 @@
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  background: #fff;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* === Header === */
+.page-header {
+  text-align: center;
+  padding: 3.5rem 1.5rem 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page-header .title-accent {
+  color: #a6192e;
+}
+
+.page-header .quote {
+  margin-top: 1rem;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.page-header .quote-translation {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.page-header .subtitle {
+  margin-top: 1rem;
+  color: #666;
+  font-size: 1.15rem;
+}
+
+.page-header .page-note {
+  margin-top: 0.6rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.page-header .guide-hover {
+  color: #a6192e;
+  font-weight: 600;
+}
+
+.page-header .guide-click {
+  color: #a6192e;
+  font-weight: 600;
+}
+
+.page-header .page-note-source {
+  margin-top: 0.35rem;
+}
+
+/* === Section shared === */
+.category-section, .highlights {
+  padding: 3rem 0;
+}
+
+.category-section.alt {
+  background: #f8f9fa;
+}
+
+.category-section h2, .highlights h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-intro {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+  max-width: 780px;
+}
+
+/* === Navigation pills === */
+.category-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.85rem 0;
+}
+
+.category-nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+}
+
+.nav-pill {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background: #e8f4fd;
+  color: #1a6fa8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.nav-pill:hover { background: #cce8f9; }
+
+/* === Highlights === */
+.highlights-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.highlights-row {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.highlights-row-2x4 { grid-template-columns: repeat(2, 1fr); }
+.highlights-row-2x3 { grid-template-columns: repeat(2, 1fr); }
+.highlights-row-2x2 { grid-template-columns: repeat(2, 1fr); }
+
+.highlight-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  position: relative;
+}
+
+.highlight-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #fff;
+}
+
+/* Aspect ratio for highlight cards */
+.highlight-card.ar-2x4 { aspect-ratio: 1920 / 1044; }
+.highlight-card.ar-2x3 { aspect-ratio: 1440 / 1044; }
+.highlight-card.ar-2x2 { aspect-ratio: 960 / 1044; }
+
+.highlight-card .highlight-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 0.85rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* === Task list (collapsible) === */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.task-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.15rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.task-header:hover { background: #f9f9f9; }
+
+.task-header .chevron {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  color: #999;
+}
+
+.task-item.open .task-header .chevron {
+  transform: rotate(90deg);
+}
+
+.task-header .task-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  flex: 1;
+}
+
+.task-body {
+  display: none;
+  padding: 0 1.15rem 1.25rem;
+}
+
+.task-item.open .task-body {
+  display: block;
+}
+
+.task-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.85rem;
+}
+
+.task-note {
+  font-size: 0.9rem;
+  color: #856404;
+  background: #fff8e1;
+  border-radius: 4px;
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+/* === Video grid (inside tasks) === */
+.video-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+/* Grid columns based on aspect ratio class */
+.video-grid.grid-2x4 { grid-template-columns: 1fr; }
+.video-grid.grid-2x3 { grid-template-columns: repeat(2, 1fr); }
+.video-grid.grid-2x2 { grid-template-columns: repeat(3, 1fr); }
+
+/* Camera control uses 2x2 aspect ratio but 2 columns per row */
+.video-grid.camera-control-grid { grid-template-columns: repeat(2, 1fr); }
+
+.video-cell {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+/* Aspect ratio containers */
+.video-cell.ar-2x4 { aspect-ratio: 1920 / 1044; }
+.video-cell.ar-2x3 { aspect-ratio: 1440 / 1044; }
+.video-cell.ar-2x2 { aspect-ratio: 960 / 1044; }
+
+.video-cell video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #fff;
+}
+
+/* === Footer === */
+.page-footer {
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .highlights-row-2x4 { grid-template-columns: 1fr; }
+  .highlights-row-2x3 { grid-template-columns: 1fr; }
+  .highlights-row-2x2 { grid-template-columns: repeat(2, 1fr); }
+  .video-grid.grid-2x3 { grid-template-columns: 1fr; }
+  .video-grid.grid-2x2 { grid-template-columns: repeat(2, 1fr); }
+  .page-header h1 { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .video-grid.grid-2x2 { grid-template-columns: 1fr; }
+  .highlights-row-2x2 { grid-template-columns: 1fr; }
+}
