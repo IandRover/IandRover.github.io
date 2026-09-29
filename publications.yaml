@@ -19,7 +19,7 @@ publications:
     selected: true
     tags: [video]
     links:
-      # paper: https://arxiv.org/abs/2605.20576
+      paper: https://arxiv.org/abs/2609.33935
       project: "https://iandrover.github.io/video_analogy/index.html"
       github: null
     authors:
