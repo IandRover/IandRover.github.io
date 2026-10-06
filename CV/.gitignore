@@ -1,0 +1,8 @@
+# Allow-list: this repo is a public site, so only publish the sources and final PDFs.
+*
+!.gitignore
+!README.md
+!cv_academic.typ
+!resume_industry.typ
+!ChiaHsiang_Kao_CV.pdf
+!ChiaHsiang_Kao_Resume.pdf
