@@ -1,6 +1,6 @@
 # Publications Configuration
 # Run `python paper_gen.py` to regenerate the publications section in index.html
-# Fields: tag (CV number), venue_short (label on selected rows), thumb / thumb_video (selected rows), description (one-line summary)
+# Fields: year (first publication year, groups the full list), venue_short (label on selected rows), thumb / thumb_video (selected rows), description (one-line summary)
 
 # Tag color mapping (for reference):
 # - biology: green
@@ -12,7 +12,6 @@
 
 publications:
   - id: videoanalogy2026
-    tag: "S.2"
     thumb: "video_analogy/videos/cc/camera_motion_transfer/01.jpg"
     thumb_video: "video_analogy/videos/cc/camera_motion_transfer/01.mp4"
     emoji: "🎥"
@@ -39,7 +38,6 @@ publications:
     description: "A text-free framework that executes and generalizes to diverse, unseen video tasks by completing a single visual analogy on a spatiotemporal canvas."
 
   - id: dynamics2026
-    tag: "C.9"
     thumb: "assets/img/publications/dynamics_2x2.jpg"
     thumb_video: "assets/img/publications/dynamics_2x2.mp4"
     emoji: "🏀"
@@ -74,12 +72,11 @@ publications:
     description: "A vision-language model that uses language as a unified representation to infer rigid-body dynamics from video, bridging perception and physics simulation."
 
   - id: univearth2025
-    tag: "C.8"
     venue_short: "ACL 2026 Findings"
     thumb: "assets/img/publications/UnivEARTH.png"
     emoji: "🌍"
     title: "Towards LLM Agents for Earth Observation"
-    venue: "ACL 2026 Findings; ICML 2025 TerraBytes Workshop"
+    venue: "ICML 2025 TerraBytes Workshop; ACL 2026 Findings"
     venue_type: conference
     year: 2025
     selected: true
@@ -119,7 +116,6 @@ publications:
     description: "Are AI agents ready for reliable Earth observation? A benchmark for code-executing agents on real satellite data."
 
   - id: ccl2024
-    tag: "C.7"
     thumb: "assets/img/publications/ccl.png"
     emoji: "🐟"
     title: "Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning"
@@ -141,7 +137,6 @@ publications:
     description: "A non-backpropagation learning algorithm inspired by counter-current exchange in biological systems."
 
   - id: allclear2024
-    tag: "C.6"
     venue_short: "NeurIPS 2024 Datasets & Benchmarks"
     thumb: "assets/img/publications/allclear.png"
     emoji: "⛅"
@@ -174,7 +169,6 @@ publications:
     description: "The largest collection of satellite images with cloud occlusions, with a benchmark for cloud removal."
 
   - id: caduceus2024
-    tag: "C.5"
     emoji: "⚕️"
     title: "Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling"
     venue: "ICML 2024"
@@ -203,12 +197,11 @@ publications:
     description: "We design a DNA foundation model, specialized in long-context sequence modeling, combining the bi-directional equivariant intuition."
 
   - id: genomicslrb2024
-    tag: "C.4"
     emoji: "🧬"
     title: "Advancing DNA Language Models: The Genomics Long-Range Benchmark"
     venue: "AAAI 2023 Workshop; ICLR 2024 MLGenX Workshop"
     venue_type: workshop
-    year: 2024
+    year: 2023
     selected: false
     tags: [biology, learning-algorithm]
     links:
@@ -240,7 +233,6 @@ publications:
     description: "We introduce a long-range benchmark for evaluating DNA language models on genomics tasks."
 
   - id: fedbug2023
-    tag: "S.1"
     emoji: "🐞"
     title: "FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning"
     venue: "arXiv"
@@ -261,7 +253,6 @@ publications:
     description: "We design a federated learning framework to mitigate the dataset shift by gradually unfreezing the model."
 
   - id: embc2022
-    tag: "C.3"
     emoji: "🧲"
     title: "MEG-Based Classification and Grad-CAM Visualization for Major Depressive and Bipolar Disorders with Semi-CNN"
     venue: "IEEE EMBC 2022"
@@ -294,7 +285,6 @@ publications:
     description: "We classify major depressive and bipolar disorders from resting-state MEG with a 3D CNN and visualize the learned patterns with Grad-CAM++."
 
   - id: maml2022
-    tag: "C.2"
     thumb: "assets/img/publications/ICLR2022_800x600.png"
     emoji: "🦣"
     title: "MAML Is a Noisy Contrastive Learner in Classification"
@@ -319,7 +309,6 @@ publications:
     description: "We show that model-agnostic meta-learning (MAML) acts as contrastive learning."
 
   - id: miccai2021
-    tag: "C.1"
     emoji: "🧠"
     title: "Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity"
     venue: "MICCAI 2021"
