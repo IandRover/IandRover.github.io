@@ -48,7 +48,7 @@
 
 = Summary
 
-Cornell CS Ph.D. (expected August 2027) building world models that recover and predict real-world 3D motion and physics, and video generation models that learn new tasks in context. Led all first-author projects, with papers at CVPR, NeurIPS, ICLR, ACL, and MICCAI; 500+ citations (h-index 7). Student Researcher at Meta; previously Applied Scientist Intern at Amazon. Trained as a physician (M.D.).
+Cornell CS Ph.D. (expected Fall 2027) building world models that recover and predict real-world 3D motion and physics, and video generation models that learn new tasks in context. Led all first-author projects, with papers at CVPR, NeurIPS, ICLR, ACL, and MICCAI; 500+ citations (h-index 7). Student Researcher at Meta; previously Applied Scientist Intern at Amazon. Trained as a physician (M.D.).
 
 = Experience
 
@@ -65,7 +65,7 @@ Cornell CS Ph.D. (expected August 2027) building world models that recover and p
 
 = Selected Publications
 
-#sel([Unifying Video Tasks via Spatiotemporal Analogy], [ICLR 2027 (under review)])
+#sel([Unifying Video Tasks via Spatiotemporal Analogy], [Under review])
 #sel([Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos], [CVPR 2026])
 #sel([Towards LLM Agents for Earth Observation], [ACL 2026 Findings])
 #sel([Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning], [NeurIPS 2024])
@@ -77,7 +77,7 @@ Cornell CS Ph.D. (expected August 2027) building world models that recover and p
 
 = Education
 
-#entry("Ph.D., Computer Science", "Cornell University", "2023 – Aug 2027 (expected)", sub: [Advisor: Bharath Hariharan])
+#entry("Ph.D., Computer Science", "Cornell University", "2023 – Fall 2027 (expected)", sub: [Advisor: Bharath Hariharan])
 #entry("Doctor of Medicine (M.D.)", "National Yang-Ming Chiao-Tung University", "2015 – 2022")
 
 = Skills, Honors & Service

@@ -1,265 +1,238 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Chia-Hsiang Kao</title>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Chia-Hsiang Kao, Robust and interpretable Machine Learning." name="keywords" />
-  <meta property="og:title" content="Chia-Hsiang's Website" />
-  <meta property="og:description" content="My research focuses on inferring the hidden dynamics of real-world interactions." />
-  <meta property="og:image" content="https://raw.githubusercontent.com/IandRover/IandRover.github.io/gh-pages/assets/img/hero-small.webp" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://iandrover.github.io/" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chia-Hsiang Kao</title>
+<meta name="description" content="Chia-Hsiang Kao — Cornell CS PhD building world models that infer and predict the hidden dynamics of real-world interactions.">
+<meta name="keywords" content="Chia-Hsiang Kao, world models, video generation, 3D vision, LLM agents">
+<meta property="og:title" content="Chia-Hsiang Kao">
+<meta property="og:description" content="I build world models that infer and predict the hidden dynamics of real-world interactions.">
+<meta property="og:image" content="https://iandrover.github.io/assets/img/Aaron_23_08.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iandrover.github.io/">
+<link rel="icon" type="image/png" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<style>
+  :root { --ink:#222; --muted:#666; --navy:#1f3a5f; --link:#2563eb; --line:#d9dee5; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:17px/1.6 Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif; color:var(--ink); }
+  a { color:var(--navy); text-decoration:none; border-bottom:1px solid transparent; }
+  a:hover { border-bottom-color:var(--navy); }
+  main a, .venue-hl { color:var(--link); }
+  main a:hover { border-bottom-color:var(--link); }
+  main a.author { color:inherit; }
+  main a.author:hover { border-bottom-color:currentColor; }
+  .layout { max-width:1120px; margin:0 auto; display:grid; grid-template-columns:270px 1fr; gap:64px; padding:64px 32px; }
 
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./assets/css/publications.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  aside { position:sticky; top:48px; align-self:start; }
+  aside img { width:100%; max-width:210px; border-radius:6px; display:block; }
+  aside h1 { font-size:1.7em; line-height:1.15; color:var(--navy); margin:18px 0 4px; }
+  .role { color:var(--muted); font-size:.9em; margin:0; }
+  .side-links { list-style:none; padding:0; margin:18px 0 0; font-size:.9em; }
+  .side-links li { margin:5px 0; }
+  .side-links i { width:22px; color:var(--navy); }
+  .side-note { display:block; margin-left:22px; color:var(--muted); }
+  .status { margin-top:20px; padding-top:14px; border-top:1px solid var(--line); font-size:.9em; color:var(--muted); }
+  .status b { color:var(--ink); }
+  .market { margin:4px 0 0; padding-left:1.1em; }
+  .market li { margin:2px 0; }
+  .nowrap { white-space:nowrap; }
 
-  <script src="./assets/js/scramble.js"></script>
+  main h2 { font-size:.92rem; letter-spacing:.12em; text-transform:uppercase; color:var(--navy); border-bottom:1px solid var(--navy); padding-bottom:4px; margin:44px 0 16px; }
+  main h2:first-child { margin-top:0; }
+  main p { margin:0 0 12px; }
+  .theme { display:grid; grid-template-columns:4px 1fr; gap:16px; margin:0 0 18px; }
+  .theme::before { content:""; background:var(--navy); border-radius:2px; opacity:.8; }
+  .theme h3 { font-size:1em; margin:0 0 2px; }
+  .theme p { margin:0; font-size:1em; }
 
-  <title>Chia-Hsiang Kao</title>
-  <meta name="Chia-Hsiang Kao's Homepage" http-equiv="Content-Type" content="Chia-Hsiang Kao's Homepage">
-  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  .scholar { font-size:.9em; color:var(--muted); margin:-6px 0 6px; }
+  .pub { display:grid; grid-template-columns:200px 1fr; gap:22px; align-items:center; padding:16px 0; border-bottom:1px solid var(--line); }
+  .media { width:200px; aspect-ratio:5/4; border-radius:6px; overflow:hidden; }
+  .media img, .media video { width:100%; height:100%; object-fit:contain; display:block; }
+  .ptitle { font-size:1em; font-weight:bold; line-height:1.35; margin:0 0 4px; }
+  .pauthors { font-size:.9em; margin:0 0 6px; line-height:1.45; }
+  .pmeta { font-size:.9em; }
+  .chip { display:inline-block; color:var(--navy); background:#eef2f7; padding:0 7px; border-radius:4px; margin-right:6px; }
+  .plinks a { margin-right:8px; }
+  .tldr { font-size:.9em; color:var(--muted); margin:8px 0 0; line-height:1.5; }
+  details { margin-top:18px; }
+  summary { cursor:pointer; color:var(--navy); font-weight:bold; margin-bottom:12px; }
+  .pubs { list-style:none; padding:0; margin:0; }
+  .pubs li { display:grid; grid-template-columns:3.1em 1fr; margin:0 0 13px; line-height:1.42; }
+  .tag { color:var(--muted); font-size:.9em; }
+  .pt { font-weight:bold; display:block; }
+  .au { font-size:.9em; display:block; }
+  .vn { font-size:.9em; font-style:italic; }
+  .vn a { font-style:normal; margin-left:8px; }
+  .note { font-size:.85rem; color:var(--muted); }
 
+  .row { display:grid; grid-template-columns:1fr auto; gap:16px; margin:0 0 10px; align-items:baseline; }
+  .row .d { color:var(--muted); font-size:1em; white-space:nowrap; }
+  .sub { display:block; color:var(--muted); font-size:.9em; }
+  footer { margin-top:48px; font-size:.85rem; color:var(--muted); }
+
+  @media (max-width:860px) {
+    .layout { grid-template-columns:1fr; gap:28px; padding:36px 20px; }
+    aside { position:static; text-align:center; }
+    aside img { max-width:150px; margin:0 auto; }
+    .side-links { display:flex; flex-wrap:wrap; justify-content:center; gap:4px 16px; }
+    .status { text-align:left; }
+    .pub { grid-template-columns:1fr; gap:12px; }
+    .media { width:100%; }
+  }
+</style>
 </head>
-
 <body>
+<div class="layout">
 
-<div class="container">
-
-<!-- Introduction Section -->
-<div class="intro-section">
-  <h1 class="intro-name">Chia-Hsiang Kao</h1>
-
-  <div class="intro-content">
-    <div class="intro-photo">
-      <a href="assets/img/Aaron[2308-2].png">
-        <img src="assets/img/Aaron[2308-2].png" alt="Chia-Hsiang Kao">
-      </a>
-      <div class="intro-links">
-        <a href="mailto:ck696@cornell.edu" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="./CV/ChiaHsiang_Kao_CV.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
-        <a href="https://scholar.google.com.tw/citations?user=W_i9B0sAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-      </div>
-    </div>
-
-    <div class="intro-text">
-      <p>
-        I am a CS PhD candidate at Cornell and a Cornell Foundational AI PhD Fellow, advised by Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>. My research focuses on inferring the hidden dynamics of real-world interactions, spanning vision-language reasoning and video understanding.
-      </p>
-      <p>
-        I am currently a Student Researcher at Meta and was previously an Applied Scientist Intern at Amazon. Before Cornell, I obtained my M.D. in Taiwan.
-      </p>
-    </div>
+<aside>
+  <img src="assets/img/Aaron[2308-2].png" alt="Chia-Hsiang Kao">
+  <h1>Chia-Hsiang Kao</h1>
+  <p class="role">Ph.D. Candidate, Computer Science<br>Cornell University</p>
+  <ul class="side-links">
+    <li><i class="fas fa-envelope"></i><a href="mailto:ck696@cornell.edu">ck696@cornell.edu</a></li>
+    <li><i class="fas fa-file-alt"></i><a href="CV/ChiaHsiang_Kao_CV.pdf" target="_blank">CV</a></li>
+    <li><i class="ai ai-google-scholar"></i><a href="https://scholar.google.com/citations?user=W_i9B0sAAAAJ" target="_blank">Google Scholar</a><span class="side-note">500+ citations · h-index 7</span></li>
+    <li><i class="fab fa-github"></i><a href="https://github.com/IandRover" target="_blank">GitHub</a></li>
+  </ul>
+  <div class="status">
+    <b>On the job market</b>
+    <ul class="market">
+      <li>Research internships, <span class="nowrap">Summer 2027</span></li>
+      <li>Research scientist roles, <span class="nowrap">from Fall 2027</span></li>
+    </ul>
   </div>
-</div>
+</aside>
 
-<!-- PUBLICATIONS_START -->
-<!-- Auto-generated by paper_gen.py - Do not edit manually -->
+<main>
+  <h2>About</h2>
+  <p>I build world models that infer and predict the hidden dynamics of real-world interactions: recovering 3D motion and physics from observation, and generating controllable video. I am a Cornell Foundational AI PhD Fellow advised by Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, currently a Student Researcher at Meta, and previously an Applied Scientist Intern at Amazon. Before Cornell, I trained as a physician (M.D., Taiwan).</p>
 
-<div class="section-title">Publications</div>
+  <h2>Research</h2>
+  <div class="theme"><div>
+    <h3>3D &amp; physical world modeling</h3>
+    <p>Completing occluded scene geometry and its motion (amodal scene flow, ongoing), and recovering rigid-body physics from monocular video by generating simulator configurations as language (<a href="https://iandrover.github.io/2026_dynamics/">Δynamics</a>, <span class="venue-hl">CVPR 2026</span>).</p>
+  </div></div>
+  <div class="theme"><div>
+    <h3>Video generation &amp; in-context learning</h3>
+    <p>A single video model that learns new tasks from one demonstration via spatiotemporal analogy, generalizing to unseen tasks and sensing modalities (<a href="https://iandrover.github.io/video_analogy/">ViGeo</a>).</p>
+  </div></div>
+  <div class="theme"><div>
+    <h3>LLM agents</h3>
+    <p>Code-executing, tool-using agents and how to evaluate them on real scientific workflows (<a href="https://iandrover.github.io/2025_univearth/">UnivEarth</a>, <span class="venue-hl">ACL 2026 Findings</span>).</p>
+  </div></div>
+  <div class="theme"><div>
+    <h3>AI for science</h3>
+    <p>Earth observation from satellite imagery (<a href="https://allclear.cs.cornell.edu">AllClear</a>, <span class="venue-hl">NeurIPS 2024 D&amp;B</span>), long-range DNA sequence models (<a href="https://caduceus-dna.github.io">Caduceus</a>, <span class="venue-hl">ICML 2024</span>), and medical imaging and neuroscience (<span class="venue-hl">MICCAI 2021</span>, <span class="venue-hl">EMBC 2022</span>).</p>
+  </div></div>
 
-<div class="pub-tabs">
-  <button class="pub-tab active" data-tab="selected">Selected</button>
-  <button class="pub-tab" data-tab="all">All Publications</button>
-</div>
+  <!-- PUBLICATIONS_START -->
+  <!-- Auto-generated by paper_gen.py from publications.yaml. Do not edit by hand. -->
+  <h2>Selected Research</h2>
+  <p class="scholar">* equal contribution</p>
 
-<div class="pub-container">
-  <div class="pub-list" id="pub-selected">
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🎥</span> Video, Ergo Genero: Unifying Video Tasks via Spatiotemporal Analogy</div>
-      <div class="pub-venue">preprint 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://openreview.net/profile?id=~Belinda_Zeng1" target="_blank" class="author-link">Belinda Zeng</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://kmnp.github.io" target="_blank" class="author-link">Menglin Jia</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2609.33935" target="_blank">paper</a> | <a href="https://iandrover.github.io/video_analogy/index.html" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🏀</span> Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</div>
-      <div class="pub-venue">CVPR 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://scholar.google.com/citations?user=KtQBW7oAAAAJ" target="_blank" class="author-link">Cong Phuoc Huynh</a>, <a href="https://chienyiwang.github.io" target="_blank" class="author-link">Chien-Yi Wang</a>, <a href="https://noranart.com/?i=1" target="_blank" class="author-link">Noranart Vesdapunt</a>, <a href="https://sstojanov.github.io" target="_blank" class="author-link">Stefan Stojanov</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://www.amazon.science/author/oleksandr-obiednikov" target="_blank" class="author-link">Oleksandr Obiednikov</a>, <a href="https://scholar.google.com/citations?user=tUd1UL4AAAAJ" target="_blank" class="author-link">Ning Zhou</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2605.20576" target="_blank">paper</a> | <a href="https://iandrover.github.io/2026_dynamics/" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🌍</span> Towards LLM Agents for Earth Observation</div>
-      <div class="pub-venue">ICML Terrabytes Workshop 2025, ACL Findings 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://wenting-zhao.github.io" target="_blank" class="author-link">Wenting Zhao</a>, <a href="https://shreelekha.revankar.net" target="_blank" class="author-link">Shreelekha Revankar</a>, <a href="https://cam.cornell.edu/people/samuel-speas/" target="_blank" class="author-link">Samuel Speas</a>, <a href="https://scholar.google.com/citations?user=Cq-eyMMAAAAJ" target="_blank" class="author-link">Snehal Bhagat</a>, <a href="https://rajeev-datta.github.io" target="_blank" class="author-link">Rajeev Datta</a>, <a href="https://cpphoo.github.io" target="_blank" class="author-link">Cheng Perng Phoo</a>, <a href="https://utkarshmall.com" target="_blank" class="author-link">Utkarsh Mall</a>, <a href="https://www.cs.columbia.edu/~vondrick/" target="_blank" class="author-link">Carl Vondrick</a>, <a href="https://www.cs.cornell.edu/~kb/" target="_blank" class="author-link">Kavita Bala</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/pdf/2504.12110" target="_blank">paper</a> | <a href="https://iandrover.github.io/2025_univearth/" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🐟</span> Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning</div>
-      <div class="pub-venue">NeurIPS 2024</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2409.19841" target="_blank">paper</a> | <a href="https://github.com/IandRover/CCL-NeurIPS24" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">⛅</span> AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery</div>
-      <div class="pub-venue">NeurIPS 2024</div>
-      <div class="pub-authors"><a href="https://zhou-hangyu.github.io" target="_blank" class="author-link">Hangyu Zhou*</a>, <span class="author-self"><b>Chia-Hsiang Kao*</b></span>, <a href="https://cpphoo.github.io" target="_blank" class="author-link">Cheng Perng Phoo</a>, <a href="https://utkarshmall.com" target="_blank" class="author-link">Utkarsh Mall</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://www.cs.cornell.edu/~kb/" target="_blank" class="author-link">Kavita Bala</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2410.23891" target="_blank">paper</a> | <a href="https://allclear.cs.cornell.edu" target="_blank">project</a> | <a href="https://github.com/Zhou-Hangyu/allclear" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🦣</span> MAML Is a Noisy Contrastive Learner in Classification</div>
-      <div class="pub-venue">ICLR 2022</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://walonchiu.github.io/" target="_blank" class="author-link">Wei-Chen Chiu</a>, <a href="https://sites.google.com/site/pinyuchenpage" target="_blank" class="author-link">Pin-Yu Chen</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2106.15367" target="_blank">paper</a> | <a href="https://github.com/iandrover/maml_noisy_contrasive_learner" target="_blank">code</a> | <a href="https://medium.com/@aaronkao/paper-maml-is-a-noisy-contrastive-learner-in-classification-de63001ad3e0" target="_blank">blog</a></div>
+  <div class="pub">
+    <div class="media"><video src="video_analogy/videos/cc/camera_motion_transfer/01.mp4" poster="video_analogy/videos/cc/camera_motion_transfer/01.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div>
+      <p class="ptitle">Unifying Video Tasks via Spatiotemporal Analogy</p>
+      <p class="pauthors"><b>Chia-Hsiang Kao</b>, <a class="author" href="https://openreview.net/profile?id=~Belinda_Zeng1">Belinda Zeng</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://kmnp.github.io">Menglin Jia</a></p>
+      <span class="pmeta"><span class="chip">Under review</span><span class="plinks"><a href="https://arxiv.org/abs/2609.33935">[arXiv]</a><a href="https://iandrover.github.io/video_analogy/index.html">[Project]</a></span></span>
+      <p class="tldr">A text-free framework that executes and generalizes to diverse, unseen video tasks by completing a single visual analogy on a spatiotemporal canvas.</p>
     </div>
   </div>
 
-  <div class="pub-list" id="pub-all" style="display: none;">
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🎥</span> Video, Ergo Genero: Unifying Video Tasks via Spatiotemporal Analogy</div>
-      <div class="pub-venue">preprint 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://openreview.net/profile?id=~Belinda_Zeng1" target="_blank" class="author-link">Belinda Zeng</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://kmnp.github.io" target="_blank" class="author-link">Menglin Jia</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2609.33935" target="_blank">paper</a> | <a href="https://iandrover.github.io/video_analogy/index.html" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🏀</span> Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</div>
-      <div class="pub-venue">CVPR 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://scholar.google.com/citations?user=KtQBW7oAAAAJ" target="_blank" class="author-link">Cong Phuoc Huynh</a>, <a href="https://chienyiwang.github.io" target="_blank" class="author-link">Chien-Yi Wang</a>, <a href="https://noranart.com/?i=1" target="_blank" class="author-link">Noranart Vesdapunt</a>, <a href="https://sstojanov.github.io" target="_blank" class="author-link">Stefan Stojanov</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://www.amazon.science/author/oleksandr-obiednikov" target="_blank" class="author-link">Oleksandr Obiednikov</a>, <a href="https://scholar.google.com/citations?user=tUd1UL4AAAAJ" target="_blank" class="author-link">Ning Zhou</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2605.20576" target="_blank">paper</a> | <a href="https://iandrover.github.io/2026_dynamics/" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🌍</span> Towards LLM Agents for Earth Observation</div>
-      <div class="pub-venue">ICML Terrabytes Workshop 2025, ACL Findings 2026</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://wenting-zhao.github.io" target="_blank" class="author-link">Wenting Zhao</a>, <a href="https://shreelekha.revankar.net" target="_blank" class="author-link">Shreelekha Revankar</a>, <a href="https://cam.cornell.edu/people/samuel-speas/" target="_blank" class="author-link">Samuel Speas</a>, <a href="https://scholar.google.com/citations?user=Cq-eyMMAAAAJ" target="_blank" class="author-link">Snehal Bhagat</a>, <a href="https://rajeev-datta.github.io" target="_blank" class="author-link">Rajeev Datta</a>, <a href="https://cpphoo.github.io" target="_blank" class="author-link">Cheng Perng Phoo</a>, <a href="https://utkarshmall.com" target="_blank" class="author-link">Utkarsh Mall</a>, <a href="https://www.cs.columbia.edu/~vondrick/" target="_blank" class="author-link">Carl Vondrick</a>, <a href="https://www.cs.cornell.edu/~kb/" target="_blank" class="author-link">Kavita Bala</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/pdf/2504.12110" target="_blank">paper</a> | <a href="https://iandrover.github.io/2025_univearth/" target="_blank">project</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🐟</span> Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning</div>
-      <div class="pub-venue">NeurIPS 2024</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2409.19841" target="_blank">paper</a> | <a href="https://github.com/IandRover/CCL-NeurIPS24" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">⛅</span> AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery</div>
-      <div class="pub-venue">NeurIPS 2024</div>
-      <div class="pub-authors"><a href="https://zhou-hangyu.github.io" target="_blank" class="author-link">Hangyu Zhou*</a>, <span class="author-self"><b>Chia-Hsiang Kao*</b></span>, <a href="https://cpphoo.github.io" target="_blank" class="author-link">Cheng Perng Phoo</a>, <a href="https://utkarshmall.com" target="_blank" class="author-link">Utkarsh Mall</a>, <a href="https://www.cs.cornell.edu/~bharathh/" target="_blank" class="author-link">Bharath Hariharan</a>, <a href="https://www.cs.cornell.edu/~kb/" target="_blank" class="author-link">Kavita Bala</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2410.23891" target="_blank">paper</a> | <a href="https://allclear.cs.cornell.edu" target="_blank">project</a> | <a href="https://github.com/Zhou-Hangyu/allclear" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">⚕️</span> Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling</div>
-      <div class="pub-venue">ICML 2024</div>
-      <div class="pub-authors"><a href="https://yair-schiff.github.io" target="_blank" class="author-link">Yair Schiff</a>, <span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://skylion007.github.io" target="_blank" class="author-link">Aaron Gokaslan</a>, <a href="https://tridao.me" target="_blank" class="author-link">Tri Dao</a>, <a href="https://goombalab.github.io" target="_blank" class="author-link">Albert Gu</a>, <a href="https://www.cs.cornell.edu/~kuleshov/" target="_blank" class="author-link">Volodymyr Kuleshov</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/pdf/2403.03234.pdf" target="_blank">paper</a> | <a href="https://caduceus-dna.github.io" target="_blank">project</a> | <a href="https://github.com/kuleshov-group/caduceus" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🧬</span> Advancing DNA Language Models: The Genomics Long-Range Benchmark</div>
-      <div class="pub-venue">ICLR 2024 Workshop on Machine Learning for Genomics Explorations</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao*</b></span>, Evan Trop*, McKinley Polen*, <a href="https://yair-schiff.github.io" target="_blank" class="author-link">Yair Schiff*</a>, Bernardo P. de Almeida, <a href="https://skylion007.github.io" target="_blank" class="author-link">Aaron Gokaslan</a>, Thomas Pierrot, <a href="https://www.cs.cornell.edu/~kuleshov/" target="_blank" class="author-link">Volodymyr Kuleshov</a></div>
-      <div class="pub-links"></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🐞</span> FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning</div>
-      <div class="pub-venue">arXiv</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="http://vllab.ee.ntu.edu.tw/" target="_blank" class="author-link">Yu-Chiang Frank Wang</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2307.10317" target="_blank">paper</a> | <a href="https://github.com/IandRover/FedBug" target="_blank">code</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🦣</span> MAML Is a Noisy Contrastive Learner in Classification</div>
-      <div class="pub-venue">ICLR 2022</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://walonchiu.github.io/" target="_blank" class="author-link">Wei-Chen Chiu</a>, <a href="https://sites.google.com/site/pinyuchenpage" target="_blank" class="author-link">Pin-Yu Chen</a></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2106.15367" target="_blank">paper</a> | <a href="https://github.com/iandrover/maml_noisy_contrasive_learner" target="_blank">code</a> | <a href="https://medium.com/@aaronkao/paper-maml-is-a-noisy-contrastive-learner-in-classification-de63001ad3e0" target="_blank">blog</a></div>
-    </div>
-
-    <div class="pub-item">
-      <div class="pub-title"><span class="pub-emoji">🧠</span> Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</div>
-      <div class="pub-venue">MICCAI 2021</div>
-      <div class="pub-authors"><span class="author-self"><b>Chia-Hsiang Kao</b></span>, <a href="https://scholar.google.com/citations?user=kUCM_aEAAAAJ" target="_blank" class="author-link">Yong-Sheng Chen</a>, <a href="https://bml.ym.edu.tw/ibs/Members/LFChen-e.html" target="_blank" class="author-link">Li-Fen Chen</a>, <a href="https://walonchiu.github.io/" target="_blank" class="author-link">Wei-Chen Chiu</a></div>
-      <div class="pub-links"></div>
+  <div class="pub">
+    <div class="media"><video src="assets/img/publications/dynamics_2x2.mp4" poster="assets/img/publications/dynamics_2x2.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div>
+      <p class="ptitle">Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</p>
+      <p class="pauthors"><b>Chia-Hsiang Kao</b>, <a class="author" href="https://scholar.google.com/citations?user=KtQBW7oAAAAJ">Cong Phuoc Huynh</a>, <a class="author" href="https://chienyiwang.github.io">Chien-Yi Wang</a>, <a class="author" href="https://noranart.com/?i=1">Noranart Vesdapunt</a>, <a class="author" href="https://sstojanov.github.io">Stefan Stojanov</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://www.amazon.science/author/oleksandr-obiednikov">Oleksandr Obiednikov</a>, <a class="author" href="https://scholar.google.com/citations?user=tUd1UL4AAAAJ">Ning Zhou</a></p>
+      <span class="pmeta"><span class="chip">CVPR 2026</span><span class="plinks"><a href="https://arxiv.org/abs/2605.20576">[arXiv]</a><a href="https://iandrover.github.io/2026_dynamics/">[Project]</a></span></span>
+      <p class="tldr">A vision-language model that uses language as a unified representation to infer rigid-body dynamics from video, bridging perception and physics simulation.</p>
     </div>
   </div>
-</div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('.pub-tab');
-  const selectedList = document.getElementById('pub-selected');
-  const allList = document.getElementById('pub-all');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      tabs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-
-      if (this.dataset.tab === 'selected') {
-        selectedList.style.display = 'flex';
-        allList.style.display = 'none';
-      } else {
-        selectedList.style.display = 'none';
-        allList.style.display = 'flex';
-      }
-    });
-  });
-});
-</script>
-
-<!-- PUBLICATIONS_END -->
-
-<div class="section-title">Awards and Scholarships</div>
-
-<div class="simple-list">
-  <div class="simple-item">
-    <span class="simple-year">2025</span>
-    <span class="simple-text">Foundational AI PhD Fellow, Cornell University</span>
+  <div class="pub">
+    <div class="media"><img src="assets/img/publications/UnivEARTH.png" alt="Towards LLM Agents for Earth Observation" loading="lazy"></div>
+    <div>
+      <p class="ptitle">Towards LLM Agents for Earth Observation</p>
+      <p class="pauthors"><b>Chia-Hsiang Kao</b>, <a class="author" href="https://wenting-zhao.github.io">Wenting Zhao</a>, <a class="author" href="https://aclanthology.org/people/cheryl-lam/">Cheryl Lam</a>, <a class="author" href="https://aclanthology.org/people/aarush-umap/unverified/">Aarush Umap</a>, <a class="author" href="https://shreelekha.revankar.net">Shreelekha Revankar</a>, <a class="author" href="https://cam.cornell.edu/people/samuel-speas/">Samuel Speas</a>, <a class="author" href="https://scholar.google.com/citations?user=Cq-eyMMAAAAJ">Snehal Bhagat</a>, <a class="author" href="https://rajeev-datta.github.io">Rajeev Datta</a>, <a class="author" href="https://cpphoo.github.io">Cheng Perng Phoo</a>, <a class="author" href="https://utkarshmall.com">Utkarsh Mall</a>, <a class="author" href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, <a class="author" href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></p>
+      <span class="pmeta"><span class="chip">ACL 2026 Findings</span><span class="plinks"><a href="https://arxiv.org/pdf/2504.12110">[arXiv]</a><a href="https://iandrover.github.io/2025_univearth/">[Project]</a></span></span>
+      <p class="tldr">Are AI agents ready for reliable Earth observation? A benchmark for code-executing agents on real satellite data.</p>
+    </div>
   </div>
-  <div class="simple-item">
-    <span class="simple-year">2021</span>
-    <span class="simple-text">Student Travel Award, MICCAI</span>
-  </div>
-  <div class="simple-item">
-    <span class="simple-year">2020</span>
-    <span class="simple-text">Undergraduate Research Fellowship, National Science and Technology Council, Taiwan</span>
-  </div>
-  <div class="simple-item">
-    <span class="simple-year">2018</span>
-    <span class="simple-text">Undergraduate Research Fellowship, National Science and Technology Council, Taiwan</span>
-  </div>
-  <div class="simple-item">
-    <span class="simple-year">2018</span>
-    <span class="simple-text">Summer Research Fellowship, National Science and Technology Council, Taiwan</span>
-  </div>
-</div>
 
-<div class="section-title">Services</div>
-
-<div class="simple-list">
-  <div class="simple-item">
-    <span class="simple-label">Conference Reviewer</span>
-    <span class="simple-text">AAAI [25], AISTATS [25], AutoML [22], CVPR [26], ECCV [26], ICML [25, 26], ICLR [25, 26], NeurIPS [21, 24, 25]</span>
+  <div class="pub">
+    <div class="media"><img src="assets/img/publications/ccl.png" alt="Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning" loading="lazy"></div>
+    <div>
+      <p class="ptitle">Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning</p>
+      <p class="pauthors"><b>Chia-Hsiang Kao</b>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></p>
+      <span class="pmeta"><span class="chip">NeurIPS 2024</span><span class="plinks"><a href="https://arxiv.org/abs/2409.19841">[arXiv]</a><a href="https://github.com/IandRover/CCL-NeurIPS24">[Code]</a></span></span>
+      <p class="tldr">A non-backpropagation learning algorithm inspired by counter-current exchange in biological systems.</p>
+    </div>
   </div>
-</div>
 
-<div class="section-title">Interests</div>
-
-<div class="simple-list">
-  <div class="simple-item">
-    <span class="simple-text">Surfing, lifeguard, running, and music.</span>
+  <div class="pub">
+    <div class="media"><img src="assets/img/publications/allclear.png" alt="AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery" loading="lazy"></div>
+    <div>
+      <p class="ptitle">AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery</p>
+      <p class="pauthors"><a class="author" href="https://zhou-hangyu.github.io">Hangyu Zhou</a>*, <b>Chia-Hsiang Kao*</b>, <a class="author" href="https://cpphoo.github.io">Cheng Perng Phoo</a>, <a class="author" href="https://utkarshmall.com">Utkarsh Mall</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a></p>
+      <span class="pmeta"><span class="chip">NeurIPS 2024 Datasets &amp; Benchmarks</span><span class="plinks"><a href="https://arxiv.org/abs/2410.23891">[arXiv]</a><a href="https://allclear.cs.cornell.edu">[Project]</a><a href="https://github.com/Zhou-Hangyu/allclear">[Code]</a></span></span>
+      <p class="tldr">The largest collection of satellite images with cloud occlusions, with a benchmark for cloud removal.</p>
+    </div>
   </div>
-</div>
 
-<div class="footer">
-  Template: <a href="https://zswang666.github.io/" target="_blank">this</a> | Last update: Feb. 2026
-</div>
+  <div class="pub">
+    <div class="media"><img src="assets/img/publications/ICLR2022_800x600.png" alt="MAML Is a Noisy Contrastive Learner in Classification" loading="lazy"></div>
+    <div>
+      <p class="ptitle">MAML Is a Noisy Contrastive Learner in Classification</p>
+      <p class="pauthors"><b>Chia-Hsiang Kao</b>, <a class="author" href="https://walonchiu.github.io/">Wei-Chen Chiu</a>, <a class="author" href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a></p>
+      <span class="pmeta"><span class="chip">ICLR 2022</span><span class="plinks"><a href="https://arxiv.org/abs/2106.15367">[arXiv]</a><a href="https://github.com/iandrover/maml_noisy_contrasive_learner">[Code]</a><a href="https://medium.com/@aaronkao/paper-maml-is-a-noisy-contrastive-learner-in-classification-de63001ad3e0">[Blog]</a></span></span>
+      <p class="tldr">We show that model-agnostic meta-learning (MAML) acts as contrastive learning.</p>
+    </div>
+  </div>
+
+  <details>
+  <summary>All publications (11)</summary>
+  <ul class="pubs">
+    <li><span class="tag">[S.2]</span><span><span class="pt">Unifying Video Tasks via Spatiotemporal Analogy</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://openreview.net/profile?id=~Belinda_Zeng1">Belinda Zeng</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://kmnp.github.io">Menglin Jia</a></span><span class="vn">Under review</span><span class="vn"><a href="https://arxiv.org/abs/2609.33935">[arXiv]</a><a href="https://iandrover.github.io/video_analogy/index.html">[Project]</a></span></span></li>
+    <li><span class="tag">[C.9]</span><span><span class="pt">Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://scholar.google.com/citations?user=KtQBW7oAAAAJ">Cong Phuoc Huynh</a>, <a class="author" href="https://chienyiwang.github.io">Chien-Yi Wang</a>, <a class="author" href="https://noranart.com/?i=1">Noranart Vesdapunt</a>, <a class="author" href="https://sstojanov.github.io">Stefan Stojanov</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://www.amazon.science/author/oleksandr-obiednikov">Oleksandr Obiednikov</a>, <a class="author" href="https://scholar.google.com/citations?user=tUd1UL4AAAAJ">Ning Zhou</a></span><span class="vn">CVPR 2026</span><span class="vn"><a href="https://arxiv.org/abs/2605.20576">[arXiv]</a><a href="https://iandrover.github.io/2026_dynamics/">[Project]</a></span></span></li>
+    <li><span class="tag">[C.8]</span><span><span class="pt">Towards LLM Agents for Earth Observation</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://wenting-zhao.github.io">Wenting Zhao</a>, <a class="author" href="https://aclanthology.org/people/cheryl-lam/">Cheryl Lam</a>, <a class="author" href="https://aclanthology.org/people/aarush-umap/unverified/">Aarush Umap</a>, <a class="author" href="https://shreelekha.revankar.net">Shreelekha Revankar</a>, <a class="author" href="https://cam.cornell.edu/people/samuel-speas/">Samuel Speas</a>, <a class="author" href="https://scholar.google.com/citations?user=Cq-eyMMAAAAJ">Snehal Bhagat</a>, <a class="author" href="https://rajeev-datta.github.io">Rajeev Datta</a>, <a class="author" href="https://cpphoo.github.io">Cheng Perng Phoo</a>, <a class="author" href="https://utkarshmall.com">Utkarsh Mall</a>, <a class="author" href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, <a class="author" href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></span><span class="vn">ACL 2026 Findings; ICML 2025 TerraBytes Workshop</span><span class="vn"><a href="https://arxiv.org/pdf/2504.12110">[arXiv]</a><a href="https://iandrover.github.io/2025_univearth/">[Project]</a></span></span></li>
+    <li><span class="tag">[C.7]</span><span><span class="pt">Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></span><span class="vn">NeurIPS 2024</span><span class="vn"><a href="https://arxiv.org/abs/2409.19841">[arXiv]</a><a href="https://github.com/IandRover/CCL-NeurIPS24">[Code]</a></span></span></li>
+    <li><span class="tag">[C.6]</span><span><span class="pt">AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery</span><span class="au"><a class="author" href="https://zhou-hangyu.github.io">Hangyu Zhou</a>*, <u>Chia-Hsiang Kao</u>*, <a class="author" href="https://cpphoo.github.io">Cheng Perng Phoo</a>, <a class="author" href="https://utkarshmall.com">Utkarsh Mall</a>, <a class="author" href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, <a class="author" href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a></span><span class="vn">NeurIPS Datasets and Benchmarks Track 2024</span><span class="vn"><a href="https://arxiv.org/abs/2410.23891">[arXiv]</a><a href="https://allclear.cs.cornell.edu">[Project]</a><a href="https://github.com/Zhou-Hangyu/allclear">[Code]</a></span></span></li>
+    <li><span class="tag">[C.5]</span><span><span class="pt">Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling</span><span class="au"><a class="author" href="https://yair-schiff.github.io">Yair Schiff</a>, <u>Chia-Hsiang Kao</u>, <a class="author" href="https://skylion007.github.io">Aaron Gokaslan</a>, <a class="author" href="https://tridao.me">Tri Dao</a>, <a class="author" href="https://goombalab.github.io">Albert Gu</a>, <a class="author" href="https://www.cs.cornell.edu/~kuleshov/">Volodymyr Kuleshov</a></span><span class="vn">ICML 2024</span><span class="vn"><a href="https://arxiv.org/pdf/2403.03234.pdf">[arXiv]</a><a href="https://caduceus-dna.github.io">[Project]</a><a href="https://github.com/kuleshov-group/caduceus">[Code]</a></span></span></li>
+    <li><span class="tag">[C.4]</span><span><span class="pt">Advancing DNA Language Models: The Genomics Long-Range Benchmark</span><span class="au"><u>Chia-Hsiang Kao</u>*, Evan Trop*, McKinley Polen*, <a class="author" href="https://yair-schiff.github.io">Yair Schiff</a>*, Bernardo P. de Almeida, <a class="author" href="https://skylion007.github.io">Aaron Gokaslan</a>, Thomas Pierrot, <a class="author" href="https://www.cs.cornell.edu/~kuleshov/">Volodymyr Kuleshov</a></span><span class="vn">AAAI 2023 Workshop; ICLR 2024 MLGenX Workshop</span></span></li>
+    <li><span class="tag">[S.1]</span><span><span class="pt">FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="http://vllab.ee.ntu.edu.tw/">Yu-Chiang Frank Wang</a></span><span class="vn">arXiv</span><span class="vn"><a href="https://arxiv.org/abs/2307.10317">[arXiv]</a><a href="https://github.com/IandRover/FedBug">[Code]</a></span></span></li>
+    <li><span class="tag">[C.3]</span><span><span class="pt">MEG-Based Classification and Grad-CAM Visualization for Major Depressive and Bipolar Disorders with Semi-CNN</span><span class="au">Chun-Chih Huang, Intan Low, <u>Chia-Hsiang Kao</u>, Chuan-Yu Yu, Tung-Ping Su, Jen-Chuen Hsieh, <a class="author" href="https://scholar.google.com/citations?user=kUCM_aEAAAAJ">Yong-Sheng Chen</a>, <a class="author" href="https://bml.ym.edu.tw/ibs/Members/LFChen-e.html">Li-Fen Chen</a></span><span class="vn">IEEE EMBC 2022</span><span class="vn"><a href="https://ieeexplore.ieee.org/abstract/document/9871238/">[Paper]</a></span></span></li>
+    <li><span class="tag">[C.2]</span><span><span class="pt">MAML Is a Noisy Contrastive Learner in Classification</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://walonchiu.github.io/">Wei-Chen Chiu</a>, <a class="author" href="https://sites.google.com/site/pinyuchenpage">Pin-Yu Chen</a></span><span class="vn">ICLR 2022</span><span class="vn"><a href="https://arxiv.org/abs/2106.15367">[arXiv]</a><a href="https://github.com/iandrover/maml_noisy_contrasive_learner">[Code]</a><a href="https://medium.com/@aaronkao/paper-maml-is-a-noisy-contrastive-learner-in-classification-de63001ad3e0">[Blog]</a></span></span></li>
+    <li><span class="tag">[C.1]</span><span><span class="pt">Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity</span><span class="au"><u>Chia-Hsiang Kao</u>, <a class="author" href="https://scholar.google.com/citations?user=kUCM_aEAAAAJ">Yong-Sheng Chen</a>, <a class="author" href="https://bml.ym.edu.tw/ibs/Members/LFChen-e.html">Li-Fen Chen</a>, <a class="author" href="https://walonchiu.github.io/">Wei-Chen Chiu</a></span><span class="vn">MICCAI 2021</span></span></li>
+  </ul>
+  </details>
+  <!-- PUBLICATIONS_END -->
+
+  <h2>Experience</h2>
+  <div class="row"><span><b>Student Researcher</b>, Meta · New York, NY<span class="sub">Host: <a href="https://kmnp.github.io">Menglin Jia</a></span></span><span class="d">Jan 2026 – May 2027</span></div>
+  <div class="row"><span><b>Applied Scientist Intern</b>, Amazon · Sunnyvale, CA<span class="sub">Host: <a href="https://chienyiwang.github.io">Chien-Yi Wang</a></span></span><span class="d">May – Aug 2025</span></div>
+  <div class="row"><span><b>Ph.D. in Computer Science</b>, Cornell University<span class="sub">Advisor: <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></span></span><span class="d">2023 – Fall 2027 (expected)</span></div>
+  <div class="row"><span><b>Doctor of Medicine (M.D.)</b>, National Yang-Ming Chiao-Tung University</span><span class="d">2015 – 2022</span></div>
+
+  <h2>Honors &amp; Awards</h2>
+  <div class="row"><span>Foundational AI PhD Fellowship, Cornell University</span><span class="d">2025</span></div>
+  <div class="row"><span>Student Travel Award, MICCAI</span><span class="d">2021</span></div>
+  <div class="row"><span>Undergraduate Research Fellowship, National Science and Technology Council, Taiwan</span><span class="d">2018, 2020</span></div>
+  <div class="row"><span>Summer Research Fellowship, National Health Research Institutes, Taiwan</span><span class="d">2018</span></div>
+
+  <h2>Mentoring &amp; Service</h2>
+  <p><b>Mentoring:</b> Hangyu Zhou (AllClear, NeurIPS 2024 D&amp;B); Cheryl Lam and Aarush Umap (UnivEarth, ACL 2026 Findings)</p>
+  <p><b>Conference reviewer:</b> NeurIPS (2021, 2024–2026), ICLR (2025–2027), ICML (2025), ECCV (2026), COLM (2026), AAAI (2025), AISTATS (2025), AutoML (2022)</p>
+  <p><b>Journal reviewer:</b> CVIU (2022), Computers &amp; Electrical Engineering (2024), IEEE TETCI (2024)</p>
+  <p class="note">Outside research: surfing, lifeguard, running, and music.</p>
+
+  <footer>Last update: Oct. 2026</footer>
+</main>
 
 </div>
-
 </body>
-
 </html>

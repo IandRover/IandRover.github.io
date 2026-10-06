@@ -2,217 +2,150 @@
 """
 Publication HTML Generator
 
-Reads publications.yaml and generates the publications section for index.html.
+Reads publications.yaml and regenerates the block between the
+PUBLICATIONS_START / PUBLICATIONS_END markers in index.html.
 Usage: python paper_gen.py
 """
 
+from html import escape
 from pathlib import Path
 
 import yaml
 
+START_MARKER = "<!-- PUBLICATIONS_START -->"
+END_MARKER = "<!-- PUBLICATIONS_END -->"
+SCHOLAR_NOTE = "* equal contribution"
 
-def load_publications(yaml_path: str) -> list:
-    """Load publications from YAML file."""
+
+def load_publications(yaml_path: Path) -> list:
     with open(yaml_path, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-    return data.get("publications", [])
+        return yaml.safe_load(f).get("publications", [])
 
 
-def generate_author_html(authors: list) -> str:
-    """Generate HTML for author list."""
-    author_parts = []
+def author_names(authors: list, me_style: str) -> str:
+    parts = []
     for author in authors:
-        name = author["name"]
-        url = author.get("url")
-        is_me = author.get("is_me", False)
-        equal = author.get("equal", False)
-
-        # Add equal contribution marker
-        if equal:
-            name += "*"
-
-        # Format name with link if URL exists
-        if url:
-            if is_me:
-                # Self: bold blue link
-                name_html = f'<a href="{url}" target="_blank" class="author-self"><b>{name}</b></a>'
-            else:
-                # Others: black link
-                name_html = (
-                    f'<a href="{url}" target="_blank" class="author-link">{name}</a>'
-                )
+        name = escape(author["name"])
+        star = "*" if author.get("equal") else ""
+        if author.get("is_me"):
+            parts.append(
+                f"<b>{name}{star}</b>" if me_style == "bold" else f"<u>{name}</u>{star}"
+            )
         else:
-            if is_me:
-                name_html = f'<span class="author-self"><b>{name}</b></span>'
-            else:
-                name_html = name
+            url = author.get("url")
+            linked = (
+                f'<a class="author" href="{escape(url, quote=True)}">{name}</a>'
+                if url
+                else name
+            )
+            parts.append(linked + star)
+    return ", ".join(parts)
 
-        author_parts.append(name_html)
 
-    return ", ".join(author_parts)
-
-
-def generate_links_html(links: dict) -> str:
-    """Generate HTML for paper links (paper, project, github, etc.)."""
-    if not links:
-        return ""
-
-    link_parts = []
-
+def link_list(links: dict) -> list:
+    links = links or {}
+    out = []
     if links.get("paper"):
-        link_parts.append(f'<a href="{links["paper"]}" target="_blank">paper</a>')
-
-    if links.get("project"):
-        link_parts.append(f'<a href="{links["project"]}" target="_blank">project</a>')
-
-    if links.get("github"):
-        link_parts.append(f'<a href="{links["github"]}" target="_blank">code</a>')
-
-    if links.get("video"):
-        link_parts.append(f'<a href="{links["video"]}" target="_blank">video</a>')
-
-    if links.get("medium"):
-        link_parts.append(f'<a href="{links["medium"]}" target="_blank">blog</a>')
-
-    return " | ".join(link_parts)
+        label = "arXiv" if "arxiv.org" in links["paper"] else "Paper"
+        out.append((label, links["paper"]))
+    for key, label in (
+        ("project", "Project"),
+        ("github", "Code"),
+        ("video", "Video"),
+        ("medium", "Blog"),
+    ):
+        if links.get(key):
+            out.append((label, links[key]))
+    return [f'<a href="{escape(url, quote=True)}">[{label}]</a>' for label, url in out]
 
 
-def generate_publication_card(pub: dict) -> str:
-    """Generate HTML for a single publication card."""
-    authors_html = generate_author_html(pub.get("authors", []))
-    links_html = generate_links_html(pub.get("links", {}))
+def media_html(pub: dict) -> str:
+    thumb = escape(pub["thumb"], quote=True)
+    if pub.get("thumb_video"):
+        video = escape(pub["thumb_video"], quote=True)
+        return (
+            f'<video src="{video}" poster="{thumb}" autoplay muted loop playsinline '
+            f'preload="metadata"></video>'
+        )
+    return (
+        f'<img src="{thumb}" alt="{escape(pub["title"], quote=True)}" loading="lazy">'
+    )
 
-    # Get emoji if available
-    emoji = pub.get("emoji", "")
-    emoji_html = f'<span class="pub-emoji">{emoji}</span> ' if emoji else ""
 
-    html = f"""
-    <div class="pub-item">
-      <div class="pub-title">{emoji_html}{pub["title"]}</div>
-      <div class="pub-venue">{pub["venue"]}</div>
-      <div class="pub-authors">{authors_html}</div>
-      <div class="pub-links">{links_html}</div>
-    </div>"""
+def selected_row(pub: dict) -> str:
+    chip = escape(pub.get("venue_short") or pub["venue"])
+    tldr = (
+        f'\n      <p class="tldr">{escape(pub["description"].strip())}</p>'
+        if pub.get("description")
+        else ""
+    )
+    return f"""
+  <div class="pub">
+    <div class="media">{media_html(pub)}</div>
+    <div>
+      <p class="ptitle">{escape(pub["title"])}</p>
+      <p class="pauthors">{author_names(pub.get("authors", []), "bold")}</p>
+      <span class="pmeta"><span class="chip">{chip}</span><span class="plinks">{"".join(link_list(pub.get("links")))}</span></span>{tldr}
+    </div>
+  </div>"""
 
-    return html
+
+def full_list_item(pub: dict) -> str:
+    links = "".join(link_list(pub.get("links")))
+    links_html = f'<span class="vn">{links}</span>' if links else ""
+    return (
+        f'    <li><span class="tag">[{escape(pub["tag"])}]</span><span>'
+        f'<span class="pt">{escape(pub["title"])}</span>'
+        f'<span class="au">{author_names(pub.get("authors", []), "underline")}</span>'
+        f'<span class="vn">{escape(pub["venue"])}</span>{links_html}</span></li>'
+    )
 
 
 def generate_publications_html(publications: list) -> str:
-    """Generate the complete publications section HTML."""
+    selected = [p for p in publications if p.get("selected")]
+    rows = "\n".join(selected_row(p) for p in selected)
+    items = "\n".join(full_list_item(p) for p in publications)
+    return f"""{START_MARKER}
+  <!-- Auto-generated by paper_gen.py from publications.yaml. Do not edit by hand. -->
+  <h2>Selected Research</h2>
+  <p class="scholar">{escape(SCHOLAR_NOTE)}</p>
+{rows}
 
-    # Separate selected and other publications
-    selected = [p for p in publications if p.get("selected", False)]
-
-    # Generate cards
-    selected_cards = "\n".join(generate_publication_card(p) for p in selected)
-    all_cards = "\n".join(generate_publication_card(p) for p in publications)
-
-    html = f"""<!-- PUBLICATIONS_START -->
-<!-- Auto-generated by paper_gen.py - Do not edit manually -->
-
-<div class="section-title">Publications</div>
-
-<div class="pub-tabs">
-  <button class="pub-tab active" data-tab="selected">Selected</button>
-  <button class="pub-tab" data-tab="all">All Publications</button>
-</div>
-
-<div class="pub-container">
-  <div class="pub-list" id="pub-selected">
-{selected_cards}
-  </div>
-
-  <div class="pub-list" id="pub-all" style="display: none;">
-{all_cards}
-  </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {{
-  const tabs = document.querySelectorAll('.pub-tab');
-  const selectedList = document.getElementById('pub-selected');
-  const allList = document.getElementById('pub-all');
-
-  tabs.forEach(tab => {{
-    tab.addEventListener('click', function() {{
-      tabs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-
-      if (this.dataset.tab === 'selected') {{
-        selectedList.style.display = 'flex';
-        allList.style.display = 'none';
-      }} else {{
-        selectedList.style.display = 'none';
-        allList.style.display = 'flex';
-      }}
-    }});
-  }});
-}});
-</script>
-
-<!-- PUBLICATIONS_END -->"""
-
-    return html
+  <details>
+  <summary>All publications ({len(publications)})</summary>
+  <ul class="pubs">
+{items}
+  </ul>
+  </details>
+  {END_MARKER}"""
 
 
-def update_index_html(html_path: str, publications_html: str):
-    """Update index.html with the generated publications section."""
-    with open(html_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    # Find and replace the publications section
-    start_marker = "<!-- PUBLICATIONS_START -->"
-    end_marker = "<!-- PUBLICATIONS_END -->"
-
-    start_idx = content.find(start_marker)
-    end_idx = content.find(end_marker)
-
-    if start_idx != -1 and end_idx != -1:
-        # Replace existing section
-        end_idx += len(end_marker)
-        new_content = content[:start_idx] + publications_html + content[end_idx:]
-    else:
-        # Markers not found - print error
-        print(f"ERROR: Could not find publication markers in {html_path}")
-        print(f"Please add {start_marker} and {end_marker} markers to your HTML file.")
-        print("\nGenerated HTML:\n")
-        print(publications_html)
+def update_index_html(html_path: Path, publications_html: str) -> bool:
+    content = html_path.read_text(encoding="utf-8")
+    start = content.find(START_MARKER)
+    end = content.find(END_MARKER)
+    if start == -1 or end == -1:
+        print(f"ERROR: add {START_MARKER} and {END_MARKER} markers to {html_path}")
         return False
-
-    with open(html_path, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
+    html_path.write_text(
+        content[:start] + publications_html + content[end + len(END_MARKER) :],
+        encoding="utf-8",
+    )
     return True
 
 
-def main():
-    # Paths
+def main() -> int:
     script_dir = Path(__file__).parent
-    yaml_path = script_dir / "publications.yaml"
-    html_path = script_dir / "index.html"
-
-    # Load publications
-    print(f"Loading publications from {yaml_path}...")
-    publications = load_publications(yaml_path)
-    print(f"Found {len(publications)} publications")
-
-    selected_count = sum(1 for p in publications if p.get("selected", False))
-    print(f"  - Selected: {selected_count}")
-    print(f"  - Other: {len(publications) - selected_count}")
-
-    # Generate HTML
-    print("\nGenerating HTML...")
-    publications_html = generate_publications_html(publications)
-
-    # Update index.html
-    print(f"Updating {html_path}...")
-    if update_index_html(html_path, publications_html):
+    publications = load_publications(script_dir / "publications.yaml")
+    selected = sum(1 for p in publications if p.get("selected"))
+    print(f"Found {len(publications)} publications ({selected} selected)")
+    if update_index_html(
+        script_dir / "index.html", generate_publications_html(publications)
+    ):
         print("✓ Successfully updated index.html")
-    else:
-        print("✗ Failed to update index.html")
-        return 1
-
-    return 0
+        return 0
+    print("✗ Failed to update index.html")
+    return 1
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 # Publications Configuration
 # Run `python paper_gen.py` to regenerate the publications section in index.html
+# Fields: tag (CV number), venue_short (label on selected rows), thumb / thumb_video (selected rows), description (one-line summary)
 
 # Tag color mapping (for reference):
 # - biology: green
@@ -11,9 +12,12 @@
 
 publications:
   - id: videoanalogy2026
+    tag: "S.2"
+    thumb: "video_analogy/videos/cc/camera_motion_transfer/01.jpg"
+    thumb_video: "video_analogy/videos/cc/camera_motion_transfer/01.mp4"
     emoji: "🎥"
-    title: "Video, Ergo Genero: Unifying Video Tasks via Spatiotemporal Analogy"
-    venue: "preprint 2026"
+    title: "Unifying Video Tasks via Spatiotemporal Analogy"
+    venue: "Under review"
     venue_type: conference
     year: 2026
     selected: true
@@ -32,9 +36,12 @@ publications:
         url: "https://www.cs.cornell.edu/~bharathh/"
       - name: "Menglin Jia"
         url: "https://kmnp.github.io"
-    description: " We introduce a unified, text-free framework that executes and generalizes to diverse, unseen video tasks simply by observing and completing a single visual analogy on a spatiotemporal canvas."
+    description: "A text-free framework that executes and generalizes to diverse, unseen video tasks by completing a single visual analogy on a spatiotemporal canvas."
 
   - id: dynamics2026
+    tag: "C.9"
+    thumb: "assets/img/publications/dynamics_2x2.jpg"
+    thumb_video: "assets/img/publications/dynamics_2x2.mp4"
     emoji: "🏀"
     title: "Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos"
     venue: "CVPR 2026"
@@ -64,13 +71,16 @@ publications:
         url: https://www.amazon.science/author/oleksandr-obiednikov
       - name: "Ning Zhou"
         url: https://scholar.google.com/citations?user=tUd1UL4AAAAJ
-    description: "We introduce a vision-language framework that uses language as a unified representation to infer rigid-body dynamics from videos, bridging perception and physics simulation."
+    description: "A vision-language model that uses language as a unified representation to infer rigid-body dynamics from video, bridging perception and physics simulation."
 
   - id: univearth2025
+    tag: "C.8"
+    venue_short: "ACL 2026 Findings"
+    thumb: "assets/img/publications/UnivEARTH.png"
     emoji: "🌍"
     title: "Towards LLM Agents for Earth Observation"
-    venue: "ICML Terrabytes Workshop 2025, ACL Findings 2026"
-    venue_type: workshop
+    venue: "ACL 2026 Findings; ICML 2025 TerraBytes Workshop"
+    venue_type: conference
     year: 2025
     selected: true
     tags: [remote-sensing, ai-agent]
@@ -84,6 +94,10 @@ publications:
         is_me: true
       - name: "Wenting Zhao"
         url: https://wenting-zhao.github.io
+      - name: "Cheryl Lam"
+        url: https://aclanthology.org/people/cheryl-lam/
+      - name: "Aarush Umap"
+        url: https://aclanthology.org/people/aarush-umap/unverified/
       - name: "Shreelekha Revankar"
         url: https://shreelekha.revankar.net
       - name: "Samuel Speas"
@@ -102,9 +116,11 @@ publications:
         url: "https://www.cs.cornell.edu/~kb/"
       - name: "Bharath Hariharan"
         url: "https://www.cs.cornell.edu/~bharathh/"
-    description: "We ask and answer: Are AI systems ready for reliable Earth Observation?"
+    description: "Are AI agents ready for reliable Earth observation? A benchmark for code-executing agents on real satellite data."
 
   - id: ccl2024
+    tag: "C.7"
+    thumb: "assets/img/publications/ccl.png"
     emoji: "🐟"
     title: "Counter-Current Learning: A Biologically Plausible Dual Network Approach for Deep Learning"
     venue: "NeurIPS 2024"
@@ -122,12 +138,15 @@ publications:
         is_me: true
       - name: "Bharath Hariharan"
         url: "https://www.cs.cornell.edu/~bharathh/"
-    description: "We design a non-backpropagation learning algorithm that mimics the counter-current exchange mechanisms observed in biological systems."
+    description: "A non-backpropagation learning algorithm inspired by counter-current exchange in biological systems."
 
   - id: allclear2024
+    tag: "C.6"
+    venue_short: "NeurIPS 2024 Datasets & Benchmarks"
+    thumb: "assets/img/publications/allclear.png"
     emoji: "⛅"
     title: "AllClear: A Comprehensive Dataset and Benchmark for Cloud Removal in Satellite Imagery"
-    venue: "NeurIPS 2024"
+    venue: "NeurIPS Datasets and Benchmarks Track 2024"
     venue_type: conference
     year: 2024
     selected: true
@@ -152,9 +171,10 @@ publications:
         url: "https://www.cs.cornell.edu/~bharathh/"
       - name: "Kavita Bala"
         url: "https://www.cs.cornell.edu/~kb/"
-    description: "We build the largest collection of satellite images with cloud occlusions."
+    description: "The largest collection of satellite images with cloud occlusions, with a benchmark for cloud removal."
 
   - id: caduceus2024
+    tag: "C.5"
     emoji: "⚕️"
     title: "Caduceus: Bi-directional Equivariant Long-Range DNA Sequence Modeling"
     venue: "ICML 2024"
@@ -183,9 +203,10 @@ publications:
     description: "We design a DNA foundation model, specialized in long-context sequence modeling, combining the bi-directional equivariant intuition."
 
   - id: genomicslrb2024
+    tag: "C.4"
     emoji: "🧬"
     title: "Advancing DNA Language Models: The Genomics Long-Range Benchmark"
-    venue: "ICLR 2024 Workshop on Machine Learning for Genomics Explorations"
+    venue: "AAAI 2023 Workshop; ICLR 2024 MLGenX Workshop"
     venue_type: workshop
     year: 2024
     selected: false
@@ -219,6 +240,7 @@ publications:
     description: "We introduce a long-range benchmark for evaluating DNA language models on genomics tasks."
 
   - id: fedbug2023
+    tag: "S.1"
     emoji: "🐞"
     title: "FedBug: A Bottom-Up Gradual Unfreezing Framework for Federated Learning"
     venue: "arXiv"
@@ -238,7 +260,42 @@ publications:
         url: "http://vllab.ee.ntu.edu.tw/"
     description: "We design a federated learning framework to mitigate the dataset shift by gradually unfreezing the model."
 
+  - id: embc2022
+    tag: "C.3"
+    emoji: "🧲"
+    title: "MEG-Based Classification and Grad-CAM Visualization for Major Depressive and Bipolar Disorders with Semi-CNN"
+    venue: "IEEE EMBC 2022"
+    venue_type: conference
+    year: 2022
+    selected: false
+    tags: [medicine]
+    links:
+      paper: "https://ieeexplore.ieee.org/abstract/document/9871238/"
+      project: null
+      github: null
+    authors:
+      - name: "Chun-Chih Huang"
+        url: null
+      - name: "Intan Low"
+        url: null
+      - name: "Chia-Hsiang Kao"
+        url: null
+        is_me: true
+      - name: "Chuan-Yu Yu"
+        url: null
+      - name: "Tung-Ping Su"
+        url: null
+      - name: "Jen-Chuen Hsieh"
+        url: null
+      - name: "Yong-Sheng Chen"
+        url: https://scholar.google.com/citations?user=kUCM_aEAAAAJ
+      - name: "Li-Fen Chen"
+        url: "https://bml.ym.edu.tw/ibs/Members/LFChen-e.html"
+    description: "We classify major depressive and bipolar disorders from resting-state MEG with a 3D CNN and visualize the learned patterns with Grad-CAM++."
+
   - id: maml2022
+    tag: "C.2"
+    thumb: "assets/img/publications/ICLR2022_800x600.png"
     emoji: "🦣"
     title: "MAML Is a Noisy Contrastive Learner in Classification"
     venue: "ICLR 2022"
@@ -259,9 +316,10 @@ publications:
         url: "https://walonchiu.github.io/"
       - name: "Pin-Yu Chen"
         url: "https://sites.google.com/site/pinyuchenpage"
-    description: "We show that Model-agnostic meta-learning (MAML) acts as contrastive learning."
+    description: "We show that model-agnostic meta-learning (MAML) acts as contrastive learning."
 
   - id: miccai2021
+    tag: "C.1"
     emoji: "🧠"
     title: "Demystifying T1-MRI to FDG18-PET Image Translation via Representational Similarity"
     venue: "MICCAI 2021"

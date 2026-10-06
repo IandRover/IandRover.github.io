@@ -55,7 +55,7 @@
   stack(
     spacing: name-gap,
     text(size: 24pt, weight: "bold", fill: accent, top-edge: "cap-height", bottom-edge: "baseline", me),
-    text(size: 11pt, fill: muted, top-edge: "cap-height", bottom-edge: "baseline")[Ph.D. in Computer Science, Cornell University · Expected August 2027],
+    text(size: 11pt, fill: muted, top-edge: "cap-height", bottom-edge: "baseline")[Ph.D. in Computer Science, Cornell University · Expected Fall 2027],
   ),
   text(size: 9pt)[
     #link("mailto:ck696@cornell.edu")[ck696\@cornell.edu] \
@@ -74,7 +74,7 @@ I build world models that infer and predict the hidden dynamics of real-world in
 
 = Education
 
-#entry("Ph.D. in Computer Science", "Cornell University", "2023 – Aug 2027 (expected)", place: "Ithaca, NY",
+#entry("Ph.D. in Computer Science", "Cornell University", "2023 – Fall 2027 (expected)", place: "Ithaca, NY",
   sub: [Advisor: #link("https://www.cs.cornell.edu/~bharathh/")[Bharath Hariharan]])
 
 #entry("Doctor of Medicine (M.D.)", "National Yang-Ming Chiao-Tung University", "2015 – 2022", place: "Taipei, Taiwan")
@@ -110,7 +110,7 @@ I build world models that infer and predict the hidden dynamics of real-world in
 #pub("S.2",
   [Unifying Video Tasks via Spatiotemporal Analogy],
   authors: [Chia-Hsiang Kao, Belinda Zeng, Bharath Hariharan, Menglin Jia],
-  venue: [Under submission to ICLR 2027],
+  venue: [Under review],
   urls: (("arXiv", "https://arxiv.org/abs/2609.33935"), ("Project", "https://iandrover.github.io/video_analogy/")),
 )
 
