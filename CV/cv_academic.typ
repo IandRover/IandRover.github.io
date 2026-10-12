@@ -19,7 +19,7 @@
 #set list(indent: 0.15em, body-indent: 0.5em, spacing: 0.5em, marker: text(fill: accent, sym.bullet))
 #show link: set text(fill: accent)
 
-#let pubs-aside = text(size: 8.5pt, weight: "regular", fill: muted)[#link("https://scholar.google.com/citations?user=W_i9B0sAAAAJ")[Google Scholar]: 500+ citations, h-index 7 (Oct 2026)]
+#let pubs-aside = text(size: 8.5pt, weight: "regular", fill: muted)[#link("https://scholar.google.com/citations?user=W_i9B0sAAAAJ")[Google Scholar]: 500+ citations, h-index 8 (Oct 2026)]
 
 #show heading.where(level: 1): it => block(above: 1.1em, below: 0.65em, sticky: true, stack(
   spacing: 4pt,

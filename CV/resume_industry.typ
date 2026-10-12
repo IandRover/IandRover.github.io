@@ -48,7 +48,7 @@
 
 = Summary
 
-Cornell CS Ph.D. (expected Fall 2027) building world models that recover and predict real-world 3D motion and physics, and video generation models that learn new tasks in context. Led all first-author projects, with papers at CVPR, NeurIPS, ICLR, ACL, and MICCAI; 500+ citations (h-index 7). Student Researcher at Meta; previously Applied Scientist Intern at Amazon. Trained as a physician (M.D.).
+Cornell CS Ph.D. (expected Fall 2027) building world models that recover and predict real-world 3D motion and physics, and video generation models that learn new tasks in context. Led all first-author projects, with papers at CVPR, NeurIPS, ICLR, ACL, and MICCAI; 500+ citations (h-index 8). Student Researcher at Meta; previously Applied Scientist Intern at Amazon. Trained as a physician (M.D.).
 
 = Experience
 
