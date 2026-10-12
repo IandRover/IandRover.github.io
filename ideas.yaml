@@ -22,6 +22,22 @@
 # - published: became a paper
 
 ideas:
+  - date: 2026-10-09
+    title: "VLM for 3d scene reconstruction"
+    note:
+      - "Use AI (VLM) agent to find the point correspondance themselves; and finetune the COLMAP parameter per scene."
+    status: exploring
+    tags: [computer vision]
+
+  - date: 2026-10-08
+    title: "How to use TF32 smartly as FP32?"
+    note:
+      - "I think the issue is about loss computation and softmax: where must we keep FP32, and where is TF32 enough?"
+      - "Does the difference matter more for diffusion / generative models, or for perception models (which need more accurate outputs)?"
+      - "Can the influence be mitigated with gradient norm, batch size, or Adam (alpha, beta)?"
+    status: exploring
+    tags: [optimization]
+
   - date: 2026-03-19
     title: "Video generation with mirror"
     note: "is simulation data enough?"

@@ -145,7 +145,21 @@
         <button class="filter-btn" data-tag="diffusion">diffusion</button>
         <button class="filter-btn" data-tag="generative">generative</button>
         <button class="filter-btn" data-tag="learning">learning</button>
+        <button class="filter-btn" data-tag="optimization">optimization</button>
         <button class="filter-btn" data-tag="physics">physics</button>
+    </div>
+
+    <div class="idea" id="how-to-use-tf32-smartly-as-fp32">
+        <div class="idea-header">
+            <span class="date">2026-10-08</span>
+            <span class="idea-status" style="color: #16a34a;">🔍 Exploring</span>
+        </div>
+        <div class="title">How to use TF32 smartly as FP32?</div>
+        <div class="note"><span class="note-marker">a.</span> I think the issue is about loss computation and softmax: where must we keep FP32, and where is TF32 enough?<br><span class="note-marker">b.</span> Does the difference matter more for diffusion / generative models, or for perception models (which need more accurate outputs)?<br><span class="note-marker">c.</span> Can the influence be mitigated with gradient norm, batch size, or Adam (alpha, beta)?</div>
+        <div class="idea-meta">
+            <div class="idea-tags"><span class="idea-tag" style="background-color: #dc262620; color: #dc2626; border: 1px solid #dc262640;">optimization</span></div>
+            
+        </div>
     </div>
 
     <div class="idea" id="video-generation-with-mirror">
