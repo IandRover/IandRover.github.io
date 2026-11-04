@@ -1,25 +1,74 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<title>SCENE4LOW</title>
 <style>
-  html, body { margin: 0; background: #fff; }
-  main { max-width: 1280px; margin: 0 auto; padding: 24px 16px 48px; display: flex; flex-direction: column; gap: 24px; }
-  video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #fff; cursor: pointer; }
+  :root { --bg: #f4f5f8; --card: #fff; --ink: #1b1d22; --muted: #5d6270; --line: #e4e6ec; --accent: #3a5bd9; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body { font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  header { text-align: center; padding: 72px 20px 40px; background: linear-gradient(180deg, #e9edfb 0%, var(--bg) 100%); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 60px); letter-spacing: .04em; font-weight: 800; }
+  .tagline { margin: 8px 0 0; font-size: clamp(18px, 2.4vw, 24px); color: var(--muted); }
+  .venue { display: inline-block; margin-top: 22px; padding: 6px 16px; border-radius: 999px; background: #fff; border: 1px solid var(--line);
+           font-size: 14px; font-weight: 600; color: var(--accent); box-shadow: 0 1px 2px rgba(20, 30, 60, .06); }
+  main { max-width: 1240px; margin: 0 auto; padding: 0 20px 72px; display: flex; flex-direction: column; gap: 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+          box-shadow: 0 1px 2px rgba(20, 30, 60, .04), 0 8px 24px rgba(20, 30, 60, .06); }
+  .card.text { padding: 32px clamp(20px, 5vw, 56px); }
+  h2 { margin: 0 0 14px; font-size: 22px; text-align: center; }
+  .card.text p { margin: 0 auto; max-width: 860px; text-align: justify; hyphens: auto; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #fff; cursor: pointer; }
+  .card figcaption { padding: 10px 16px 12px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 600; color: var(--muted); }
+  figure { margin: 0; }
+  .grid .card { transition: transform .15s ease, box-shadow .15s ease; }
+  .grid .card:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(20, 30, 60, .06), 0 14px 32px rgba(20, 30, 60, .10); }
 </style>
 </head>
 <body>
+<header>
+  <h1>SCENE4LOW</h1>
+  <p class="tagline">Amodal 4D Scene Completion</p>
+  <span class="venue">Under submission to CVPR 2026</span>
+</header>
 <main>
-  <video src="videos/rhino.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/camel.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/stroller.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/dog.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/cow_a.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/cow_b.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/bear_a.mp4" muted loop playsinline preload="metadata"></video>
-  <video src="videos/bear_b.mp4" muted loop playsinline preload="metadata"></video>
+  <figure class="card">
+    <video src="videos/rhino.mp4" muted loop playsinline preload="metadata"></video>
+  </figure>
+
+  <section class="card text">
+    <h2>Abstract</h2>
+    <p>
+      We study <em>amodal 4D scene completion</em>: Given partial point clouds of a scene at one or two time steps, predict its complete colored
+      geometry together with an <em>amodal scene flow</em> that maps every completed point, visible or occluded, between time steps.
+      Existing methods address this only in pieces: amodal reconstruction handles static snapshots, 4D generation handles single objects,
+      and scene flow covers only observed points.
+      We present SCENE4LOW, a generative model that completes geometry, color, and motion jointly within one 3D representation. Because it
+      operates directly on point clouds, completion is decoupled from depth and pose estimation, and a single model works with monocular depth,
+      multi-view reconstruction, or depth sensors without retraining.
+      We adopt sparse-convolutional tokenizers encode the point distribution within each voxel into spatially aligned shape and color latents.
+      In this latent space, an occupancy transformer proposes missing structure, a diffusion transformer completes the shapes from two frames
+      jointly, and a cellwise deformation head predicts motion for every completed cell, including surfaces never observed. We train on
+      &sim;150K static scenes, objects, and animated assets with simulated partial observations. SCENE4LOW achieves state-of-the-art amodal
+      completion on SCRREAM and ScanNet++, reduces scene-flow error on Hi4D from 1.91 to 1.17&thinsp;cm compared to SAM&nbsp;3D&nbsp;Body,
+      and matches or outperforms dedicated 4D generators on ActionBench.
+    </p>
+  </section>
+
+  <section class="grid">
+    <figure class="card"><video src="videos/camel.mp4" muted loop playsinline preload="metadata"></video><figcaption>Camel</figcaption></figure>
+    <figure class="card"><video src="videos/stroller.mp4" muted loop playsinline preload="metadata"></video><figcaption>Stroller</figcaption></figure>
+    <figure class="card"><video src="videos/dog.mp4" muted loop playsinline preload="metadata"></video><figcaption>Dog</figcaption></figure>
+    <figure class="card"><video src="videos/cow_a.mp4" muted loop playsinline preload="metadata"></video><figcaption>Cows (1)</figcaption></figure>
+    <figure class="card"><video src="videos/cow_b.mp4" muted loop playsinline preload="metadata"></video><figcaption>Cows (2)</figcaption></figure>
+    <figure class="card"><video src="videos/bear_a.mp4" muted loop playsinline preload="metadata"></video><figcaption>Bear (1)</figcaption></figure>
+    <figure class="card"><video src="videos/bear_b.mp4" muted loop playsinline preload="metadata"></video><figcaption>Bear (2)</figcaption></figure>
+  </section>
 </main>
 <script>
   // Play only what is on screen; click to pause / resume.
@@ -31,7 +80,7 @@
     }
   }, { threshold: 0.25 });
   for (const v of videos) {
-    v.addEventListener('error', () => v.remove());
+    v.addEventListener('error', () => v.closest('.card').remove());
     io.observe(v);
     v.addEventListener('click', () => {
       if (v.paused) { delete v.dataset.paused; v.play(); } else { v.dataset.paused = 1; v.pause(); }
