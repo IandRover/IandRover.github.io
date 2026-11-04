@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  html, body { margin: 0; background: #fff; }
+  main { max-width: 1280px; margin: 0 auto; padding: 24px 16px 48px; display: flex; flex-direction: column; gap: 24px; }
+  video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #fff; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <video src="videos/rhino.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/camel.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/stroller.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/dog.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/cow_a.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/cow_b.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/bear_a.mp4" muted loop playsinline preload="metadata"></video>
+  <video src="videos/bear_b.mp4" muted loop playsinline preload="metadata"></video>
+</main>
+<script>
+  // Play only what is on screen; click to pause / resume.
+  const videos = document.querySelectorAll('video');
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting && !e.target.dataset.paused) e.target.play().catch(() => {});
+      else e.target.pause();
+    }
+  }, { threshold: 0.25 });
+  for (const v of videos) {
+    v.addEventListener('error', () => v.remove());
+    io.observe(v);
+    v.addEventListener('click', () => {
+      if (v.paused) { delete v.dataset.paused; v.play(); } else { v.dataset.paused = 1; v.pause(); }
+    });
+  }
+</script>
+</body>
+</html>
